@@ -1,0 +1,32 @@
+/* CSS country */
+.description p {
+    max-width:1024px;
+    font-family:arial;
+    font-size:18px;
+}
+.description-road {
+    width:30px;
+    margin-top:-5px;
+}
+.road-selection {
+    background-color:#464646;
+    color:#FFFFFF;
+    float:left;
+}
+.road-selection th {
+    margin-left:15px;
+    margin-right:15px;
+    display:flex;
+    justify-content:center;
+}
+.road-selection tr {
+    margin-left:15px;
+    margin-right:15px;
+    display:flex;
+    justify-content:center;
+}
+/* img element pre cesty */
+.menu-icon {
+    width:45px;
+    cursor:pointer;
+}

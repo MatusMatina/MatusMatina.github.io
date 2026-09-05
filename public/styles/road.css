@@ -1,0 +1,142 @@
+/* CSS road */
+#header img {
+    width:35px;
+    margin-bottom:-5px;
+    margin-left:5px;
+}
+#cv {
+    min-width:125px;
+}
+#main {
+    min-width:1250px;
+}
+#prej {
+    min-width:250px;
+}
+#selection {
+    position:fixed;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    right:5px;
+    top:150px;
+    background-color:#464646;
+    color:#FFFFFF;
+    width:350px;
+    height:210px;
+    border-radius:2.5px;
+    flex-direction:column;
+}
+#selection a {
+    width:320px;
+    margin:5px;
+    height:60px;
+    cursor:default;
+}
+#selection button {
+    width:320px;
+    height:60px;
+    border-radius:2.5px;
+    cursor:pointer;
+}
+.flag {
+    width:35px;
+    margin-bottom:-5px;
+    margin-left:5px;
+}
+.objekty td {
+    font-size:24px;
+}
+.gray {
+    color:#A7A7A7;
+}
+.road-tag {
+    width:45px;
+    margin-top:0px;
+}
+.direction {
+    font-weight: bold;
+}
+.pdz {
+    background-color:#A38E00;
+    color:#FFFFFF;
+    font-weight:bold;
+}
+.vystavba {
+    color:#F16300;
+    font-weight:bold;
+}
+.red {
+    color:#FF0000;
+    font-weight:bold;
+    cursor:pointer;
+}
+.hranice {
+    color:#2A2AFF;
+    font-weight:bold;
+}
+.typ {
+    display:none;
+}
+.tunel {
+    color:#007100;
+    font-weight:bold;
+}
+.spoplatnenie {
+    color:#0000D2;
+    font-weight:bold;
+}
+.nespoplatneny-usek {
+    background-color:#0000D2;
+    color:white;
+    font-weight:bold;
+    font-style:italic;
+}
+.info {
+    color:#1F77B5;
+    font-weight:bold;
+}
+.icon {
+    width:20px;
+}
+.pozn {
+    font-style: italic;
+}
+.uzavierka {
+    font-weight:bold;
+    background-color:#FF0000;
+    color:#ffffff;
+}
+.f-info {
+    color:#1F77B5;
+    font-weight:bold;
+}
+.s {
+    background-color:#E2FF00;
+}
+.peaz {
+    color:#000000;
+    background-color:#CDCDCD;
+    font-weight:bold;
+}
+.zajm {
+    text-decoration:underline;
+    font-style:italic;
+}
+.dial {
+    color:#007300;
+}
+.warn {
+    background-color:#FF8B00;
+    color:#FFFFFF;
+    font-weight:bold;
+    text-decoration:underline;
+}
+.prir {
+    background-color:#926D00;
+    color:#FFFFFF;
+}
+.x {
+    background-color:#004E65;
+    color:#FFFFFF;
+}
