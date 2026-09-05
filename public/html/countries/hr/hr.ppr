@@ -1,0 +1,47 @@
+[Config]
+Compilator.SaveAll=0
+Compilator.Capture=0
+Compilator.CompileOnBackground=0
+Compilator.ProgSaveAll=0
+Compilator.ProgRunSelection=0
+Compilator.LogType=0
+Compilator.LogEncoding=0
+DefaultCP=0
+LogtoEnd=1
+DontOpen=0
+AbsolutePath=0
+FileFormat=0
+ProjectFilesOnly=0
+HTServer=localhost
+[Project tree]
+hr
+	+js
+		..\..\..\scripts\hr-road.js
+	+html
+		A\A1.html
+		A\A3.html
+		A\A4.html
+[Open project files]
+0=..\..\..\scripts\hr-road.js
+1=..\..\..\..\..\..\..\AppData\Roaming\PSpad\Macro\exit-hr.pme
+2=A\A1.html
+3=A\A3.html
+4=A\A4.html
+[Selected Project Files]
+Main=
+Selected=A\A1.html
+[..\..\..\scripts\hr-road.js]
+TopLine=1
+Caret=166,19
+[..\..\..\..\..\..\..\AppData\Roaming\PSpad\Macro\exit-hr.pme]
+TopLine=1
+Caret=131,14
+[A\A1.html]
+TopLine=1986
+Caret=44,2013
+[A\A3.html]
+TopLine=486
+Caret=20,532
+[A\A4.html]
+TopLine=418
+Caret=45,459

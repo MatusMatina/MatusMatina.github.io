@@ -1,0 +1,28 @@
+[Config]
+Compilator.SaveAll=0
+Compilator.Capture=0
+Compilator.CompileOnBackground=0
+Compilator.ProgSaveAll=0
+Compilator.ProgRunSelection=0
+Compilator.LogType=0
+Compilator.LogEncoding=0
+DefaultCP=0
+LogtoEnd=1
+DontOpen=0
+AbsolutePath=0
+FileFormat=0
+ProjectFilesOnly=0
+HTServer=localhost
+[Project tree]
+cze
+	+cesty-i
+		i-51.html
+	-dialnice
+[Open project files]
+0=i-51.html
+[Selected Project Files]
+Main=
+Selected=i-51.html
+[i-51.html]
+TopLine=161
+Caret=83,213

@@ -1,0 +1,2081 @@
+<!DOCTYPE html>
+<html lang="sk">
+  <head>
+    <title>Chorvátsko • A1</title>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../../../styles/index.css">
+    <link rel="stylesheet" href="../../../../styles/road.css">
+    <base href="../../../../">
+    <script src="scripts/loadExit.js" defer></script>
+    <script src="scripts/hr-road.js" defer></script>
+    <script src="scripts/sidebar.js" defer></script>
+  </head>
+  <body>
+  <div id="header">
+        <h2><img src="files/images/countries/hr/A/A1.svg" class="road-tag">Diaľnica A1, Chorvátsko  •  Zagreb - Ploče (Dubrovnik)</h2>
+        <hr>
+        <h3>Župne mestá, cez/okolo ktorých cesta prechádza:</h3><span>Zagreb, Karlovac, Zadar, Šibenik, Split</span>
+        <h3>Medzinárodné cestné ťahy Transeurópskej siete:</h3><span>E65, E71, E73</span>
+    </div>
+    <div id="selection">
+        <span>Toto je beta verzia funkcie.</span>
+        <button onclick="history.back()">Späť</button>
+        <button onclick="direction('dir1')">Zagreb → Ploče (Dubrovnik)</button>
+        <button onclick="direction('dir2')">Ploče (Dubrovnik) → Zagreb</button>
+    </div>
+    <div id="objekty-na-trase">
+        <h3>Objekty na trase:</h3>
+        <div id="objekty">
+            <h4 id="dir1">Objekty • Smer Zagreb → Ploče (Dubrovnik)</h4>
+            <table border="1" class="tabulka objekty">
+                <tr>
+                    <th class="typ">
+                        Typ objektu
+                    </th>
+                    <th id="cv">
+                        Číslo výjazdu
+                    </th>
+                    <th id="main">
+                        Smer/-y
+                    </th>
+                    <th id="prej">
+                        Prejazdy
+                    </th>
+                    <th>
+                        Poznámka
+                    </th>
+                </tr>
+                <!-- ↑ ↓ ← → ↗ ↘ ↔ ↕ ⇐ ⇒ ⇑ ⇓ ⤳ ⤴ ⤵ 
+                    ↗ - šípka doprava hore diagonálna
+                    ↖ - šípka doľava hore diagonálna
+                -->
+                <tr>
+                    <td class="typ">cvor</td>
+                    <td>1 - <img src="files/images/countries/hr/cvor.svg" class="icon"> <br> </td>
+                    <td class="direction">↑ Split, Rijeka <img title="Autocesta A1" src="files/images/countries/hr/A/A1.svg" class="road-tag">,<img onclick="red('../e/e65.html')" title="Európska cesta 65" src="files/images/countries/eu/hr/E65.svg" class="road-tag red">,<img onclick="red('../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/hr/E71.svg" class="road-tag red"> ↑ \/ ↗ Sl. Brod, Varaždin, Ljubljana , Smer SLO <img onclick="red('../slovenia.html')" src="files/images/flags/slovenia.webp" class="road-tag red">, Krapina, Lučko <img onclick="red('A/A3.html')" title="Autocesta A3" src="files/images/countries/hr/A/A3.svg" class="road-tag red">,<img onclick="red('../e/e70.html')" title="Európska cesta 70" src="files/images/countries/eu/hr/E70.svg" class="road-tag red"></td>
+                    <td><img title="Autocesta A1" src="files/images/countries/hr/A/A1.svg" class="road-tag">,<img onclick="red('A/A3.html')" title="Autocesta A3" src="files/images/countries/hr/A/A3.svg" class="road-tag red">,<img onclick="red('../e/e65.html')" title="Európska cesta 65" src="files/images/countries/eu/hr/E65.svg" class="road-tag red">,<img onclick="red('../e/e70.html')" title="Európska cesta 70" src="files/images/countries/eu/hr/E70.svg" class="road-tag red">,<img onclick="red('../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/hr/E71.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">cestarina</td>
+                    <td><img src="files/images/countries/hr/cestarina/naplata.svg" class="road-tag"></td>
+                    <td onclick="dev()" title="Funkcia vo vývoji: Po kliknutí na mýtnicu sa zobrazí vypočítaná hodnota mýta." class="info red">Zagreb - Lučko</td>
+                    <td><img title="Autocesta A1" src="files/images/countries/hr/A/A1.svg" class="road-tag">,<img onclick="red('../e/e65.html')" title="Európska cesta 65" src="files/images/countries/eu/hr/E65.svg" class="road-tag red">,<img onclick="red('../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/hr/E71.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">odmoriste</td>
+                    <td></td>
+                    <td class="info"><img src="files/images/countries/hr/info/csph-lpg.svg" class="road-tag">,<img src="files/images/countries/hr/info/motorest.svg" class="road-tag">,<img src="files/images/countries/hr/info/p.svg" class="road-tag"> - Stupnik - zapad</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>2 - <img src="files/images/countries/hr/exit.svg" class="icon"> <br> </td>
+                    <td class="direction">↑ Split, Rijeka <img title="Autocesta A1" src="files/images/countries/hr/A/A1.svg" class="road-tag">,<img onclick="red('../e/e65.html')" title="Európska cesta 65" src="files/images/countries/eu/hr/E65.svg" class="road-tag red">,<img onclick="red('../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/hr/E71.svg" class="road-tag red"> ↑ | ↗ Pisarovina, Klinča Sela</td>
+                    <td><img onclick="red('Z/Z3106.html')" title="Župna cesta 3106" src="files/images/countries/hr/Z/Z3106.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">odmoriste</td>
+                    <td></td>
+                    <td class="info"><img src="files/images/countries/hr/info/csph-lpg.svg" class="road-tag">,<img src="files/images/countries/hr/info/motorest.svg" class="road-tag">,<img src="files/images/countries/hr/info/p.svg" class="road-tag"> - Desinec</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>3 - <img src="files/images/countries/hr/exit.svg" class="icon"> <br> </td>
+                    <td class="direction">↑ Split, Rijeka <img title="Autocesta A1" src="files/images/countries/hr/A/A1.svg" class="road-tag">,<img onclick="red('../e/e65.html')" title="Európska cesta 65" src="files/images/countries/eu/hr/E65.svg" class="road-tag red">,<img onclick="red('../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/hr/E71.svg" class="road-tag red"> ↑ | ↗ Jastrebarsko</td>
+                    <td><img onclick="red('D/D310.html')" title="Državna cesta 310" src="files/images/countries/hr/D/D310.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">odmoriste</td>
+                    <td></td>
+                    <td class="info"><img src="files/images/countries/hr/info/csph.svg" class="road-tag">,<img src="files/images/countries/hr/info/p.svg" class="road-tag">,<img src="files/images/countries/hr/info/cafe.svg" class="road-tag">,<img src="files/images/countries/hr/info/motorest.svg" class="road-tag">,<img src="files/images/countries/hr/info/motel.svg" class="road-tag">,<img src="files/images/countries/hr/info/ele-nab.svg" class="road-tag"> - Draganić</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>4 - <img src="files/images/countries/hr/exit.svg" class="icon"> <br> </td>
+                    <td class="direction">↑ Split, Rijeka <img title="Autocesta A1" src="files/images/countries/hr/A/A1.svg" class="road-tag">,<img onclick="red('../e/e65.html')" title="Európska cesta 65" src="files/images/countries/eu/hr/E65.svg" class="road-tag red">,<img onclick="red('../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/hr/E71.svg" class="road-tag red"> ↑ | ↗ <span class="prir">Plitvička jezera</span>, D. Resa, Karlovac ↗</td>
+                    <td><img onclick="red('D/D1.html')" title="Državna cesta 1" src="files/images/countries/hr/D/D1.svg" class="road-tag red">,<img onclick="red('D/D23.html')" title="Državna cesta 23" src="files/images/countries/hr/D/D23.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">tunel</td>
+                    <td><img src="files/images/countries/hr/info/tunel.svg" class="road-tag"></td>
+                    <td class="info">↑ Tunel Sveti Marko ↑</td>
+                    <td class="info">265 m</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>5 - <img src="files/images/countries/hr/exit.svg" class="icon"><br>Novigrad</td>
+                    <td class="direction">↑ Split, Rijeka <img title="Autocesta A1" src="files/images/countries/hr/A/A1.svg" class="road-tag">,<img onclick="red('../e/e65.html')" title="Európska cesta 65" src="files/images/countries/eu/hr/E65.svg" class="road-tag red">,<img onclick="red('../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/hr/E71.svg" class="road-tag red"> ↑ | ↗ Novo Mesto, Smer SLO <img onclick="red('../slovenia.html')" src="files/images/flags/slovenia.webp" class="road-tag red">, Novigrad na Dobri</td>
+                    <td><img onclick="red('D/D6.html')" title="Državna cesta 6" src="files/images/countries/hr/D/D6.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">odmoriste</td>
+                    <td></td>
+                    <td class="info"><img src="files/images/countries/hr/info/csph.svg" class="road-tag">,<img src="files/images/countries/hr/info/motorest.svg" class="road-tag">,<img src="files/images/countries/hr/info/ele-nab.svg" class="road-tag"> - Vukova Gorica</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>6 - <img src="files/images/countries/hr/exit.svg" class="icon"> <br> </td>
+                    <td class="direction">↑ Split, Rijeka <img title="Autocesta A1" src="files/images/countries/hr/A/A1.svg" class="road-tag">,<img onclick="red('../e/e65.html')" title="Európska cesta 65" src="files/images/countries/eu/hr/E65.svg" class="road-tag red">,<img onclick="red('../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/hr/E71.svg" class="road-tag red"> ↑ | ↗ Novo Mesto, Smer SLO <img onclick="red('../slovenia.html')" src="files/images/flags/slovenia.webp" class="road-tag red">, Bosiljevo</td>
+                    <td><img onclick="red('D/D3.html')" title="Državna cesta 3" src="files/images/countries/hr/D/D3.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>7 - <img src="files/images/countries/hr/cvor.svg" class="icon"> <br> </td>
+                    <td class="direction">↑ Split, Senj, Ogulin <img title="Autocesta A1" src="files/images/countries/hr/A/A1.svg" class="road-tag">,<img onclick="red('../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/hr/E71.svg" class="road-tag red"> ↑ | ↗ Pula, Rijeka <img onclick="red('A/A6.html')" title="Autocesta A6" src="files/images/countries/hr/A/A6.svg" class="road-tag red">,<img onclick="red('../e/e65.html')" title="Európska cesta 65" src="files/images/countries/eu/hr/E65.svg" class="road-tag red"> ↗</td>
+                    <td><img title="Autocesta A1" src="files/images/countries/hr/A/A1.svg" class="road-tag">,<img onclick="red('A/A6.html')" title="Autocesta A6" src="files/images/countries/hr/A/A6.svg" class="road-tag red">,<img onclick="red('../e/e65.html')" title="Európska cesta 65" src="files/images/countries/eu/hr/E65.svg" class="road-tag red">,<img onclick="red('../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/hr/E71.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">odmoriste</td>
+                    <td></td>
+                    <td class="info"><img src="files/images/countries/hr/info/csph-lpg.svg" class="road-tag">,<img src="files/images/countries/hr/info/motorest.svg" class="road-tag"> - Dobra</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">tunel</td>
+                    <td><img src="files/images/countries/hr/info/tunel.svg" class="road-tag"></td>
+                    <td class="info">↑ Tunel Rasnica ↑</td>
+                    <td class="info">120 m</td>
+                    <td class="info">Zeleni most</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>8 - <img src="files/images/countries/hr/exit.svg" class="icon"> <br> </td>
+                    <td class="direction">↑ Split, Senj <img title="Autocesta A1" src="files/images/countries/hr/A/A1.svg" class="road-tag">,<img onclick="red('../e/e65.html')" title="Európska cesta 65" src="files/images/countries/eu/hr/E65.svg" class="road-tag red">,<img onclick="red('../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/hr/E71.svg" class="road-tag red"> ↑ | ↗ <span class="prir">Plitvička jezera</span>, Josipdol, Ogulin</td>
+                    <td><img onclick="red('D/D42.html')" title="Državna cesta 42" src="files/images/countries/hr/D/D42.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">odmoriste</td>
+                    <td></td>
+                    <td class="info"><img src="files/images/countries/hr/info/cafe.svg" class="road-tag">,<img src="files/images/countries/hr/info/wc.svg" class="road-tag">,<img src="files/images/countries/hr/info/p.svg" class="road-tag"> - Modruš</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">tunel</td>
+                    <td><img src="files/images/countries/hr/info/tunel.svg" class="road-tag"></td>
+                    <td class="info">↑ Tunel Mala Kapela ↑</td>
+                    <td class="info">5780 m</td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>9 - <img src="files/images/countries/hr/exit.svg" class="icon"> <br> </td>
+                    <td class="direction">↑ Split, Senj <img title="Autocesta A1" src="files/images/countries/hr/A/A1.svg" class="road-tag">,<img onclick="red('../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/hr/E71.svg" class="road-tag red"> ↑ | ↗ Brinje, Križpolje</td>
+                    <td><img onclick="red('D/D23.html')" title="Državna cesta 23" src="files/images/countries/hr/D/D23.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">odmoriste</td>
+                    <td></td>
+                    <td class="info"><img src="files/images/countries/hr/info/csph.svg" class="road-tag">,<img src="files/images/countries/hr/info/motel.svg" class="road-tag">,<img src="files/images/countries/hr/info/motorest.svg" class="road-tag"> - Sokolac</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">tunel</td>
+                    <td><img src="files/images/countries/hr/info/tunel.svg" class="road-tag"></td>
+                    <td class="info">↑ Tunel Brinje ↑</td>
+                    <td class="info">1560 m</td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>10 - <img src="files/images/countries/hr/exit.svg" class="icon"> <br> </td>
+                    <td class="direction">↑ Split, Gospić <img title="Autocesta A1" src="files/images/countries/hr/A/A1.svg" class="road-tag">,<img onclick="red('../e/e65.html')" title="Európska cesta 65" src="files/images/countries/eu/hr/E65.svg" class="road-tag red">,<img onclick="red('../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/hr/E71.svg" class="road-tag red"> ↑ | ↗ Žuta Lokva, Rijeka, Senj, Crikvenica, Otok Rab, N. Vinodolski, Sveti Juraj</td>
+                    <td><img onclick="red('D/D23.html')" title="Državna cesta 23" src="files/images/countries/hr/D/D23.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">odmoriste</td>
+                    <td></td>
+                    <td class="info"><img src="files/images/countries/hr/info/p.svg" class="road-tag">,<img src="files/images/countries/hr/info/wc.svg" class="road-tag"> - Brloška Dubrava</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>11 - <img src="files/images/countries/hr/exit.svg" class="icon"> <br> </td>
+                    <td class="direction">↑ Split, Gospić <img title="Autocesta A1" src="files/images/countries/hr/A/A1.svg" class="road-tag">,<img onclick="red('../e/e65.html')" title="Európska cesta 65" src="files/images/countries/eu/hr/E65.svg" class="road-tag red">,<img onclick="red('../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/hr/E71.svg" class="road-tag red"> ↑ | ↗ <span class="prir">Plitvička jezera</span>, Otočac</td>
+                    <td><img onclick="red('D/D50.html')" title="Državna cesta 50" src="files/images/countries/hr/D/D50.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">tunel</td>
+                    <td><img src="files/images/countries/hr/info/tunel.svg" class="road-tag"></td>
+                    <td class="info">↑ Tunel Brezik ↑</td>
+                    <td class="info">435 m</td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">tunel</td>
+                    <td><img src="files/images/countries/hr/info/tunel.svg" class="road-tag"></td>
+                    <td class="info">↑ Tunel Plasina ↑</td>
+                    <td class="info">2300 m</td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">odmoriste</td>
+                    <td></td>
+                    <td class="info"><img src="files/images/countries/hr/info/wc.svg" class="road-tag">,<img src="files/images/countries/hr/info/p.svg" class="road-tag"> - Ličko Lešće</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">tunel</td>
+                    <td><img src="files/images/countries/hr/info/tunel.svg" class="road-tag"></td>
+                    <td class="info">↑ Tunel Grič ↑</td>
+                    <td class="info">1259 m</td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">odmoriste</td>
+                    <td></td>
+                    <td class="info"><img src="files/images/countries/hr/info/csph-lpg.svg" class="road-tag">,<img src="files/images/countries/hr/info/motorest.svg" class="road-tag">,<img src="files/images/countries/hr/info/ele-nab.svg" class="road-tag"> - Janjče</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">tunel</td>
+                    <td><img src="files/images/countries/hr/info/tunel.svg" class="road-tag"></td>
+                    <td class="info">↑ Tunel Medina Gora ↑</td>
+                    <td class="info">125 m</td>
+                    <td class="info">Zeleni most</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>12 - <img src="files/images/countries/hr/exit.svg" class="icon"> <br> </td>
+                    <td class="direction">↑ Split, Zadar <img title="Autocesta A1" src="files/images/countries/hr/A/A1.svg" class="road-tag">,<img onclick="red('../e/e65.html')" title="Európska cesta 65" src="files/images/countries/eu/hr/E65.svg" class="road-tag red">,<img onclick="red('../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/hr/E71.svg" class="road-tag red"> ↑ | ↗ Perušić</td>
+                    <td><img onclick="red('D/D50.html')" title="Državna cesta 50" src="files/images/countries/hr/D/D50.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">tunel</td>
+                    <td><img src="files/images/countries/hr/info/tunel.svg" class="road-tag"></td>
+                    <td class="info">↑ Tunel Varošina ↑</td>
+                    <td class="info">125 m</td>
+                    <td class="info">Zeleni most</td>
+                </tr>
+                <tr>
+                    <td class="typ">odmoriste</td>
+                    <td></td>
+                    <td class="info"><img src="files/images/countries/hr/info/cafe.svg" class="road-tag">,<img src="files/images/countries/hr/info/wc.svg" class="road-tag">,<img src="files/images/countries/hr/info/p.svg" class="road-tag"> - Lički Osik</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>13   - <img src="files/images/countries/hr/exit.svg" class="icon"> <br> </td>
+                    <td class="direction">↑ Split, Zadar <img title="Autocesta A1" src="files/images/countries/hr/A/A1.svg" class="road-tag">,<img onclick="red('../e/e65.html')" title="Európska cesta 65" src="files/images/countries/eu/hr/E65.svg" class="road-tag red">,<img onclick="red('../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/hr/E71.svg" class="road-tag red"> ↑ | ↗ Karlobag, Lički Osik, Gospić</td>
+                    <td><img onclick="red('D/D50.html')" title="Državna cesta 50" src="files/images/countries/hr/D/D50.svg" class="road-tag red">,<img onclick="red('D/D534.html')" title="Državna cesta 534" src="files/images/countries/hr/D/D534.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">odmoriste</td>
+                    <td></td>
+                    <td class="info"><img src="files/images/countries/hr/info/p.svg" class="road-tag">,<img src="files/images/countries/hr/info/wc.svg" class="road-tag"> - Jadova</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">odmoriste</td>
+                    <td></td>
+                    <td class="info"><img src="files/images/countries/hr/info/csph-lpg.svg" class="road-tag">,<img src="files/images/countries/hr/info/motorest.svg" class="road-tag">,<img src="files/images/countries/hr/info/motel.svg" class="road-tag">,<img src="files/images/countries/hr/info/ele-nab.svg" class="road-tag"> - Zir</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>14 - <img src="files/images/countries/hr/exit.svg" class="icon"><br>Gornja Ploča</td>
+                    <td class="direction">↑ Split, Zadar <img title="Autocesta A1" src="files/images/countries/hr/A/A1.svg" class="road-tag">,<img onclick="red('../e/e65.html')" title="Európska cesta 65" src="files/images/countries/eu/hr/E65.svg" class="road-tag red">,<img onclick="red('../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/hr/E71.svg" class="road-tag red"> ↑ | ↗ Udbina, Gornja Ploča</td>
+                    <td><img onclick="red('D/D522.html')" title="Državna cesta 522" src="files/images/countries/hr/D/D522.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>15 - <img src="files/images/countries/hr/exit.svg" class="icon"> <br> </td>
+                    <td class="direction">↑ Split, Zadar <img title="Autocesta A1" src="files/images/countries/hr/A/A1.svg" class="road-tag">,<img onclick="red('../e/e65.html')" title="Európska cesta 65" src="files/images/countries/eu/hr/E65.svg" class="road-tag red">,<img onclick="red('../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/hr/E71.svg" class="road-tag red"> ↑ | ↗ Gračac, Lovinac, Sveti Rok</td>
+                    <td><img onclick="red('D/D50.html')" title="Državna cesta 50" src="files/images/countries/hr/D/D50.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">tunel</td>
+                    <td><img src="files/images/countries/hr/info/tunel.svg" class="road-tag"></td>
+                    <td class="info">↑ Tunel Krpani ↑</td>
+                    <td class="info">178 m</td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">tunel</td>
+                    <td><img src="files/images/countries/hr/info/tunel.svg" class="road-tag"></td>
+                    <td class="info">↑ Tunel Sveti Rok ↑</td>
+                    <td class="info">5681 m</td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">odmoriste</td>
+                    <td></td>
+                    <td class="info"><img src="files/images/countries/hr/info/p.svg" class="road-tag">,<img src="files/images/countries/hr/info/cafe.svg" class="road-tag">,<img src="files/images/countries/hr/info/motorest.svg" class="road-tag"> - Marune</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">tunel</td>
+                    <td><img src="files/images/countries/hr/info/tunel.svg" class="road-tag"></td>
+                    <td class="info">↑ Tunel Ledenik ↑</td>
+                    <td class="info">768 m</td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">tunel</td>
+                    <td><img src="files/images/countries/hr/info/tunel.svg" class="road-tag"></td>
+                    <td class="info">↑ Tunel Bristovac ↑</td>
+                    <td class="info">700 m</td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">tunel</td>
+                    <td><img src="files/images/countries/hr/info/tunel.svg" class="road-tag"></td>
+                    <td class="info">↑ Tunel Čelinka ↑</td>
+                    <td class="info">220 m</td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">odmoriste</td>
+                    <td></td>
+                    <td class="info"><img src="files/images/countries/hr/info/ele-nab.svg" class="road-tag">,<img src="files/images/countries/hr/info/csph-lpg.svg" class="road-tag">,<img src="files/images/countries/hr/info/cafe.svg" class="road-tag">,<img src="files/images/countries/hr/info/motorest.svg" class="road-tag">,<img src="files/images/countries/hr/info/info.svg" class="road-tag"> - Jasenice</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>16 - <img src="files/images/countries/hr/exit.svg" class="icon"> <br> </td>
+                    <td class="direction">↑ Split, Zadar <img title="Autocesta A1" src="files/images/countries/hr/A/A1.svg" class="road-tag">,<img onclick="red('../e/e65.html')" title="Európska cesta 65" src="files/images/countries/eu/hr/E65.svg" class="road-tag red">,<img onclick="red('../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/hr/E71.svg" class="road-tag red"> ↑ | ↗ Rijeka, Obrovac, Starigrad, Maslenica, <span class="prir">Paklenica</span></td>
+                    <td><img onclick="red('D/D8.html')" title="Državna cesta 8" src="files/images/countries/hr/D/D8.svg" class="road-tag red">,<img onclick="red('D/D54.html')" title="Državna cesta 54" src="files/images/countries/hr/D/D54.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>17 - <img src="files/images/countries/hr/exit.svg" class="icon"> <br> </td>
+                    <td class="direction">↑ Split, Zadar <img title="Autocesta A1" src="files/images/countries/hr/A/A1.svg" class="road-tag">,<img onclick="red('../e/e65.html')" title="Európska cesta 65" src="files/images/countries/eu/hr/E65.svg" class="road-tag red">,<img onclick="red('../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/hr/E71.svg" class="road-tag red"> ↑ | ↗ otok Pag, Novigrad, Posedarje</td>
+                    <td><img onclick="red('D/D106.html')" title="Državna cesta 106" src="files/images/countries/hr/D/D106.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>18 - <img src="files/images/countries/hr/exit.svg" class="icon"> <br> </td>
+                    <td class="direction">↑ Split, Zadar - Centar <img src="files/images/countries/hr/info/zracnaluka.svg" class="road-tag"> <img title="Autocesta A1" src="files/images/countries/hr/A/A1.svg" class="road-tag">,<img onclick="red('../e/e65.html')" title="Európska cesta 65" src="files/images/countries/eu/hr/E65.svg" class="road-tag red">,<img onclick="red('../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/hr/E71.svg" class="road-tag red"> ↑ | ↗ Nin, Zadar-zapad, Poličnik</td>
+                    <td><img onclick="red('D/D8.html')" title="Državna cesta 8" src="files/images/countries/hr/D/D8.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>19 - <img src="files/images/countries/hr/exit.svg" class="icon"> <br> </td>
+                    <td class="direction">↑ Split, Šibenik <img title="Autocesta A1" src="files/images/countries/hr/A/A1.svg" class="road-tag">,<img onclick="red('../e/e65.html')" title="Európska cesta 65" src="files/images/countries/eu/hr/E65.svg" class="road-tag red">,<img onclick="red('../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/hr/E71.svg" class="road-tag red"> ↑ | ↗ Zadar - centar <img src="files/images/countries/hr/info/zracnaluka.svg" class="road-tag">, Sukošan, Zemunik D.</td>
+                    <td><img onclick="red('D/D424.html')" title="Državna cesta 424" src="files/images/countries/hr/D/D424.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">odmoriste</td>
+                    <td></td>
+                    <td class="info"><img src="files/images/countries/hr/info/csph-lpg.svg" class="road-tag">,<img src="files/images/countries/hr/info/p.svg" class="road-tag">,<img src="files/images/countries/hr/info/ele-nab.svg" class="road-tag">,<img src="files/images/countries/hr/info/cafe.svg" class="road-tag">,<img src="files/images/countries/hr/info/motorest.svg" class="road-tag"> - Nadin</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>20 - <img src="files/images/countries/hr/exit.svg" class="icon"> <br> </td>
+                    <td class="direction">↑ Split, Šibenik <img title="Autocesta A1" src="files/images/countries/hr/A/A1.svg" class="road-tag">,<img onclick="red('../e/e65.html')" title="Európska cesta 65" src="files/images/countries/eu/hr/E65.svg" class="road-tag red">,<img onclick="red('../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/hr/E71.svg" class="road-tag red"> ↑ | ↗ Pakoštane, Biograd, Benkovac, otok Pašman, Sv. Filip i Jakov, <span class="prir">Vransko jezero</span></td>
+                    <td><img onclick="red('D/D27.html')" title="Državna cesta 27" src="files/images/countries/hr/D/D27.svg" class="road-tag red">,<img onclick="red('D/D503.html')" title="Državna cesta 503" src="files/images/countries/hr/D/D503.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">odmoriste</td>
+                    <td></td>
+                    <td class="info"><img src="files/images/countries/hr/info/p.svg" class="road-tag">,<img src="files/images/countries/hr/info/wc.svg" class="road-tag"> - Pristeg</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>21 - <img src="files/images/countries/hr/exit.svg" class="icon"> <br> </td>
+                    <td class="direction">↑ Split, Šibenik <img title="Autocesta A1" src="files/images/countries/hr/A/A1.svg" class="road-tag">,<img onclick="red('../e/e65.html')" title="Európska cesta 65" src="files/images/countries/eu/hr/E65.svg" class="road-tag red">,<img onclick="red('../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/hr/E71.svg" class="road-tag red"> ↑ | ↗ <span class="prir">N. P. Kornati</span>, otok Murter, Vodice, Pirovac, Stankovci</td>
+                    <td><img onclick="red('D/D59.html')" title="Državna cesta 59" src="files/images/countries/hr/D/D59.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">odmoriste</td>
+                    <td></td>
+                    <td class="info"><img src="files/images/countries/hr/info/csph.svg" class="road-tag">,<img src="files/images/countries/hr/info/p.svg" class="road-tag">,<img src="files/images/countries/hr/info/cafe.svg" class="road-tag">,<img src="files/images/countries/hr/info/wc.svg" class="road-tag">,<img src="files/images/countries/hr/info/ele-nab.svg" class="road-tag"> - Prokljan</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>22 - <img src="files/images/countries/hr/exit.svg" class="icon"> <br> </td>
+                    <td class="direction">↑ Split, Šibenik <img title="Autocesta A1" src="files/images/countries/hr/A/A1.svg" class="road-tag">,<img onclick="red('../e/e65.html')" title="Európska cesta 65" src="files/images/countries/eu/hr/E65.svg" class="road-tag red">,<img onclick="red('../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/hr/E71.svg" class="road-tag red"> ↑ | ↗ <span class="prir">Krka</span>, Skradin</td>
+                    <td><img onclick="red('D/D56.html')" title="Državna cesta568" src="files/images/countries/hr/D/D56.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">odmoriste</td>
+                    <td></td>
+                    <td class="info"><img src="files/images/countries/hr/info/ele-nab.svg" class="road-tag">,<img src="files/images/countries/hr/info/motorest.svg" class="road-tag"> - Krka</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>23 - <img src="files/images/countries/hr/exit.svg" class="icon"> <br> </td>
+                    <td class="direction">↑ Dubrovnik, Split <img title="Autocesta A1" src="files/images/countries/hr/A/A1.svg" class="road-tag">,<img onclick="red('../e/e65.html')" title="Európska cesta 65" src="files/images/countries/eu/hr/E65.svg" class="road-tag red">,<img onclick="red('../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/hr/E71.svg" class="road-tag red"> ↑ | ↗ Knin-Drniš, Primošten, Šibenik</td>
+                    <td><img onclick="red('D/D33.html')" title="Državna cesta 33" src="files/images/countries/hr/D/D33.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>24 - <img src="files/images/countries/hr/exit.svg" class="icon"> <br> </td>
+                    <td class="direction">↑ Dubrovnik, Split <img title="Autocesta A1" src="files/images/countries/hr/A/A1.svg" class="road-tag">,<img onclick="red('../e/e65.html')" title="Európska cesta 65" src="files/images/countries/eu/hr/E65.svg" class="road-tag red">,<img onclick="red('../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/hr/E71.svg" class="road-tag red"> ↑ | ↗ Ražine, Gospodarska zona - "Podi"</td>
+                    <td><img onclick="red('D/D58.html')" title="Državna cesta 58" src="files/images/countries/hr/D/D58.svg" class="road-tag red">,D554</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">odmoriste</td>
+                    <td></td>
+                    <td class="info"><img src="files/images/countries/hr/info/csph-lpg.svg" class="road-tag">,<img src="files/images/countries/hr/info/p.svg" class="road-tag">,<img src="files/images/countries/hr/info/wc.svg" class="road-tag">, <img src="files/images/countries/hr/info/motorest.svg" class="road-tag">,<img src="files/images/countries/hr/info/cafe.svg" class="road-tag"> - Vrpolje Primorsko</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>25 - <img src="files/images/countries/hr/exit.svg" class="icon"> <br> </td>
+                    <td class="direction">↑ Dubrovnik, Split <img title="Autocesta A1" src="files/images/countries/hr/A/A1.svg" class="road-tag">,<img onclick="red('../e/e65.html')" title="Európska cesta 65" src="files/images/countries/eu/hr/E65.svg" class="road-tag red">,<img onclick="red('../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/hr/E71.svg" class="road-tag red"> ↑ | ↗ Perković, Danilo</td>
+                    <td><img onclick="red('D/D58.html')" title="Državna cesta 58" src="files/images/countries/hr/D/D58.svg" class="road-tag red">,<img onclick="red('D/D531.html')" title="Državna cesta 531" src="files/images/countries/hr/D/D531.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">odmoriste</td>
+                    <td></td>
+                    <td class="info"><img src="files/images/countries/hr/info/p.svg" class="road-tag">,<img src="files/images/countries/hr/info/wc.svg" class="road-tag"> - Sitno</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">tunel</td>
+                    <td><img src="files/images/countries/hr/info/tunel.svg" class="road-tag"></td>
+                    <td class="info">↑ Tunel Dubrave ↑</td>
+                    <td class="info">838 m</td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>26 - <img src="files/images/countries/hr/exit.svg" class="icon"> <br> </td>
+                    <td class="direction">↑ Dubrovnik, Split <img title="Autocesta A1" src="files/images/countries/hr/A/A1.svg" class="road-tag">,<img onclick="red('../e/e65.html')" title="Európska cesta 65" src="files/images/countries/eu/hr/E65.svg" class="road-tag red">,<img onclick="red('../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/hr/E71.svg" class="road-tag red"> ↑ | ↗ Kaštela <img src="files/images/countries/hr/info/zracnaluka.svg" class="road-tag">, Trogir, Prgomet</td>
+                    <td><img onclick="red('Z/Z6112.html')" title="Župna cesta 6112" src="files/images/countries/hr/Z/Z6112.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">odmoriste</td>
+                    <td></td>
+                    <td class="info"><img src="files/images/countries/hr/info/p.svg" class="road-tag">,<img src="files/images/countries/hr/info/wc.svg" class="road-tag"> - Radošić</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>27 - <img src="files/images/countries/hr/exit.svg" class="icon"> <br> </td>
+                    <td class="direction">↑ Dubrovnik, Split <img title="Autocesta A1" src="files/images/countries/hr/A/A1.svg" class="road-tag">,<img onclick="red('../e/e65.html')" title="Európska cesta 65" src="files/images/countries/eu/hr/E65.svg" class="road-tag red">,<img onclick="red('../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/hr/E71.svg" class="road-tag red"> ↑ | ↗ Vučevica, Konjsko, Lećevica</td>
+                    <td><img onclick="red('Z/Z6115.html')" title="Župna cesta 6115" src="files/images/countries/hr/Z/Z6115.svg" class="road-tag red">,<img onclick="red('L/L67061.html')" title="Lokalna cesta 67061" src="files/images/countries/hr/L/L67061.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">tunel</td>
+                    <td><img src="files/images/countries/hr/info/tunel.svg" class="road-tag"></td>
+                    <td class="info">↑ Tunel Osmakovac ↑</td>
+                    <td class="info">200 m</td>
+                    <td class="info">Zeleni most</td>
+                </tr>
+                <tr>
+                    <td class="typ">odmoriste</td>
+                    <td></td>
+                    <td class="info"><img src="files/images/countries/hr/info/csph-lpg.svg" class="road-tag">,<img src="files/images/countries/hr/info/p.svg" class="road-tag">,<img src="files/images/countries/hr/info/cafe.svg" class="road-tag">,<img src="files/images/countries/hr/info/ele-nab.svg" class="road-tag"> - Kozjak</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">tunel</td>
+                    <td><img src="files/images/countries/hr/info/tunel.svg" class="road-tag"></td>
+                    <td class="info">↑ Tunel Konjsko ↑</td>
+                    <td class="info">1122 m</td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>28 - <img src="files/images/countries/hr/exit.svg" class="icon"> <br> </td>
+                    <td class="direction">↑ Dubrovnik, Makarska <img title="Autocesta A1" src="files/images/countries/hr/A/A1.svg" class="road-tag">,<img onclick="red('../e/e65.html')" title="Európska cesta 65" src="files/images/countries/eu/hr/E65.svg" class="road-tag red"> ↑ | ↗ Split, Sinj, Dugopolje</td>
+                    <td><img onclick="red('D/D1.html')" title="Državna cesta 1" src="files/images/countries/hr/D/D1.svg" class="road-tag red">,<img onclick="red('../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/hr/E71.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">tunel</td>
+                    <td><img src="files/images/countries/hr/info/tunel.svg" class="road-tag"></td>
+                    <td class="info">↑ Tunel Zaranač ↑</td>
+                    <td class="info">300 m</td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">tunel</td>
+                    <td><img src="files/images/countries/hr/info/tunel.svg" class="road-tag"></td>
+                    <td class="info">↑ Tunel Bisko ↑</td>
+                    <td class="info">525 m</td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>29 - <img src="files/images/countries/hr/exit.svg" class="icon"> <br>Bisko</td>
+                    <td class="direction">↑ Dubrovnik, Makarska <img title="Autocesta A1" src="files/images/countries/hr/A/A1.svg" class="road-tag">,<img onclick="red('../e/e65.html')" title="Európska cesta 65" src="files/images/countries/eu/hr/E65.svg" class="road-tag red"> ↑ | ↗ Livno, Smer BIH <img onclick="red('../bosniaandherzegovina.html')" src="files/images/flags/bosniaandherzegovina.svg" class="road-tag red">, Trilj, Bisko</td>
+                    <td><img onclick="red('D/D62.html')" title="Državna cesta 62" src="files/images/countries/hr/D/D62.svg" class="road-tag red">,<img onclick="red('D/D220.html')" title="Državna cesta 220" src="files/images/countries/hr/D/D220.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">tunel</td>
+                    <td><img src="files/images/countries/hr/info/tunel.svg" class="road-tag"></td>
+                    <td class="info">↑ Tunel Rošca ↑</td>
+                    <td class="info">150 m</td>
+                    <td class="info">Zeleni most</td>
+                </tr>
+                <tr>
+                    <td class="typ">tunel</td>
+                    <td><img src="files/images/countries/hr/info/tunel.svg" class="road-tag"></td>
+                    <td class="info">↑ Tunel Konšćica ↑</td>
+                    <td class="info">150 m</td>
+                    <td class="info">Zeleni most</td>
+                </tr>
+                <tr>
+                    <td class="typ">tunel</td>
+                    <td><img src="files/images/countries/hr/info/tunel.svg" class="road-tag"></td>
+                    <td class="info">↑ Tunel Vrankovića ograda ↑</td>
+                    <td class="info">150 m</td>
+                    <td class="info">Zeleni most</td>
+                </tr>
+                <tr>
+                    <td class="typ">odmoriste</td>
+                    <td></td>
+                    <td class="info"><img src="files/images/countries/hr/info/csph-lpg.svg" class="road-tag">,<img src="files/images/countries/hr/info/cafe.svg" class="road-tag">,<img src="files/images/countries/hr/info/ele-nab.svg" class="road-tag"> - Mosor</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">tunel</td>
+                    <td><img src="files/images/countries/hr/info/tunel.svg" class="road-tag"></td>
+                    <td class="info">↑ Tunel Crna brda ↑</td>
+                    <td class="info">420 m</td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">tunel</td>
+                    <td><img src="files/images/countries/hr/info/tunel.svg" class="road-tag"></td>
+                    <td class="info">↑ Tunel Stražina ↑</td>
+                    <td class="info">614 m</td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>30 - <img src="files/images/countries/hr/exit.svg" class="icon"> <br> </td>
+                    <td class="direction">↑ Dubrovnik, Makarska <img title="Autocesta A1" src="files/images/countries/hr/A/A1.svg" class="road-tag">,<img onclick="red('../e/e65.html')" title="Európska cesta 65" src="files/images/countries/eu/hr/E65.svg" class="road-tag red"> ↑ | ↗ Blato na Cetini</td>
+                    <td><img onclick="red('D/D70.html')" title="Državna cesta 70" src="files/images/countries/hr/D/D70.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>31 - <img src="files/images/countries/hr/exit.svg" class="icon"> <br> </td>
+                    <td class="direction">↑ Dubrovnik, Makarska <img title="Autocesta A1" src="files/images/countries/hr/A/A1.svg" class="road-tag">,<img onclick="red('../e/e65.html')" title="Európska cesta 65" src="files/images/countries/eu/hr/E65.svg" class="road-tag red"> ↑ | ↗ Cista Provo, Omiš, Zadvarje, Šestanovac</td>
+                    <td><img onclick="red('D/D39.html')" title="Državna cesta 39" src="files/images/countries/hr/D/D39.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">tunel</td>
+                    <td><img src="files/images/countries/hr/info/tunel.svg" class="road-tag"></td>
+                    <td class="info">↑ Tunel Strednja Gora ↑</td>
+                    <td class="info">135 m</td>
+                    <td class="info">Zeleni most</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>32 - <img src="files/images/countries/hr/exit.svg" class="icon"> <br> </td>
+                    <td class="direction">↑ Dubrovnik, Ploče <img title="Autocesta A1" src="files/images/countries/hr/A/A1.svg" class="road-tag">,<img onclick="red('../e/e65.html')" title="Európska cesta 65" src="files/images/countries/eu/hr/E65.svg" class="road-tag red"> ↑ | ↗ Makarska, Imotski, Zagvozd</td>
+                    <td><img onclick="red('D/D76.html')" title="Državna cesta 76" src="files/images/countries/hr/D/D76.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">tunel</td>
+                    <td><img src="files/images/countries/hr/info/tunel.svg" class="road-tag"></td>
+                    <td class="info">↑ Tunel Lendići ↑</td>
+                    <td class="info">120 m</td>
+                    <td class="info">Zeleni most</td>
+                </tr>
+                <tr>
+                    <td class="typ">odmoriste</td>
+                    <td></td>
+                    <td class="info"><img src="files/images/countries/hr/info/csph-lpg.svg" class="road-tag">,<img src="files/images/countries/hr/info/p.svg" class="road-tag">,<img src="files/images/countries/hr/info/wc.svg" class="road-tag">, <img src="files/images/countries/hr/info/cafe.svg" class="road-tag">,<img src="files/images/countries/hr/info/ele-nab.svg" class="road-tag"> - Rašćane Gornje</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>34 - <img src="files/images/countries/hr/exit.svg" class="icon"> <br> </td>
+                    <td class="direction">↑ Dubrovnik, Ploče <img title="Autocesta A1" src="files/images/countries/hr/A/A1.svg" class="road-tag">,<img onclick="red('../e/e65.html')" title="Európska cesta 65" src="files/images/countries/eu/hr/E65.svg" class="road-tag red"> ↑ | ↗ Ravča</td>
+                    <td><img onclick="red('D/D62.html')" title="Državna cesta 62" src="files/images/countries/hr/D/D62.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">tunel</td>
+                    <td><img src="files/images/countries/hr/info/tunel.svg" class="road-tag"></td>
+                    <td class="info">↑ Tunel Umac ↑</td>
+                    <td class="info">387 m</td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>35 - <img src="files/images/countries/hr/exit.svg" class="icon"> <br> </td>
+                    <td class="direction">↑ Dubrovnik, Ploče <img title="Autocesta A1" src="files/images/countries/hr/A/A1.svg" class="road-tag">,<img onclick="red('../e/e65.html')" title="Európska cesta 65" src="files/images/countries/eu/hr/E65.svg" class="road-tag red"> ↑ | ↗ Ljubuški, Smer BIH <img onclick="red('../bosniaandherzegovina.html')" src="files/images/flags/bosniaandherzegovina.svg" class="road-tag red">, Vrgorac</td>
+                    <td><img onclick="red('Z/Z6208.html')" title="Župna cesta 6208" src="files/images/countries/hr/Z/Z6208.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">odmoriste</td>
+                    <td></td>
+                    <td class="info"><img src="files/images/countries/hr/info/p.svg" class="road-tag"> - Dusina</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">tunel</td>
+                    <td><img src="files/images/countries/hr/info/tunel.svg" class="road-tag"></td>
+                    <td class="info">↑ Tunel Šubir ↑</td>
+                    <td class="info">962 m</td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">cvor</td>
+                    <td>36 - <img src="files/images/countries/hr/cvor.svg" class="icon"> <br>  Ploče</td>
+                    <td class="direction">↑ Sarajevo, Mostar, Smer BIH <img onclick="red('../bosniaandherzegovina.html')" src="files/images/flags/bosniaandherzegovina.svg" class="road-tag red">, Metković <img onclick="red('A/A10.html')" title="Autocesta A10" src="files/images/countries/hr/A/A10.svg" class="road-tag red">,<img onclick="red('../e/e73.html')" title="Európska cesta 73" src="files/images/countries/eu/hr/E73.svg" class="road-tag red"> ↑ \/<br> ↗ Dubrovnik, Ploče, <span class="prir">Mljet</span>, otok Korčula, Pelješac, Herceg Novi, Smer MNE <img onclick="red('../montenegro.html')" src="files/images/flags/montenegro.svg" class="road-tag red"> <img title="Autocesta A1" src="files/images/countries/hr/A/A1.svg" class="road-tag">,<img onclick="red('../e/e65.html')" title="Európska cesta 65" src="files/images/countries/eu/hr/E65.svg" class="road-tag red">,<img onclick="red('../e/e73.html')" title="Európska cesta 73" src="files/images/countries/eu/hr/E73.svg" class="road-tag red"> ↗</td>
+                    <td><img title="Autocesta A1" src="files/images/countries/hr/A/A1.svg" class="road-tag">,<img onclick="red('A/A10.html')" title="Autocesta A10" src="files/images/countries/hr/A/A10.svg" class="road-tag red">,<img onclick="red('../e/e65.html')" title="Európska cesta 65" src="files/images/countries/eu/hr/E65.svg" class="road-tag red">,<img onclick="red('../e/e73.html')" title="Európska cesta 73" src="files/images/countries/eu/hr/E73.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">tunel</td>
+                    <td><img src="files/images/countries/hr/info/tunel.svg" class="road-tag"></td>
+                    <td class="info">↑ Tunel Mali Prolog ↑</td>
+                    <td class="info">1029 m</td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">tunel</td>
+                    <td><img src="files/images/countries/hr/info/tunel.svg" class="road-tag"></td>
+                    <td class="info">↑ Tunel Kobiljača ↑</td>
+                    <td class="info">780 m</td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">tunel</td>
+                    <td><img src="files/images/countries/hr/info/tunel.svg" class="road-tag"></td>
+                    <td class="info">↑ Tunel Puljani ↑</td>
+                    <td class="info">417 m</td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">most</td>
+                    <td><img src="files/images/countries/hr/info/most.svg" class="road-tag"></td>
+                    <td class="info">↑ Most Kula ↑</td>
+                    <td class="info">448 m</td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">cestarina</td>
+                    <td><img src="files/images/countries/hr/cestarina/naplata.svg" class="road-tag"></td>
+                    <td onclick="dev()" title="Funkcia vo vývoji: Po kliknutí na mýtnicu sa zobrazí vypočítaná hodnota mýta." class="info red">Karamatići</td>
+                    <td><img title="Autocesta A1" src="files/images/countries/hr/A/A1.svg" class="road-tag">,<img onclick="red('../e/e65.html')" title="Európska cesta 65" src="files/images/countries/eu/hr/E65.svg" class="road-tag red">,<img onclick="red('../e/e73.html')" title="Európska cesta 73" src="files/images/countries/eu/hr/E73.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td></td>
+                    <td class="info"><img title="Autocesta A1" src="files/images/countries/hr/A/A1.svg" class="road-tag">,<img onclick="red('../e/e65.html')" title="Európska cesta 65" src="files/images/countries/eu/hr/E65.svg" class="road-tag red">,<img onclick="red('../e/e73.html')" title="Európska cesta 73" src="files/images/countries/eu/hr/E73.svg" class="road-tag red"> → <img onclick="red('./D/D425')" title="Državna cesta D425" src="files/images/countries/hr/D/D425.svg" class="road-tag red">,<img onclick="red('../e/e65.html')" title="Európska cesta 65" src="files/images/countries/eu/hr/E65.svg" class="road-tag red">,<img onclick="red('../e/e73.html')" title="Európska cesta 73" src="files/images/countries/eu/hr/E73.svg" class="road-tag red"></td>
+                    <td class="info">Dočasný koniec <img title="Autocesta A1" src="files/images/countries/hr/A/A1.svg" class="road-tag">.</td>
+                    <td></td>
+                </tr>
+            </table>
+	    <hr>
+            <h4 id="dir2">Objekty • Smer Ploče (Dubrovnik) → Zagreb</h4>
+            <table border="1" class="tabulka objekty">
+                <tr>
+                    <th class="typ">
+                        Typ objektu
+                    </th>
+                    <th id="cv">
+                        Číslo výjazdu
+                    </th>
+                    <th id="main">
+                        Smer/-y
+                    </th>
+                    <th id="prej">
+                        Prejazdy
+                    </th>
+                    <th>
+                        Poznámka
+                    </th>
+                </tr>
+                <!-- ↑ ↓ ← → ↗ ↘ ↔ ↕ ⇐ ⇒ ⇑ ⇓ ⤳ ⤴ ⤵ 
+                    ↗ - šípka doprava hore diagonálna
+                    ↖ - šípka doľava hore diagonálna
+                -->
+                <tr>
+                    <td class="typ">info</td>
+                    <td></td>
+                    <td class="info"><img onclick="red('./D/D425')" title="Državna cesta D425" src="files/images/countries/hr/D/D425.svg" class="road-tag red">,<img onclick="red('../e/e65.html')" title="Európska cesta 65" src="files/images/countries/eu/hr/E65.svg" class="road-tag red">,<img onclick="red('../e/e73.html')" title="Európska cesta 73" src="files/images/countries/eu/hr/E73.svg" class="road-tag red"> → <img title="Autocesta A1" src="files/images/countries/hr/A/A1.svg" class="road-tag">,<img onclick="red('../e/e65.html')" title="Európska cesta 65" src="files/images/countries/eu/hr/E65.svg" class="road-tag red">,<img onclick="red('../e/e73.html')" title="Európska cesta 73" src="files/images/countries/eu/hr/E73.svg" class="road-tag red"></td>
+                    <td class="info">Dočasný začiatok <img title="Autocesta A1" src="files/images/countries/hr/A/A1.svg" class="road-tag">.</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">cestarina</td>
+                    <td><img src="files/images/countries/hr/cestarina/naplata.svg" class="road-tag"></td>
+                    <td onclick="dev()" title="Funkcia vo vývoji: Po kliknutí na mýtnicu sa zobrazí vypočítaná hodnota mýta." class="info red">Karamatići</td>
+                    <td><img title="Autocesta A1" src="files/images/countries/hr/A/A1.svg" class="road-tag">,<img onclick="red('../e/e65.html')" title="Európska cesta 65" src="files/images/countries/eu/hr/E65.svg" class="road-tag red">,<img onclick="red('../e/e73.html')" title="Európska cesta 73" src="files/images/countries/eu/hr/E73.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">most</td>
+                    <td><img src="files/images/countries/hr/info/most.svg" class="road-tag"></td>
+                    <td class="info">↑ Most Kula ↑</td>
+                    <td class="info">358 m</td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">tunel</td>
+                    <td><img src="files/images/countries/hr/info/tunel.svg" class="road-tag"></td>
+                    <td class="info">↑ Tunel Puljani ↑</td>
+                    <td class="info">285 m</td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">most</td>
+                    <td><img src="files/images/countries/hr/info/most.svg" class="road-tag"></td>
+                    <td class="info">↑ Most Struge-Brečići ↑</td>
+                    <td class="info">598 m</td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">tunel</td>
+                    <td><img src="files/images/countries/hr/info/tunel.svg" class="road-tag"></td>
+                    <td class="info">↑ Tunel Kobiljača ↑</td>
+                    <td class="info">832 m</td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">tunel</td>
+                    <td><img src="files/images/countries/hr/info/tunel.svg" class="road-tag"></td>
+                    <td class="info">↑ Tunel Mali Prolog ↑</td>
+                    <td class="info">1092 m</td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">cvor</td>
+                    <td>36 - <img src="files/images/countries/hr/cvor.svg" class="icon"> <br>  Ploče</td>
+                    <td class="direction">↑ Zagreb, Split <img title="Autocesta A1" src="files/images/countries/hr/A/A1.svg" class="road-tag">,<img onclick="red('../e/e65.html')" title="Európska cesta 65" src="files/images/countries/eu/hr/E65.svg" class="road-tag red"> ↑ \/ ↗ Sarajevo, Mostar, Smer BIH <img onclick="red('../bosniaandherzegovina.html')" src="files/images/flags/bosniaandherzegovina.svg" class="road-tag red">, Metković <img onclick="red('A/A10.html')" title="Autocesta A10" src="files/images/countries/hr/A/A10.svg" class="road-tag red">,<img onclick="red('../e/e73.html')" title="Európska cesta 73" src="files/images/countries/eu/hr/E73.svg" class="road-tag red"></td>
+                    <td><img title="Autocesta A1" src="files/images/countries/hr/A/A1.svg" class="road-tag">,<img onclick="red('A/A10.html')" title="Autocesta A10" src="files/images/countries/hr/A/A10.svg" class="road-tag red">,<img onclick="red('../e/e65.html')" title="Európska cesta 65" src="files/images/countries/eu/hr/E65.svg" class="road-tag red">,<img onclick="red('../e/e73.html')" title="Európska cesta 73" src="files/images/countries/eu/hr/E73.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">tunel</td>
+                    <td><img src="files/images/countries/hr/info/tunel.svg" class="road-tag"></td>
+                    <td class="info">↑ Tunel Šubir ↑</td>
+                    <td class="info">825 m</td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">most</td>
+                    <td><img src="files/images/countries/hr/info/most.svg" class="road-tag"></td>
+                    <td class="info">↑ Most Otrić-Seoci ↑</td>
+                    <td class="info">238 m</td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">most</td>
+                    <td><img src="files/images/countries/hr/info/most.svg" class="road-tag"></td>
+                    <td class="info">↑ Most Velki Prolog ↑</td>
+                    <td class="info">390 m</td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">odmoriste</td>
+                    <td></td>
+                    <td class="info"><img src="files/images/countries/hr/info/p.svg" class="road-tag"> - Dusina</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">most</td>
+                    <td><img src="files/images/countries/hr/info/most.svg" class="road-tag"></td>
+                    <td class="info">↑ Most Lučka ↑</td>
+                    <td class="info">359 m</td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>35 - <img src="files/images/countries/hr/exit.svg" class="icon"> <br>  Vrgorac</td>
+                    <td class="direction">↑ Zagreb, Split <img title="Autocesta A1" src="files/images/countries/hr/A/A1.svg" class="road-tag">,<img onclick="red('../e/e65.html')" title="Európska cesta 65" src="files/images/countries/eu/hr/E65.svg" class="road-tag red"> ↑ | ↗ Vrgorac, Ljubuški, Smer BIH <img onclick="red('../bosniaandherzegovina.html')" src="files/images/flags/bosniaandherzegovina.svg" class="road-tag red">, <span class="prir">Međugorje</span>, Staševica, Mali Prolog, Vina</td>
+                    <td><img onclick="red('Z/Z6208.html')" title="Župna cesta 6208" src="files/images/countries/hr/Z/Z6208.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">most</td>
+                    <td><img src="files/images/countries/hr/info/most.svg" class="road-tag"></td>
+                    <td class="info">↑ Most Paklina ↑</td>
+                    <td class="info">208 m</td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">most</td>
+                    <td><img src="files/images/countries/hr/info/most.svg" class="road-tag"></td>
+                    <td class="info">↑ Most Kotezi ↑</td>
+                    <td class="info">1227 m</td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">most</td>
+                    <td><img src="files/images/countries/hr/info/most.svg" class="road-tag"></td>
+                    <td class="info">↑ Most Šare ↑</td>
+                    <td class="info">402 m</td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">most</td>
+                    <td><img src="files/images/countries/hr/info/most.svg" class="road-tag"></td>
+                    <td class="info">↑ Most Crip ↑</td>
+                    <td class="info">194 m</td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">tunel</td>
+                    <td><img src="files/images/countries/hr/info/tunel.svg" class="road-tag"></td>
+                    <td class="info">↑ Tunel Umac ↑</td>
+                    <td class="info">440 m</td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">most</td>
+                    <td><img src="files/images/countries/hr/info/most.svg" class="road-tag"></td>
+                    <td class="info">↑ Most Gradina ↑</td>
+                    <td class="info">598 m</td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>34 - <img src="files/images/countries/hr/exit.svg" class="icon"> <br>  Ravča</td>
+                    <td class="direction">↑ Zagreb, Split <img title="Autocesta A1" src="files/images/countries/hr/A/A1.svg" class="road-tag">,<img onclick="red('../e/e65.html')" title="Európska cesta 65" src="files/images/countries/eu/hr/E65.svg" class="road-tag red"> ↑ | ↗ Ravča, <span class="prir">Biokovo</span></td>
+                    <td><img onclick="red('D/D62.html')" title="Državna cesta 62" src="files/images/countries/hr/D/D62.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">most</td>
+                    <td><img src="files/images/countries/hr/info/most.svg" class="road-tag"></td>
+                    <td class="info">↑ Most Dubrava ↑</td>
+                    <td class="info">274 m</td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">most</td>
+                    <td><img src="files/images/countries/hr/info/most.svg" class="road-tag"></td>
+                    <td class="info">↑ Most Rašćane ↑</td>
+                    <td class="info">604 m</td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">odmoriste</td>
+                    <td></td>
+                    <td class="info"><img src="files/images/countries/hr/info/csph-lpg.svg" class="road-tag">,<img src="files/images/countries/hr/info/p.svg" class="road-tag">,<img src="files/images/countries/hr/info/wc.svg" class="road-tag">, <img src="files/images/countries/hr/info/cafe.svg" class="road-tag">,<img src="files/images/countries/hr/info/ele-nab.svg" class="road-tag"> - Rašćane Gornje</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">tunel</td>
+                    <td><img src="files/images/countries/hr/info/tunel.svg" class="road-tag"></td>
+                    <td class="info">↑ Tunel Lendići ↑</td>
+                    <td class="info">120 m</td>
+                    <td class="info">Zeleni most</td>
+                </tr>
+                <tr>
+                    <td class="typ">most</td>
+                    <td><img src="files/images/countries/hr/info/most.svg" class="road-tag"></td>
+                    <td class="info">↑ Most Staje ↑</td>
+                    <td class="info">238 m</td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">most</td>
+                    <td><img src="files/images/countries/hr/info/most.svg" class="road-tag"></td>
+                    <td class="info">↑ Most Glavica ↑</td>
+                    <td class="info">307 m</td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">most</td>
+                    <td><img src="files/images/countries/hr/info/most.svg" class="road-tag"></td>
+                    <td class="info">↑ Most Gradina ↑</td>
+                    <td class="info">242 m</td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>32 - <img src="files/images/countries/hr/exit.svg" class="icon"> <br>  Zagvozd</td>
+                    <td class="direction">↑ Zagreb, Split <img title="Autocesta A1" src="files/images/countries/hr/A/A1.svg" class="road-tag">,<img onclick="red('../e/e65.html')" title="Európska cesta 65" src="files/images/countries/eu/hr/E65.svg" class="road-tag red"> ↑ |<br> ↗ Zagvozd, Makarska, Imotski, Podgora, Tučepi, Baška Voda, Brela,, Grude, Posušje, Smer BIH <img onclick="red('../bosniaandherzegovina.html')" src="files/images/flags/bosniaandherzegovina.svg" class="road-tag red"></td>
+                    <td><img onclick="red('D/D76.html')" title="Državna cesta 76" src="files/images/countries/hr/D/D76.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">tunel</td>
+                    <td><img src="files/images/countries/hr/info/tunel.svg" class="road-tag"></td>
+                    <td class="info">↑ Tunel Strednja Gora ↑</td>
+                    <td class="info">135 m</td>
+                    <td class="info">Zeleni most</td>
+                </tr>
+                <tr>
+                    <td class="typ">most</td>
+                    <td><img src="files/images/countries/hr/info/most.svg" class="road-tag"></td>
+                    <td class="info">↑ Most Gradina ↑</td>
+                    <td class="info">159 m</td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">most</td>
+                    <td><img src="files/images/countries/hr/info/most.svg" class="road-tag"></td>
+                    <td class="info">↑ Most Mladine ↑</td>
+                    <td class="info">159 m</td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">most</td>
+                    <td><img src="files/images/countries/hr/info/most.svg" class="road-tag"></td>
+                    <td class="info">↑ Most Babajići ↑</td>
+                    <td class="info">34 m</td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">most</td>
+                    <td><img src="files/images/countries/hr/info/most.svg" class="road-tag"></td>
+                    <td class="info">↑ Most Krželji ↑</td>
+                    <td class="info">33 m</td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">most</td>
+                    <td><img src="files/images/countries/hr/info/most.svg" class="road-tag"></td>
+                    <td class="info">↑ Most Pejkovići ↑</td>
+                    <td class="info">32 m</td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">most</td>
+                    <td><img src="files/images/countries/hr/info/most.svg" class="road-tag"></td>
+                    <td class="info">↑ Most Škerići ↑</td>
+                    <td class="info">30 m</td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>31 - <img src="files/images/countries/hr/exit.svg" class="icon"><br>Šestanovac</td>
+                    <td class="direction">↑ Zagreb, Split <img title="Autocesta A1" src="files/images/countries/hr/A/A1.svg" class="road-tag">,<img onclick="red('../e/e65.html')" title="Európska cesta 65" src="files/images/countries/eu/hr/E65.svg" class="road-tag red"> ↑ | ↗ Šestanovac, Cista Provo, Omiš, Zadvarje, Brela, Mimice, Marušići, Pisak, Gornja Brela</td>
+                    <td><img onclick="red('D/D39.html')" title="Državna cesta 39" src="files/images/countries/hr/D/D39.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">most</td>
+                    <td><img src="files/images/countries/hr/info/most.svg" class="road-tag"></td>
+                    <td class="info">↑ Most Cetina ↑</td>
+                    <td class="info">148 m</td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>30 - <img src="files/images/countries/hr/exit.svg" class="icon"><br>Blato na Cetini</td>
+                    <td class="direction">↑ Zagreb, Split <img title="Autocesta A1" src="files/images/countries/hr/A/A1.svg" class="road-tag">,<img onclick="red('../e/e65.html')" title="Európska cesta 65" src="files/images/countries/eu/hr/E65.svg" class="road-tag red"> ↑ | ↗ Blato na Cetini</td>
+                    <td><img onclick="red('D/D70.html')" title="Državna cesta 70" src="files/images/countries/hr/D/D70.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">tunel</td>
+                    <td><img src="files/images/countries/hr/info/tunel.svg" class="road-tag"></td>
+                    <td class="info">↑ Tunel Stražina ↑</td>
+                    <td class="info">614 m</td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">tunel</td>
+                    <td><img src="files/images/countries/hr/info/tunel.svg" class="road-tag"></td>
+                    <td class="info">↑ Tunel Crna Brda ↑</td>
+                    <td class="info">420 m</td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">odmoriste</td>
+                    <td></td>
+                    <td class="info"><img src="files/images/countries/hr/info/csph-lpg.svg" class="road-tag">,<img src="files/images/countries/hr/info/cafe.svg" class="road-tag">,<img src="files/images/countries/hr/info/ele-nab.svg" class="road-tag"> - Mosor</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">tunel</td>
+                    <td><img src="files/images/countries/hr/info/tunel.svg" class="road-tag"></td>
+                    <td class="info">↑ Tunel Vrankovića ograda ↑</td>
+                    <td class="info">150 m</td>
+                    <td class="info">Zeleni most</td>
+                </tr>
+                <tr>
+                    <td class="typ">most</td>
+                    <td><img src="files/images/countries/hr/info/most.svg" class="road-tag"></td>
+                    <td class="info">↑ Most Srijane (Radovići) ↑</td>
+                    <td class="info">504 m</td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">tunel</td>
+                    <td><img src="files/images/countries/hr/info/tunel.svg" class="road-tag"></td>
+                    <td class="info">↑ Tunel Konšćica ↑</td>
+                    <td class="info">150 m</td>
+                    <td class="info">Zeleni most</td>
+                </tr>
+                <tr>
+                    <td class="typ">tunel</td>
+                    <td><img src="files/images/countries/hr/info/tunel.svg" class="road-tag"></td>
+                    <td class="info">↑ Tunel Rošca ↑</td>
+                    <td class="info">150 m</td>
+                    <td class="info">Zeleni most</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>29 - <img src="files/images/countries/hr/exit.svg" class="icon"><br>Bisko</td>
+                    <td class="direction">↑ Zagreb, Split <img title="Autocesta A1" src="files/images/countries/hr/A/A1.svg" class="road-tag">,<img onclick="red('../e/e65.html')" title="Európska cesta 65" src="files/images/countries/eu/hr/E65.svg" class="road-tag red"> ↑ | ↗ Bisko, Trilj, Granični prijelaz Kamensko,, Tomislavgrad, Livno, Smer BIH</td>
+                    <td><img onclick="red('D/D62.html')" title="Državna cesta 62" src="files/images/countries/hr/D/D62.svg" class="road-tag red">,<img onclick="red('D/D220.html')" title="Državna cesta 220" src="files/images/countries/hr/D/D220.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">most</td>
+                    <td><img src="files/images/countries/hr/info/most.svg" class="road-tag"></td>
+                    <td class="info">↑ Most Bulati ↑</td>
+                    <td class="info">148 m</td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">tunel</td>
+                    <td><img src="files/images/countries/hr/info/tunel.svg" class="road-tag"></td>
+                    <td class="info">↑ Tunel Bisko ↑</td>
+                    <td class="info">518 m</td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">most</td>
+                    <td><img src="files/images/countries/hr/info/most.svg" class="road-tag"></td>
+                    <td class="info">↑ Most Perići ↑</td>
+                    <td class="info">208 m</td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">most</td>
+                    <td><img src="files/images/countries/hr/info/most.svg" class="road-tag"></td>
+                    <td class="info">↑ Most Prosika ↑</td>
+                    <td class="info">30 m</td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">most</td>
+                    <td><img src="files/images/countries/hr/info/most.svg" class="road-tag"></td>
+                    <td class="info">↑ Most Biakuše ↑</td>
+                    <td class="info">328 m</td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">tunel</td>
+                    <td><img src="files/images/countries/hr/info/tunel.svg" class="road-tag"></td>
+                    <td class="info">↑ Tunel Zaranač ↑</td>
+                    <td class="info">370 m</td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>28 - <img src="files/images/countries/hr/exit.svg" class="icon"><br>Split</td>
+                    <td class="direction">↑ Zagreb, Šibenik <img title="Autocesta A1" src="files/images/countries/hr/A/A1.svg" class="road-tag">,<img onclick="red('../e/e65.html')" title="Európska cesta 65" src="files/images/countries/eu/hr/E65.svg" class="road-tag red">,<img onclick="red('../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/hr/E71.svg" class="road-tag red"> ↑ | ↗ Split, Sinj, Dugopolje</td>
+                    <td><img onclick="red('D/D1.html')" title="Državna cesta 1" src="files/images/countries/hr/D/D1.svg" class="road-tag red">,<img onclick="red('../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/hr/E71.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">tunel</td>
+                    <td><img src="files/images/countries/hr/info/tunel.svg" class="road-tag"></td>
+                    <td class="info">↑ Tunel Konjsko ↑</td>
+                    <td class="info">1254 m</td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">most</td>
+                    <td><img src="files/images/countries/hr/info/most.svg" class="road-tag"></td>
+                    <td class="info">↑ Most Vinokop ↑</td>
+                    <td>52 m</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">odmoriste</td>
+                    <td></td>
+                    <td class="info"><img src="files/images/countries/hr/info/csph-lpg.svg" class="road-tag">,<img src="files/images/countries/hr/info/p.svg" class="road-tag">,<img src="files/images/countries/hr/info/cafe.svg" class="road-tag">,<img src="files/images/countries/hr/info/ele-nab.svg" class="road-tag"> - Kozjak</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">tunel</td>
+                    <td><img src="files/images/countries/hr/info/tunel.svg" class="road-tag"></td>
+                    <td class="info">↑ Tunel Osmakovac ↑</td>
+                    <td class="info">200 m</td>
+                    <td class="info">Zeleni most</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>27 - <img src="files/images/countries/hr/exit.svg" class="icon"><br>Vučevica</td>
+                    <td class="direction">↑ Zagreb, Šibenik <img title="Autocesta A1" src="files/images/countries/hr/A/A1.svg" class="road-tag">,<img onclick="red('../e/e65.html')" title="Európska cesta 65" src="files/images/countries/eu/hr/E65.svg" class="road-tag red">,<img onclick="red('../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/hr/E71.svg" class="road-tag red"> ↑ | ↗ Konjsko, Lećevica, Vučevica</td>
+                    <td><img onclick="red('Z/Z6115.html')" title="Župna cesta 6115" src="files/images/countries/hr/Z/Z6115.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">most</td>
+                    <td><img src="files/images/countries/hr/info/most.svg" class="road-tag"></td>
+                    <td class="info">↑ Most Podgrede ↑</td>
+                    <td>90 m</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">most</td>
+                    <td><img src="files/images/countries/hr/info/most.svg" class="road-tag"></td>
+                    <td class="info">↑ Most Rodine Glavice ↑</td>
+                    <td>120 m</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">most</td>
+                    <td><img src="files/images/countries/hr/info/most.svg" class="road-tag"></td>
+                    <td class="info">↑ Most Fradivina ↑</td>
+                    <td>90 m</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">most</td>
+                    <td><img src="files/images/countries/hr/info/most.svg" class="road-tag"></td>
+                    <td class="info">↑ Most Bejići ↑</td>
+                    <td>180 m</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">odmoriste</td>
+                    <td></td>
+                    <td class="info"><img src="files/images/countries/hr/info/p.svg" class="road-tag">,<img src="files/images/countries/hr/info/wc.svg" class="road-tag"> - Radošić</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">most</td>
+                    <td><img src="files/images/countries/hr/info/most.svg" class="road-tag"></td>
+                    <td class="info">↑ Most Gajina ↑</td>
+                    <td>300 m</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">most</td>
+                    <td><img src="files/images/countries/hr/info/most.svg" class="road-tag"></td>
+                    <td class="info">↑ Most Prgomet ↑</td>
+                    <td>210 m</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>26 - <img src="files/images/countries/hr/exit.svg" class="icon"><br>Prgomet</td>
+                    <td class="direction">↑ Zagreb, Šibenik <img title="Autocesta A1" src="files/images/countries/hr/A/A1.svg" class="road-tag">,<img onclick="red('../e/e65.html')" title="Európska cesta 65" src="files/images/countries/eu/hr/E65.svg" class="road-tag red">,<img onclick="red('../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/hr/E71.svg" class="road-tag red"> ↑ | ↗ Kaštela <img src="files/images/countries/hr/info/zracnaluka.svg" class="road-tag">, Trogir, Prgomet</td>
+                    <td><img onclick="red('Z/Z6112.html')" title="Župna cesta 6112" src="files/images/countries/hr/Z/Z6112.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">most</td>
+                    <td><img src="files/images/countries/hr/info/most.svg" class="road-tag"></td>
+                    <td class="info">↑ Most Ljubeč ↑</td>
+                    <td>180 m</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">most</td>
+                    <td><img src="files/images/countries/hr/info/most.svg" class="road-tag"></td>
+                    <td class="info">↑ Most Garišta ↑</td>
+                    <td>390 m</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">tunel</td>
+                    <td><img src="files/images/countries/hr/info/tunel.svg" class="road-tag"></td>
+                    <td class="info">↑ Tunel Dubrave ↑</td>
+                    <td class="info">869 m</td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">odmoriste</td>
+                    <td></td>
+                    <td class="info"><img src="files/images/countries/hr/info/p.svg" class="road-tag">,<img src="files/images/countries/hr/info/wc.svg" class="road-tag"> - Sitno</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">most</td>
+                    <td><img src="files/images/countries/hr/info/most.svg" class="road-tag"></td>
+                    <td class="info">↑ Most Čvor Vrpolje ↑</td>
+                    <td>165 m</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>25 - <img src="files/images/countries/hr/exit.svg" class="icon"><br>Danilo</td>
+                    <td class="direction">↑ Zagreb, Šibenik <img title="Autocesta A1" src="files/images/countries/hr/A/A1.svg" class="road-tag">,<img onclick="red('../e/e65.html')" title="Európska cesta 65" src="files/images/countries/eu/hr/E65.svg" class="road-tag red">,<img onclick="red('../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/hr/E71.svg" class="road-tag red"> ↑ | ↗ Danilo, Vrpolje, Perković</td>
+                    <td><img onclick="red('D/D58.html')" title="Državna cesta 58" src="files/images/countries/hr/D/D58.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">odmoriste</td>
+                    <td></td>
+                    <td class="info"><img src="files/images/countries/hr/info/csph-lpg.svg" class="road-tag">,<img src="files/images/countries/hr/info/p.svg" class="road-tag">,<img src="files/images/countries/hr/info/wc.svg" class="road-tag">, <img src="files/images/countries/hr/info/motorest.svg" class="road-tag">,<img src="files/images/countries/hr/info/cafe.svg" class="road-tag"> - Vrpolje Primorsko</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">most</td>
+                    <td><img src="files/images/countries/hr/info/most.svg" class="road-tag"></td>
+                    <td class="info">↑ Most Dabar ↑</td>
+                    <td>360 m</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>24 - <img src="files/images/countries/hr/exit.svg" class="icon"></td>
+                    <td class="direction">↑ Zagreb, Šibenik <img title="Autocesta A1" src="files/images/countries/hr/A/A1.svg" class="road-tag">,<img onclick="red('../e/e65.html')" title="Európska cesta 65" src="files/images/countries/eu/hr/E65.svg" class="road-tag red">,<img onclick="red('../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/hr/E71.svg" class="road-tag red"> ↑ | ↗ Ražine, Gospodarska zona "Podi"</td>
+                    <td>L65064</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">most</td>
+                    <td><img src="files/images/countries/hr/info/most.svg" class="road-tag"></td>
+                    <td class="info">↑ Most Dubrava ↑</td>
+                    <td>160 m</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">most</td>
+                    <td><img src="files/images/countries/hr/info/most.svg" class="road-tag"></td>
+                    <td class="info">↑ Most Protege ↑</td>
+                    <td>250 m</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>23 - <img src="files/images/countries/hr/exit.svg" class="icon"><br>Šibenik</td>
+                    <td class="direction">↑ Zagreb, Zadar <img title="Autocesta A1" src="files/images/countries/hr/A/A1.svg" class="road-tag">,<img onclick="red('../e/e65.html')" title="Európska cesta 65" src="files/images/countries/eu/hr/E65.svg" class="road-tag red">,<img onclick="red('../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/hr/E71.svg" class="road-tag red"> ↑ | ↗ Knin-Drniš, Primošten, Šibenik</td>
+                    <td><img onclick="red('D/D33.html')" title="Državna cesta 33" src="files/images/countries/hr/D/D33.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">most</td>
+                    <td><img src="files/images/countries/hr/info/most.svg" class="road-tag"></td>
+                    <td class="info">↑ Most Draga ↑</td>
+                    <td>297 m</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">odmoriste</td>
+                    <td></td>
+                    <td class="info"><img src="files/images/countries/hr/info/ele-nab.svg" class="road-tag">,<img src="files/images/countries/hr/info/motorest.svg" class="road-tag"> - Krka</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">most</td>
+                    <td><img src="files/images/countries/hr/info/most.svg" class="road-tag"></td>
+                    <td class="info">↑ Most Krka ↑</td>
+                    <td>389 m</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>22 - <img src="files/images/countries/hr/exit.svg" class="icon"><br>Skradin</td>
+                    <td class="direction">↑ Zagreb, Zadar <img title="Autocesta A1" src="files/images/countries/hr/A/A1.svg" class="road-tag">,<img onclick="red('../e/e65.html')" title="Európska cesta 65" src="files/images/countries/eu/hr/E65.svg" class="road-tag red">,<img onclick="red('../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/hr/E71.svg" class="road-tag red"> ↑ | ↗ <span class="prir">Krka</span>, Skradin</td>
+                    <td><img onclick="red('D/D56.html')" title="Državna cesta 56" src="files/images/countries/hr/D/D56.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">most</td>
+                    <td><img src="files/images/countries/hr/info/most.svg" class="road-tag"></td>
+                    <td class="info">↑ Most Vlake ↑</td>
+                    <td>90 m</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">most</td>
+                    <td><img src="files/images/countries/hr/info/most.svg" class="road-tag"></td>
+                    <td class="info">↑ Most Mokrice ↑</td>
+                    <td>316 m</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">odmoriste</td>
+                    <td></td>
+                    <td class="info"><img src="files/images/countries/hr/info/csph.svg" class="road-tag">,<img src="files/images/countries/hr/info/p.svg" class="road-tag">,<img src="files/images/countries/hr/info/cafe.svg" class="road-tag">,<img src="files/images/countries/hr/info/wc.svg" class="road-tag">,<img src="files/images/countries/hr/info/ele-nab.svg" class="road-tag"> - Prokljan</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">most</td>
+                    <td><img src="files/images/countries/hr/info/most.svg" class="road-tag"></td>
+                    <td class="info">↑ Most Guduča ↑</td>
+                    <td>225 m</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>21 - <img src="files/images/countries/hr/exit.svg" class="icon"><br>Vodice</td>
+                    <td class="direction">↑ Zagreb, Zadar <img title="Autocesta A1" src="files/images/countries/hr/A/A1.svg" class="road-tag">,<img onclick="red('../e/e65.html')" title="Európska cesta 65" src="files/images/countries/eu/hr/E65.svg" class="road-tag red">,<img onclick="red('../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/hr/E71.svg" class="road-tag red"> ↑ | ↗ <span class="prir">Narodni park Kornati</span>, otok Murter, Vodice, Pirovac, Stankovci</td>
+                    <td><img onclick="red('D/D59.html')" title="Državna cesta 59" src="files/images/countries/hr/D/D59.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">odmoriste</td>
+                    <td></td>
+                    <td class="info"><img src="files/images/countries/hr/info/p.svg" class="road-tag">,<img src="files/images/countries/hr/info/wc.svg" class="road-tag"> - Pristeg</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>20 - <img src="files/images/countries/hr/exit.svg" class="icon"><br>Benkovac</td>
+                    <td class="direction">↑ Zagreb, PREPIS <img title="Autocesta A1" src="files/images/countries/hr/A/A1.svg" class="road-tag">,<img onclick="red('../e/e65.html')" title="Európska cesta 65" src="files/images/countries/eu/hr/E65.svg" class="road-tag red">,<img onclick="red('../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/hr/E71.svg" class="road-tag red"> ↑ | ↗ Benkovac, Otok Pašman, <span class="prir">Vransko jezero</span>, Sveti Filip i Jakov, Pakoštane, Biograd</td>
+                    <td><img onclick="red('D/D27.html')" title="Državna cesta 278" src="files/images/countries/hr/D/D27.svg" class="road-tag red">,<img onclick="red('D/D503.html')" title="Državna cesta 503" src="files/images/countries/hr/D/D503.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">most</td>
+                    <td><img src="files/images/countries/hr/info/most.svg" class="road-tag"></td>
+                    <td class="info">↑ Most Kličevica ↑</td>
+                    <td>X</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">most</td>
+                    <td><img src="files/images/countries/hr/info/most.svg" class="road-tag"></td>
+                    <td class="info">↑ Most Raštević ↑</td>
+                    <td>150 m</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">odmoriste</td>
+                    <td></td>
+                    <td class="info"><img src="files/images/countries/hr/info/csph-lpg.svg" class="road-tag">,<img src="files/images/countries/hr/info/p.svg" class="road-tag">,<img src="files/images/countries/hr/info/ele-nab.svg" class="road-tag">,<img src="files/images/countries/hr/info/cafe.svg" class="road-tag">,<img src="files/images/countries/hr/info/motorest.svg" class="road-tag"> - Nadin</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>19 - <img src="files/images/countries/hr/exit.svg" class="icon"><br>Zadar istok</td>
+                    <td class="direction">↑ Zagreb, Rijeka <img title="Autocesta A1" src="files/images/countries/hr/A/A1.svg" class="road-tag">,<img onclick="red('../e/e65.html')" title="Európska cesta 65" src="files/images/countries/eu/hr/E65.svg" class="road-tag red">,<img onclick="red('../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/hr/E71.svg" class="road-tag red"> ↑ |<br> ↗ Zadar <img src="files/images/countries/hr/info/zracnaluka.svg" class="road-tag">, Dugi otok, otok Ugljan, Bibinje, Škabrnja, Smilčić, Sukošan, Zemunik D.</td>
+                    <td><img onclick="red('D/D424.html')" title="Državna cesta 424" src="files/images/countries/hr/D/D424.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>18 - <img src="files/images/countries/hr/exit.svg" class="icon"><br>Zadar centar</td>
+                    <td class="direction">↑ Zagreb, Rijeka <img title="Autocesta A1" src="files/images/countries/hr/A/A1.svg" class="road-tag">,<img onclick="red('../e/e65.html')" title="Európska cesta 65" src="files/images/countries/eu/hr/E65.svg" class="road-tag red">,<img onclick="red('../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/hr/E71.svg" class="road-tag red"> ↑ | ↗ otok Vir, Privlaka, Zaton, Petrčane, Murvica, Nin, Poličnik, Zadar-zapad</td>
+                    <td><img onclick="red('D/D8.html')" title="Državna cesta 8" src="files/images/countries/hr/D/D8.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">most</td>
+                    <td><img src="files/images/countries/hr/info/most.svg" class="road-tag"></td>
+                    <td class="info">↑ Most Baštica ↑</td>
+                    <td>92 m</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>17 - <img src="files/images/countries/hr/exit.svg" class="icon"><br>Posedarje</td>
+                    <td class="pdz">↑ Zagreb, Rijeka <img title="Autocesta A1" src="files/images/countries/hr/A/A1.svg" class="road-tag">,<img onclick="red('../e/e65.html')" title="Európska cesta 65" src="files/images/countries/eu/hr/E65.svg" class="road-tag red">,<img onclick="red('../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/hr/E71.svg" class="road-tag red"> ↑ | ↗ otok Pag, Posedarje, Novigrad</td>
+                    <td><img onclick="red('D/D8.html')" title="Državna cesta 8" src="files/images/countries/hr/D/D8.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">most</td>
+                    <td><img src="files/images/countries/hr/info/most.svg" class="road-tag"></td>
+                    <td class="info">↑ Most Posedarje ↑</td>
+                    <td>206 m</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">most</td>
+                    <td><img src="files/images/countries/hr/info/most.svg" class="road-tag"></td>
+                    <td class="info">↑ Most Maslenica ↑</td>
+                    <td>378 m</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>16 - <img src="files/images/countries/hr/exit.svg" class="icon"><br>Rovanjska</td>
+                    <td class="pdz">↑ Zagreb, Rijeka <img title="Autocesta A1" src="files/images/countries/hr/A/A1.svg" class="road-tag">,<img onclick="red('../e/e65.html')" title="Európska cesta 65" src="files/images/countries/eu/hr/E65.svg" class="road-tag red">,<img onclick="red('../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/hr/E71.svg" class="road-tag red"> ↑ | ↗ Rovanjska, <span class="prir">Paklenica</span>, Rijeka, Obrovac, Starigrad, Maslenica</td>
+                    <td><img onclick="red('D/D8.html')" title="Državna cesta 8" src="files/images/countries/hr/D/D8.svg" class="road-tag red">,<img onclick="red('D/D54.html')" title="Državna cesta 54" src="files/images/countries/hr/D/D54.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">odmoriste</td>
+                    <td></td>
+                    <td class="info"><img src="files/images/countries/hr/info/ele-nab.svg" class="road-tag">,<img src="files/images/countries/hr/info/csph-lpg.svg" class="road-tag">,<img src="files/images/countries/hr/info/cafe.svg" class="road-tag">,<img src="files/images/countries/hr/info/motorest.svg" class="road-tag">,<img src="files/images/countries/hr/info/info.svg" class="road-tag"> - Jasenice</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">most</td>
+                    <td><img src="files/images/countries/hr/info/most.svg" class="road-tag"></td>
+                    <td class="info">↑ Most Božići ↑</td>
+                    <td>240 m</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">most</td>
+                    <td><img src="files/images/countries/hr/info/most.svg" class="road-tag"></td>
+                    <td class="info">↑ Most Baričević ↑</td>
+                    <td>90 m</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">tunel</td>
+                    <td><img src="files/images/countries/hr/info/tunel.svg" class="road-tag"></td>
+                    <td class="info">↑ Tunel Čelinka ↑</td>
+                    <td class="info">205 m</td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">tunel</td>
+                    <td><img src="files/images/countries/hr/info/tunel.svg" class="road-tag"></td>
+                    <td class="info">↑ Tunel Bristovac ↑</td>
+                    <td class="info">657 m</td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">tunel</td>
+                    <td><img src="files/images/countries/hr/info/tunel.svg" class="road-tag"></td>
+                    <td class="info">↑ Tunel Ledenik ↑</td>
+                    <td class="info">752 m</td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">most</td>
+                    <td><img src="files/images/countries/hr/info/most.svg" class="road-tag"></td>
+                    <td class="info">↑ Most Crna Draga ↑</td>
+                    <td>298 m</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">odmoriste</td>
+                    <td></td>
+                    <td class="info"><img src="files/images/countries/hr/info/p.svg" class="road-tag">,<img src="files/images/countries/hr/info/cafe.svg" class="road-tag">,<img src="files/images/countries/hr/info/motorest.svg" class="road-tag"> - Marune</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">tunel</td>
+                    <td><img src="files/images/countries/hr/info/tunel.svg" class="road-tag"></td>
+                    <td class="info">↑ Tunel Sveti Rok ↑</td>
+                    <td class="info">5759 m</td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">tunel</td>
+                    <td><img src="files/images/countries/hr/info/tunel.svg" class="road-tag"></td>
+                    <td class="info">↑ Tunel Krpani ↑</td>
+                    <td class="info">178 m</td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">most</td>
+                    <td><img src="files/images/countries/hr/info/most.svg" class="road-tag"></td>
+                    <td class="info">↑ Most Krpani ↑</td>
+                    <td>330 m</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>15 - <img src="files/images/countries/hr/exit.svg" class="icon"><br>Sveti Rok</td>
+                    <td class="direction">↑ Zagreb, Rijeka <img title="Autocesta A1" src="files/images/countries/hr/A/A1.svg" class="road-tag">,<img onclick="red('../e/e65.html')" title="Európska cesta 65" src="files/images/countries/eu/hr/E65.svg" class="road-tag red">,<img onclick="red('../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/hr/E71.svg" class="road-tag red"> ↑ | ↗ Gračac, Lovinac, Sveti Rok</td>
+                    <td><img onclick="red('D/D8.html')" title="Državna cesta 8" src="files/images/countries/hr/D/D8.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">most</td>
+                    <td><img src="files/images/countries/hr/info/most.svg" class="road-tag"></td>
+                    <td class="info">↑ Most HŽ Raduč ↑</td>
+                    <td>29 m</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">most</td>
+                    <td><img src="files/images/countries/hr/info/most.svg" class="road-tag"></td>
+                    <td class="info">↑ Most Grabara ↑</td>
+                    <td>114 m</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>14 - <img src="files/images/countries/hr/exit.svg" class="icon"><br>Udbina</td>
+                    <td class="direction">↑ Zagreb, Rijeka <img title="Autocesta A1" src="files/images/countries/hr/A/A1.svg" class="road-tag">,<img onclick="red('../e/e65.html')" title="Európska cesta 65" src="files/images/countries/eu/hr/E65.svg" class="road-tag red">,<img onclick="red('../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/hr/E71.svg" class="road-tag red"> ↑ | ↗ <span class="prir">Plitvička Jezera</span>, Korenica, Udbina</td>
+                    <td><img onclick="red('D/D522.html')" title="Državna cesta 522" src="files/images/countries/hr/D/D522.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">odmoriste</td>
+                    <td></td>
+                    <td class="info"><img src="files/images/countries/hr/info/csph-lpg.svg" class="road-tag">,<img src="files/images/countries/hr/info/motorest.svg" class="road-tag">,<img src="files/images/countries/hr/info/ele-nab.svg" class="road-tag"> - Zir</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">most</td>
+                    <td><img src="files/images/countries/hr/info/most.svg" class="road-tag"></td>
+                    <td class="info">↑ Most Mandarića potok ↑</td>
+                    <td>23 m</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">odmoriste</td>
+                    <td></td>
+                    <td class="info"><img src="files/images/countries/hr/info/p.svg" class="road-tag">,<img src="files/images/countries/hr/info/wc.svg" class="road-tag"> - Jadova</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">most</td>
+                    <td><img src="files/images/countries/hr/info/most.svg" class="road-tag"></td>
+                    <td class="info">↑ Most Suvaja ↑</td>
+                    <td>81 m</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">most</td>
+                    <td><img src="files/images/countries/hr/info/most.svg" class="road-tag"></td>
+                    <td class="info">↑ Most Graba ↑</td>
+                    <td>64 m</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">most</td>
+                    <td><img src="files/images/countries/hr/info/most.svg" class="road-tag"></td>
+                    <td class="info">↑ Most Dubrava ↑</td>
+                    <td>23 m</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">most</td>
+                    <td><img src="files/images/countries/hr/info/rijeka.svg" class="road-tag"></td>
+                    <td class="direction">↑ Jadova ↑</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">most</td>
+                    <td><img src="files/images/countries/hr/info/most.svg" class="road-tag"></td>
+                    <td class="info">↑ Most Vučjak ↑</td>
+                    <td>345 m</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>13 - <img src="files/images/countries/hr/exit.svg" class="icon"><br>Gospić</td>
+                    <td class="direction">↑ Zagreb, Rijeka <img title="Autocesta A1" src="files/images/countries/hr/A/A1.svg" class="road-tag">,<img onclick="red('../e/e65.html')" title="Európska cesta 65" src="files/images/countries/eu/hr/E65.svg" class="road-tag red">,<img onclick="red('../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/hr/E71.svg" class="road-tag red"> ↑ | ↗ Karlobag, Lički Osik, Gospić</td>
+                    <td><img onclick="red('D/D50.html')" title="Državna cesta 50" src="files/images/countries/hr/D/D50.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">most</td>
+                    <td><img src="files/images/countries/hr/info/most.svg" class="road-tag"></td>
+                    <td class="info">↑ Most Lički Osik ↑</td>
+                    <td>81 m</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">odmoriste</td>
+                    <td></td>
+                    <td class="info"><img src="files/images/countries/hr/info/cafe.svg" class="road-tag">,<img src="files/images/countries/hr/info/wc.svg" class="road-tag">,<img src="files/images/countries/hr/info/p.svg" class="road-tag"> - Lički Osik</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">tunel</td>
+                    <td><img src="files/images/countries/hr/info/tunel.svg" class="road-tag"></td>
+                    <td class="info">↑ Tunel Varošina ↑</td>
+                    <td class="info">125 m</td>
+                    <td class="info">Zeleni most</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>12 - <img src="files/images/countries/hr/exit.svg" class="icon"><br>Perušić</td>
+                    <td class="direction">↑ Zagreb, Rijeka <img title="Autocesta A1" src="files/images/countries/hr/A/A1.svg" class="road-tag">,<img onclick="red('../e/e65.html')" title="Európska cesta 65" src="files/images/countries/eu/hr/E65.svg" class="road-tag red">,<img onclick="red('../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/hr/E71.svg" class="road-tag red"> ↑ | ↗ Perušić</td>
+                    <td><img onclick="red('D/D50.html')" title="Državna cesta 50" src="files/images/countries/hr/D/D50.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">tunel</td>
+                    <td><img src="files/images/countries/hr/info/tunel.svg" class="road-tag"></td>
+                    <td class="info">↑ Tunel Medina Gora ↑</td>
+                    <td class="info">125 m</td>
+                    <td class="info">Zeleni most</td>
+                </tr>
+                <tr>
+                    <td class="typ">odmoriste</td>
+                    <td></td>
+                    <td class="info"><img src="files/images/countries/hr/info/csph-lpg.svg" class="road-tag">,<img src="files/images/countries/hr/info/motorest.svg" class="road-tag">,<img src="files/images/countries/hr/info/ele-nab.svg" class="road-tag"> - Janjče</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">most</td>
+                    <td><img src="files/images/countries/hr/info/most.svg" class="road-tag"></td>
+                    <td class="info">↑ Most Duman ↑</td>
+                    <td>120 m</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">tunel</td>
+                    <td><img src="files/images/countries/hr/info/tunel.svg" class="road-tag"></td>
+                    <td class="info">↑ Tunel Grič ↑</td>
+                    <td class="info">1259 m</td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">most</td>
+                    <td><img src="files/images/countries/hr/info/most.svg" class="road-tag"></td>
+                    <td class="info">↑ Most Pećine ↑</td>
+                    <td>316 m</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">odmoriste</td>
+                    <td></td>
+                    <td class="info"><img src="files/images/countries/hr/info/wc.svg" class="road-tag">,<img src="files/images/countries/hr/info/p.svg" class="road-tag"> - Ličko Lešće</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">tunel</td>
+                    <td><img src="files/images/countries/hr/info/tunel.svg" class="road-tag"></td>
+                    <td class="info">↑ Tunel Plasina ↑</td>
+                    <td class="info">2300 m</td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">most</td>
+                    <td><img src="files/images/countries/hr/info/most.svg" class="road-tag"></td>
+                    <td class="info">↑ Most Vršci ↑</td>
+                    <td>337 m</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">most</td>
+                    <td><img src="files/images/countries/hr/info/most.svg" class="road-tag"></td>
+                    <td class="info">↑ Most Obilje ↑</td>
+                    <td>250 m</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">most</td>
+                    <td><img src="files/images/countries/hr/info/most.svg" class="road-tag"></td>
+                    <td class="info">↑ Most Gacka ↑</td>
+                    <td>456 m</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">tunel</td>
+                    <td><img src="files/images/countries/hr/info/tunel.svg" class="road-tag"></td>
+                    <td class="info">↑ Tunel Brezik ↑</td>
+                    <td class="info">409 m</td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>11 - <img src="files/images/countries/hr/exit.svg" class="icon"><br>Otočac</td>
+                    <td class="direction">↑ Zagreb, Rijeka <img title="Autocesta A1" src="files/images/countries/hr/A/A1.svg" class="road-tag">,<img onclick="red('../e/e65.html')" title="Európska cesta 65" src="files/images/countries/eu/hr/E65.svg" class="road-tag red">,<img onclick="red('../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/hr/E71.svg" class="road-tag red"> ↑ | ↗ Otočac, <span class="prir">Sjeverni Velebit, Plitvička jezera</span></td>
+                    <td><img onclick="red('D/D50.html')" title="Državna cesta 50" src="files/images/countries/hr/D/D50.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">most</td>
+                    <td><img src="files/images/countries/hr/info/most.svg" class="road-tag"></td>
+                    <td class="info">↑ Most Dreškovići ↑</td>
+                    <td>339 m</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">odmoriste</td>
+                    <td></td>
+                    <td class="info"><img src="files/images/countries/hr/info/p.svg" class="road-tag">,<img src="files/images/countries/hr/info/wc.svg" class="road-tag"> - Brloška Dubrava</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">most</td>
+                    <td><img src="files/images/countries/hr/info/most.svg" class="road-tag"></td>
+                    <td class="info">↑ Most Grubori ↑</td>
+                    <td>142 m</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">most</td>
+                    <td><img src="files/images/countries/hr/info/most.svg" class="road-tag"></td>
+                    <td class="info">↑ Most Babića Most ↑</td>
+                    <td>248 m</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>10 - <img src="files/images/countries/hr/exit.svg" class="icon"><br>Žuta Lokva</td>
+                    <td class="direction">↑ Zagreb, Rijeka <img title="Autocesta A1" src="files/images/countries/hr/A/A1.svg" class="road-tag">,<img onclick="red('../e/e65.html')" title="Európska cesta 65" src="files/images/countries/eu/hr/E65.svg" class="road-tag red">,<img onclick="red('../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/hr/E71.svg" class="road-tag red"> ↑ | ↗ Otok Rab, Senj, Žuta Lokva</td>
+                    <td><img onclick="red('D/D23.html')" title="Državna cesta 23" src="files/images/countries/hr/D/D23.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">tunel</td>
+                    <td><img src="files/images/countries/hr/info/tunel.svg" class="road-tag"></td>
+                    <td class="info">↑ Tunel Brinje ↑</td>
+                    <td class="info">1561 m</td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">odmoriste</td>
+                    <td></td>
+                    <td class="info"><img src="files/images/countries/hr/info/csph.svg" class="road-tag">,<img src="files/images/countries/hr/info/motel.svg" class="road-tag">,<img src="files/images/countries/hr/info/motorest.svg" class="road-tag"> - Sokolac</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">most</td>
+                    <td><img src="files/images/countries/hr/info/most.svg" class="road-tag"></td>
+                    <td class="info">↑ Most Borići ↑</td>
+                    <td>476 m</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">most</td>
+                    <td><img src="files/images/countries/hr/info/most.svg" class="road-tag"></td>
+                    <td class="info">↑ Most Zeleni Most ↑</td>
+                    <td>130 m</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>9 - <img src="files/images/countries/hr/exit.svg" class="icon"><br>Brinje</td>
+                    <td class="pdz">↑ Zagreb, Rijeka <img title="Autocesta A1" src="files/images/countries/hr/A/A1.svg" class="road-tag">,<img onclick="red('../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/hr/E71.svg" class="road-tag red"> ↑ | ↗ Križpolje, Brinje</td>
+                    <td><img onclick="red('D/D23.html')" title="Državna cesta 23" src="files/images/countries/hr/D/D23.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">most</td>
+                    <td><img src="files/images/countries/hr/info/most.svg" class="road-tag"></td>
+                    <td class="info">↑ Most Jezerane ↑</td>
+                    <td>636 m</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">most</td>
+                    <td><img src="files/images/countries/hr/info/most.svg" class="road-tag"></td>
+                    <td class="info">↑ Most Mokro Polje ↑</td>
+                    <td>636 m</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">tunel</td>
+                    <td><img src="files/images/countries/hr/info/tunel.svg" class="road-tag"></td>
+                    <td class="info">↑ Tunel Mala Kapela ↑</td>
+                    <td class="info">5821 m</td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">odmoriste</td>
+                    <td></td>
+                    <td class="info"><img src="files/images/countries/hr/info/cafe.svg" class="road-tag">,<img src="files/images/countries/hr/info/wc.svg" class="road-tag">,<img src="files/images/countries/hr/info/p.svg" class="road-tag"> - Modruš</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">most</td>
+                    <td><img src="files/images/countries/hr/info/most.svg" class="road-tag"></td>
+                    <td class="info">↑ Most Modruš 3 ↑</td>
+                    <td>156 m</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">most</td>
+                    <td><img src="files/images/countries/hr/info/most.svg" class="road-tag"></td>
+                    <td class="info">↑ Most Modruš 2 ↑ Most Modruš 2 ↑</td>
+                    <td>276 m</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">most</td>
+                    <td><img src="files/images/countries/hr/info/most.svg" class="road-tag"></td>
+                    <td class="info">↑ Most Modruš 1 ↑ Most Modruš 1 ↑</td>
+                    <td>516 m</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">most</td>
+                    <td><img src="files/images/countries/hr/info/rijeka.svg" class="road-tag"></td>
+                    <td class="direction">↑ Bjelobrajdić ↑</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">most</td>
+                    <td><img src="files/images/countries/hr/info/rijeka.svg" class="road-tag"></td>
+                    <td class="direction">↑ Miljanica ↑</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">most</td>
+                    <td><img src="files/images/countries/hr/info/most.svg" class="road-tag"></td>
+                    <td class="info">↑ Most Krajine ↑</td>
+                    <td>316 m</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">most</td>
+                    <td><img src="files/images/countries/hr/info/rijeka.svg" class="road-tag"></td>
+                    <td class="direction">↑ Zagorska Mrežnica ↑</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>8 - <img src="files/images/countries/hr/exit.svg" class="icon"><br>Ogulin</td>
+                    <td class="direction">↑ Zagreb, Rijeka <img title="Autocesta A1" src="files/images/countries/hr/A/A1.svg" class="road-tag">,<img onclick="red('../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/hr/E71.svg" class="road-tag red"> ↑ | ↗ <span class="prir">Plitvička jezera</span>, Josipdol, Ogulin</td>
+                    <td><img onclick="red('D/D42.html')" title="Državna cesta 42" src="files/images/countries/hr/D/D42.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">tunel</td>
+                    <td><img src="files/images/countries/hr/info/tunel.svg" class="road-tag"></td>
+                    <td class="info">↑ Tunel Rasnica ↑</td>
+                    <td class="info">120 m</td>
+                    <td class="info">Zeleni most</td>
+                </tr>
+                <tr>
+                    <td class="typ">most</td>
+                    <td><img src="files/images/countries/hr/info/rijeka.svg" class="road-tag"></td>
+                    <td class="direction">↑ Bistrica ↑</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">odmoriste</td>
+                    <td></td>
+                    <td class="info"><img src="files/images/countries/hr/info/csph-lpg.svg" class="road-tag">,<img src="files/images/countries/hr/info/motorest.svg" class="road-tag"> - Dobra</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">most</td>
+                    <td><img src="files/images/countries/hr/info/most.svg" class="road-tag"></td>
+                    <td class="info">↑ Most Dobra 3 ↑</td>
+                    <td>171 m</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">tunel</td>
+                    <td><img src="files/images/countries/hr/info/tunel.svg" class="road-tag"></td>
+                    <td class="info">↑ Tunel Ivačevo Brdo ↑</td>
+                    <td class="info">120 m</td>
+                    <td class="info">Zeleni most</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>7 - <img src="files/images/countries/hr/cvor.svg" class="icon"><br>Bosiljevo 2</td>
+                    <td class="direction">↑ Zagreb, Karlovac <img title="Autocesta A1" src="files/images/countries/hr/A/A1.svg" class="road-tag">,<img onclick="red('../e/e65.html')" title="Európska cesta 65" src="files/images/countries/eu/hr/E65.svg" class="road-tag red">,<img onclick="red('../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/hr/E71.svg" class="road-tag red"> ↑ | ↗ Pula, Rijeka</td>
+                    <td><img onclick="red('A/A6.html')" title="Autocesta A6" src="files/images/countries/hr/A/A6.svg" class="road-tag red">,<img onclick="red('../e/e65.html')" title="Európska cesta 65" src="files/images/countries/eu/hr/E65.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">most</td>
+                    <td><img src="files/images/countries/hr/info/most.svg" class="road-tag"></td>
+                    <td class="info">↑ Most Varoš ↑</td>
+                    <td>402 m</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>6 - <img src="files/images/countries/hr/exit.svg" class="icon"><br>Bosiljevo 1</td>
+                    <td class="direction">↑ Zagreb, Karlovac <img title="Autocesta A1" src="files/images/countries/hr/A/A1.svg" class="road-tag">,<img onclick="red('../e/e65.html')" title="Európska cesta 65" src="files/images/countries/eu/hr/E65.svg" class="road-tag red">,<img onclick="red('../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/hr/E71.svg" class="road-tag red"> ↑ | ↗ Novo Mesto, Smer SLO, Duga Resa, Bosiljevo</td>
+                    <td><img onclick="red('D/D3.html')" title="Državna cesta 3" src="files/images/countries/hr/D/D3.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">odmoriste</td>
+                    <td></td>
+                    <td class="info"><img src="files/images/countries/hr/info/csph.svg" class="road-tag">,<img src="files/images/countries/hr/info/motorest.svg" class="road-tag">,<img src="files/images/countries/hr/info/ele-nab.svg" class="road-tag"> - Vukova Gorica</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>5 - <img src="files/images/countries/hr/exit.svg" class="icon"><br>Novigrad</td>
+                    <td class="direction">↑ Zagreb, Karlovac <img title="Autocesta A1" src="files/images/countries/hr/A/A1.svg" class="road-tag">,<img onclick="red('../e/e65.html')" title="Európska cesta 65" src="files/images/countries/eu/hr/E65.svg" class="road-tag red">,<img onclick="red('../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/hr/E71.svg" class="road-tag red"> ↑ | ↗ Novo Mesto, Smer SLO, Novigrad n/D, Jurovsky Brod, Netretić</td>
+                    <td><img onclick="red('D/D6.html')" title="Državna cesta 6" src="files/images/countries/hr/D/D6.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">most</td>
+                    <td><img src="files/images/countries/hr/info/most.svg" class="road-tag"></td>
+                    <td class="info">↑ Most Dobra 2 ↑</td>
+                    <td>301 m</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">most</td>
+                    <td><img src="files/images/countries/hr/info/most.svg" class="road-tag"></td>
+                    <td class="info">↑ Most Dobra 1 ↑</td>
+                    <td>547 m</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">tunel</td>
+                    <td><img src="files/images/countries/hr/info/tunel.svg" class="road-tag"></td>
+                    <td class="info">↑ Tunel Sveti Marko ↑</td>
+                    <td class="info">265 m</td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">most</td>
+                    <td><img src="files/images/countries/hr/info/most.svg" class="road-tag"></td>
+                    <td class="info">↑ Most Velika Jelsa ↑</td>
+                    <td>167 m</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">most</td>
+                    <td><img src="files/images/countries/hr/info/most.svg" class="road-tag"></td>
+                    <td class="info">↑ Most Drežnik ↑</td>
+                    <td>2485 m</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>4 - <img src="files/images/countries/hr/exit.svg" class="icon"><br>Karlovac</td>
+                    <td class="direction">↑ Zagreb <img title="Autocesta A1" src="files/images/countries/hr/A/A1.svg" class="road-tag">,<img onclick="red('../e/e65.html')" title="Európska cesta 65" src="files/images/countries/eu/hr/E65.svg" class="road-tag red">,<img onclick="red('../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/hr/E71.svg" class="road-tag red"> ↑ | ↗ <span class="prir">Plitvička jezera</span>, Slunj, Karlovac</td>
+                    <td><img onclick="red('D/D1.html')" title="Državna cesta 1" src="files/images/countries/hr/D/D1.svg" class="road-tag red">,<img onclick="red('D/D36.html')" title="Državna cesta 36" src="files/images/countries/hr/D/D36.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">most</td>
+                    <td><img src="files/images/countries/hr/info/most.svg" class="road-tag"></td>
+                    <td class="info">↑ Most Orlovac ↑</td>
+                    <td>70 m</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">most</td>
+                    <td><img src="files/images/countries/hr/info/most.svg" class="road-tag"></td>
+                    <td class="info">↑ Most Kupa-Kupa ↑</td>
+                    <td>181 m</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">odmoriste</td>
+                    <td></td>
+                    <td class="info"><img src="files/images/countries/hr/info/csph.svg" class="road-tag">,<img src="files/images/countries/hr/info/p.svg" class="road-tag">,<img src="files/images/countries/hr/info/cafe.svg" class="road-tag">,<img src="files/images/countries/hr/info/motorest.svg" class="road-tag">,<img src="files/images/countries/hr/info/info.svg" class="road-tag">,<img src="files/images/countries/hr/info/ele-nab.svg" class="road-tag"> - Draganić</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">most</td>
+                    <td><img src="files/images/countries/hr/info/most.svg" class="road-tag"></td>
+                    <td class="info">↑ Most Kupčina ↑</td>
+                    <td>32 m</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>3 - <img src="files/images/countries/hr/exit.svg" class="icon"><br>Jastrebarsko</td>
+                    <td class="direction">↑ Zagreb <img title="Autocesta A1" src="files/images/countries/hr/A/A1.svg" class="road-tag">,<img onclick="red('../e/e65.html')" title="Európska cesta 65" src="files/images/countries/eu/hr/E65.svg" class="road-tag red">,<img onclick="red('../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/hr/E71.svg" class="road-tag red"> ↑ | ↗ Jastrebarsko</td>
+                    <td><img onclick="red('D/D310.html')" title="Državna cesta 310" src="files/images/countries/hr/D/D310.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">odmoriste</td>
+                    <td></td>
+                    <td class="info"><img src="files/images/countries/hr/info/csph-lpg.svg" class="road-tag">,<img src="files/images/countries/hr/info/motorest.svg" class="road-tag">,<img src="files/images/countries/hr/info/p.svg" class="road-tag">,<img src="files/images/countries/hr/info/motel.svg" class="road-tag">,<img src="files/images/countries/hr/info/cafe.svg" class="road-tag"> - Desinec</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>2 - <img src="files/images/countries/hr/exit.svg" class="icon"><br>Donja Zdenčina</td>
+                    <td class="direction">↑ Zagreb <img title="Autocesta A1" src="files/images/countries/hr/A/A1.svg" class="road-tag">,<img onclick="red('../e/e65.html')" title="Európska cesta 65" src="files/images/countries/eu/hr/E65.svg" class="road-tag red">,<img onclick="red('../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/hr/E71.svg" class="road-tag red"> ↑ | ↗ Donja Zdenčina, Klinča Sela, Jamnica, Pisarovina, Kupinec, <span class="prir">Ekopark-Kraš</span></td>
+                    <td><img onclick="red('Z/Z3106.html')" title="Župna cesta 3106" src="files/images/countries/hr/Z/Z3106.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td><img src="files/images/countries/hr/exit.svg" class="icon">,<img src="files/images/countries/hr/cestarina/naplata.svg" class="road-tag"></td>
+                    <td class="direction">↑ Zagreb-Lučko <img title="Cash" src="files/images/countries/hr/cestarina/cash.svg" class="road-tag">,<img title="Toll booth" src="files/images/countries/hr/cestarina/booth.svg" class="road-tag"> ↑ | ↗ Zagreb-Demerje <img title="ENC" src="files/images/countries/hr/cestarina/enc.svg" class="road-tag">,<img title="Card" src="files/images/countries/hr/cestarina/card.svg" class="road-tag"> ↗</td>
+                    <td><img title="Autocesta A1" src="files/images/countries/hr/A/A1.svg" class="road-tag">,<img onclick="red('../e/e65.html')" title="Európska cesta 65" src="files/images/countries/eu/hr/E65.svg" class="road-tag red">,<img onclick="red('../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/hr/E71.svg" class="road-tag red">,<img src="files/images/countries/hr/cestarina/naplata.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">cestarina</td>
+                    <td><img src="files/images/countries/hr/cestarina/naplata.svg" class="road-tag"></td>
+                    <td onclick="dev()" title="Funkcia vo vývoji: Po kliknutí na mýtnicu sa zobrazí vypočítaná hodnota mýta." class="info red">Zagreb - Lučko / Zagreb - Demerje</td>
+                    <td><img title="Autocesta A1" src="files/images/countries/hr/A/A1.svg" class="road-tag">,<img onclick="red('../e/e65.html')" title="Európska cesta 65" src="files/images/countries/eu/hr/E65.svg" class="road-tag red">,<img onclick="red('../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/hr/E71.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>1 - <img src="files/images/countries/hr/cvor.svg" class="icon"><br>Lučko</td>
+                    <td class="direction">↑ Zagreb ↑ Lučko-Stupnik ↑ | ↗ Ljubljana, Maribor, Smer SLO, Budapest, Smer H, Sl. Brod, Varaždin, Zagreb <img src="files/images/countries/hr/info/zracnaluka.svg" class="road-tag"> <img onclick="red('A/A3.html')" title="Autocesta A3" src="files/images/countries/hr/A/A3.svg" class="road-tag red">,<img onclick="red('../e/e65.html')" title="Európska cesta 65" src="files/images/countries/eu/hr/E65.svg" class="road-tag red">,<img onclick="red('../e/e70.html')" title="Európska cesta 70" src="files/images/countries/eu/hr/E70.svg" class="road-tag red">,<img onclick="red('../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/hr/E71.svg" class="road-tag red"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td></td>
+                    <td class="direction">↑ Zagreb ↑ Zagreb ↑ \/ ↗ Lučko-Stupnik</td>
+                    <td class="info">Koniec <img title="Autocesta A1" src="files/images/countries/hr/A/A1.svg" class="road-tag">.</td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+  </body>
+  <hr>
+  <footer>
+    <span>Posledná aktualizácia: 10/ 8/ 2026 22:03:37</span>
+  </footer>
+</html>

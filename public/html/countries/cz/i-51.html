@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="sk">
+  <head>
+    <title>Česká Republika • I/51</title>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../../styles/index.css">
+    <link rel="stylesheet" href="../../../styles/road.css">
+    <script src="../../../scripts/loadExit.js" defer></script>
+    <script src="../../../scripts/road.js" defer></script>
+  </head>
+  <body>
+  <div id="header">
+        <h2><img src="../../../files/images/countries/cz/i-51.svg" class="road-tag">Cesta prvej triedy 51, Česká Republika • Hodonín</h2>
+        <hr>
+    </div>
+    <div id="objekty-na-trase">
+        <h3>Objekty na trase:</h3>
+        <div id="objekty">
+            <h4>Objekty • Smer <img onclick="red('i-55.html')" src="../../../files/images/countries/cz/i-55.svg" class="road-tag red"> → <img onclick="red('../slovakia.html')" src="../../../files/images/flags/slovakia.webp" class="road-tag red"></h4>
+            <table border="1" class="tabulka objekty" id="#dir1">
+                <tr>
+                    <th class="typ">
+                        Typ objektu
+                    </th>
+                    <th id="cv">
+                        Číslo výjazdu
+                    </th>
+                    <th id="main">
+                        Smer/-y
+                    </th>
+                    <th id="prej">
+                        Prejazdy
+                    </th>
+                    <th>
+                        Poznámka
+                    </th>
+                </tr>
+                <!-- ↑ ↓ ← → ↗ ↘ ↔ ↕ ⇐ ⇒ ⇑ ⇓ ⤳ ⤴ ⤵ 
+                    ↗ - šípka doprava hore diagonálna
+                    ↖ - šípka doľava hore diagonálna
+                -->
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>0,27</td>
+                    <td class="direction">Senica <img onclick="red('../slovakia.html')" src="../../../files/images/flags/slovakia.webp" class="road-tag red"> ↑ | → Lužice</td>
+                    <td>III/05531</td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>0,34</td>
+                    <td class="info">Začiatok obce: Hodonín</td>
+                    <td><img src="../../../files/images/countries/cz/i-51.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>0,97</td>
+                    <td class="direction">ZOO ← | ↑ Senica <img onclick="red('../slovakia.html')" src="../../../files/images/flags/slovakia.webp" class="road-tag red"></td>
+                    <td>III/05532</td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>1,34</td>
+                    <td class="info"><img src="../../../files/images/countries/cz/bus.png" class="road-tag"> Hodonín, u podjezdu</td>
+                    <td></td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>1,69</td>
+                    <td class="direction">1. | 2. Senica <img onclick="red('../slovakia.html')" src="../../../files/images/flags/slovakia.webp" class="road-tag red"> | 3. Nákupní zóna</td>
+                    <td>2. <img src="../../../files/images/countries/cz/i-51.svg" class="road-tag"></td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>1,92</td>
+                    <td class="direction">1. Brno, Kyjov <img src="../../../files/images/countries/sk/maxvyska-3,7.png" class="road-tag"> | 2. Centrum | 3. Senica, Smer SK <img onclick="red('../slovakia.html')" src="../../../files/images/flags/slovakia.webp" class="road-tag red"></td>
+                    <td>1. <img onclick="red('ii/ii-380.html')" src="../../../files/images/countries/cz/ii/ii-380.svg" class="road-tag red">,<img onclick="red('ii/ii-431.html')" src="../../../files/images/countries/cz/ii/ii-431.svg" class="road-tag red"> | 2. <img onclick="red('ii/ii-432.html')" src="../../../files/images/countries/cz/ii/ii-432.svg" class="road-tag red"> | 3. <img src="../../../files/images/countries/cz/i-51.svg" class="road-tag">, <img onclick="red('../slovakia.html')" src="../../../files/images/flags/slovakia.webp" class="road-tag red"></td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>2,34</td>
+                    <td class="info"><img src="../../../files/images/countries/cz/bus.png" class="road-tag"> Hodonín, Anenská</td>
+                    <td></td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>3,53</td>
+                    <td class="info">Koniec obce: Hodonín</td>
+                    <td><img src="../../../files/images/countries/cz/i-51.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">hranice</td>
+                    <td>Štátne hranice</td>
+                    <td class="hranice">Štátna hranica <img src="../../../files/images/flags/czechrepublic.webp" class="flag">(CZ)/<img src="../../../files/images/flags/slovakia.webp" class="flag">(SK)</td>
+                    <td><img src="../../../files/images/countries/cz/i-51.svg" class="road-tag"> ↑ ↓ <img onclick="red('../sk/i-51.html')" src="../../../files/images/countries/sk/i-51.png" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+            </table>
+            <h4>Objekty • Smer <img onclick="red('../slovakia.html')" src="../../../files/images/flags/slovakia.webp" class="road-tag red"> → <img onclick="red('i-55.html')" src="../../../files/images/countries/cz/i-55.svg" class="road-tag red"></h4>
+            <table border="1" class="tabulka objekty" id="#dir2">
+                <tr>
+                    <th class="typ">
+                        Typ objektu
+                    </th>
+                    <th id="cv">
+                        Číslo výjazdu
+                    </th>
+                    <th id="main">
+                        Smer/-y
+                    </th>
+                    <th id="prej">
+                        Prejazdy
+                    </th>
+                    <th>
+                        Poznámka
+                    </th>
+                </tr>
+                <!-- ↑ ↓ ← → ↗ ↘ ↔ ↕ ⇐ ⇒ ⇑ ⇓ ⤳ ⤴ ⤵ 
+                    ↗ - šípka doprava hore diagonálna
+                    ↖ - šípka doľava hore diagonálna
+                -->
+                <tr>
+                    <td class="typ">hranice</td>
+                    <td>Štátne hranice</td>
+                    <td class="hranice">Štátna hranica <img src="../../../files/images/flags/slovakia.webp" class="flag">(SK)/<img src="../../../files/images/flags/czechrepublic.webp" class="flag">(CZ)</td>
+                    <td><img src="../../../files/images/countries/cz/i-51.svg" class="road-tag"> ↓ ↑ <img onclick="red('../sk/i-51.html')" src="../../../files/images/countries/sk/i-51.png" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>3,63</td>
+                    <td class="info">→ Jihomoravský kraj, → Okres Hodonín</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>3,53</td>
+                    <td class="info">Začiatok obce: Hodonín</td>
+                    <td><img src="../../../files/images/countries/cz/i-51.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>2,46</td>
+                    <td class="info"><img src="../../../files/images/countries/cz/bus.png" class="road-tag"> Hodonín, Anenská</td>
+                    <td></td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>1,92</td>
+                    <td class="direction">1. Centrum | 2. Brno, Kyjov <img src="../../../files/images/countries/sk/maxvyska-3,7.png" class="road-tag"> | 3. Uherské Hradiště, Břeclav, Brno, Bratislava, Smer SK <img onclick="red('../slovakia.html')" src="../../../files/images/flags/slovakia.webp" class="road-tag red"></td>
+                    <td>1. <img onclick="red('ii/ii-432.html')" src="../../../files/images/countries/cz/ii/ii-432.svg" class="road-tag red"> | 2. <img onclick="red('ii/ii-380.html')" src="../../../files/images/countries/cz/ii/ii-380.svg" class="road-tag red">,<img onclick="red('ii/ii-431.html')" src="../../../files/images/countries/cz/ii/ii-431.svg" class="road-tag red"> | 3. <img src="../../../files/images/countries/cz/i-51.svg" class="road-tag"></td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>1,69</td>
+                    <td class="direction">1. Nákupní zóna | 2. Břeclav, Uherské Hradiště, Brno | 3.</td>
+                    <td>2. <img src="../../../files/images/countries/cz/i-51.svg" class="road-tag"></td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>1,38</td>
+                    <td class="info"><img src="../../../files/images/countries/cz/bus.png" class="road-tag"> Hodonín, u podjezdu</td>
+                    <td></td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>0,97</td>
+                    <td class="direction">Břeclav ↑ | → ZOO</td>
+                    <td>III/05532</td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>0,34</td>
+                    <td class="info">Koniec obce: Hodonín</td>
+                    <td><img src="../../../files/images/countries/cz/i-51.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>0,27</td>
+                    <td class="direction">Lužice ← | ↑ Břeclav</td>
+                    <td>III/05531</td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>0</td>
+                    <td class="direction">Bratislava, Smer SK <img onclick="red('../slovakia.html')" src="../../../files/images/flags/slovakia.webp" class="road-tag red">, Brno, Břeclav <img onclick="red('i-55.html')" src="../../../files/images/countries/cz/i-55.svg" class="road-tag red"> ← | → Uherské Hradište, Skalica, Smer SK <img onclick="red('../slovakia.html')" src="../../../files/images/flags/slovakia.webp" class="road-tag red"> <img onclick="red('i-55.html')" src="../../../files/images/countries/cz/i-55.svg" class="road-tag red"></td>
+                    <td><img onclick="red('i-55.html')" src="../../../files/images/countries/cz/i-55.svg" class="road-tag red"></td>
+                    <td class="info">Koniec cesty <img src="../../../files/images/countries/cz/i-51.svg" class="road-tag"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+  </body>
+  <hr>
+  <footer>
+    <span>Posledná aktualizácia: 6/ 7/ 2026 16:55:26</span><br><span class="f-info">Označené ako hotovné 6/ 7/ 2026 20:05:39.</span>
+  </footer>
+</html>
