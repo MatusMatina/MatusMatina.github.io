@@ -1,0 +1,59 @@
+[Config]
+Compilator.SaveAll=0
+Compilator.Capture=0
+Compilator.CompileOnBackground=0
+Compilator.ProgSaveAll=0
+Compilator.ProgRunSelection=0
+Compilator.LogType=0
+Compilator.LogEncoding=0
+DefaultCP=0
+LogtoEnd=1
+DontOpen=0
+AbsolutePath=0
+FileFormat=0
+ProjectFilesOnly=0
+HTServer=localhost
+[Project tree]
+h
+	+js
+		..\..\..\scripts\h-road.js
+	+html
+		+SH
+			SH\21.html
+		+M
+			M\m15.html
+			M\M7.html
+			M\M0.html
+		..\hungary.html
+[Open project files]
+0=..\..\..\..\..\..\..\AppData\Roaming\PSpad\Macro\exit-hun.pme
+1=..\..\..\scripts\h-road.js
+2=..\hungary.html
+3=M\M0.html
+4=M\M7.html
+5=M\m15.html
+6=SH\21.html
+[Selected Project Files]
+Main=
+Selected=SH\21.html
+[..\..\..\..\..\..\..\AppData\Roaming\PSpad\Macro\exit-hun.pme]
+TopLine=1
+Caret=165,14
+[..\..\..\scripts\h-road.js]
+TopLine=1
+Caret=1,1
+[..\hungary.html]
+TopLine=1
+Caret=1,1
+[M\M0.html]
+TopLine=1
+Caret=106,16
+[M\M7.html]
+TopLine=1
+Caret=105,17
+[M\m15.html]
+TopLine=1
+Caret=114,16
+[SH\21.html]
+TopLine=68
+Caret=440,100

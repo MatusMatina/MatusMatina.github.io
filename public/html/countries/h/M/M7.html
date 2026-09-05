@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="sk">
+  <head>
+    <title>Maďarsko • Diaľnica M7</title>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../../../styles/index.css">
+    <link rel="stylesheet" href="../../../../styles/road.css">
+    <script src="../../../../scripts/loadExit.js" defer></script>
+    <script src="../../../../scripts/h-road.js" defer></script>
+    <base href="../../../../">
+  </head>
+  <body>
+  <div id="header">
+        <h2><img src="files/images/countries/h/M/M7.svg" class="road-tag">Diaľnica M7, Maďarsko  •  Budapest - Letenye</h2>
+        <hr>
+        <h3>Župné mestá, cez/okolo ktorých cesta prechádza:</h3><span>Budapešť, Székeshféhervár</span>
+        <h3>Medzinárodné cestné ťahy Transeurópskej siete:</h3><br><span>E65, E66, E71</span>
+    </div>
+    <div id="objekty-na-trase">
+        <h3>Objekty na trase:</h3>
+        <div id="objekty">
+            <h4>Objekty • Smer Budapest → Letenye</h4>
+            <table border="1" class="tabulka objekty" id="#dir1">
+                <tr>
+                    <th class="typ">
+                        Typ objektu
+                    </th>
+                    <th id="cv">
+                        Číslo výjazdu
+                    </th>
+                    <th id="main">
+                        Smer/-y
+                    </th>
+                    <th id="prej">
+                        Prejazdy
+                    </th>
+                    <th>
+                        Poznámka
+                    </th>
+                </tr>
+                <!-- ↑ ↓ ← → ↗ ↘ ↔ ↕ ⇐ ⇒ ⇑ ⇓ ⤳ ⤴ ⤵ 
+                    ↗ - šípka doprava hore diagonálna
+                    ↖ - šípka doľava hore diagonálna
+                -->
+                <tr>
+                    <td class="typ">info</td>
+                    <td></td>
+                    <td class="direction">Začiatok peáže s <img onclick="red('M/M1.html')" title="Autópálya M1" src="files/images/countries/h/M/M1.svg" class="road-tag red">.</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>7 - <img src="files/images/countries/h/exit.svg" class="icon"></td>
+                    <td class="direction">↑ Bécs-Wien, Balaton ↑ <img onclick="red('M/M1.html')" title="Autópálya M1" src="files/images/countries/h/M/M1.svg" class="road-tag red">,<img title="Autópálya M7" src="files/images/countries/h/M/M7.svg" class="road-tag"> ↑ | ↗ Budaörs</td>
+                    <td><img onclick="red('SH/1.html')" title="" src="files/images/countries/h/SH/1.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td><img src="files/images/countries/h/info/hw-start.svg" class="road-tag"></td>
+                    <td class="info">Začiatok diaľnice, <span class="spoplatnenie">úsek spoplatnený maďarskou diaľničnou známkou</span>.</td>
+                    <td><img onclick="red('M/M1.html')" title="Autópálya M1" src="files/images/countries/h/M/M1.svg" class="road-tag red">,<img title="Autópálya M7" src="files/images/countries/h/M/M7.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>9 - <img src="files/images/countries/h/exit.svg" class="icon"></td>
+                    <td class="direction">↑ Bécs-Wien ↑ Balaton ↑ <img onclick="red('M/M1.html')" title="Autópálya M1" src="files/images/countries/h/M/M1.svg" class="road-tag red">,<img title="Autópálya M7" src="files/images/countries/h/M/M7.svg" class="road-tag"> ↑ | ↗ Budaörs-Centrum</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>10 - <img src="files/images/countries/h/exit.svg" class="icon"></td>
+                    <td class="direction">↑ Bécs-Wien, Balaton ↑ <img onclick="red('M/M1.html')" title="Autópálya M1" src="files/images/countries/h/M/M1.svg" class="road-tag red">,<img title="Autópálya M7" src="files/images/countries/h/M/M7.svg" class="road-tag"> ↑ | ↗ Törökbálint-DEPO, Budaörs</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td><img src="files/images/countries/h/d-k.svg" class="icon"></td>
+                    <td class="direction">↖ Smer HR, Smer SLO, Nagykanizsa, Balaton, Szèkkesfehèrvàr <img title="Autópálya M7" src="files/images/countries/h/M/M7.svg" class="road-tag"> ↖↗ Smer SK, Smer A, Bècs-Wien, Györ <img onclick="red('M/M1.html')" title="Autópálya M1" src="files/images/countries/h/M/M1.svg" class="road-tag red"> ↗</td>
+                    <td><img onclick="red('M/M1.html')" title="Autópálya M1" src="files/images/countries/h/M/M1.svg" class="road-tag red">,<img title="Autópálya M7" src="files/images/countries/h/M/M7.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>16 - <img src="files/images/countries/h/d-k.svg" class="icon"></td>
+                    <td class="direction">↑ Nagykanizsa <img title="Autópálya M7" src="files/images/countries/h/M/M7.svg" class="road-tag">,<img onclick="red('../../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"> ↑ | ↗ Ring <img onclick="red('M/M0.html')" title="Autóút M0" src="files/images/countries/h/M/M0.svg" class="road-tag red">,<img onclick="red('../../e/e60.html')" title="Európska cesta 60" src="files/images/countries/eu/h/E60.svg" class="road-tag red">,<img onclick="red('../../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/h/E71.svg" class="road-tag red">,<img onclick="red('../../e/e75.html')" title="Európska cesta 75" src="files/images/countries/eu/h/E75.svg" class="road-tag red"></td>
+                    <td><img onclick="red('M/M0.html')" title="Autóút M0" src="files/images/countries/h/M/M0.svg" class="road-tag red">,<img title="Autópálya M7" src="files/images/countries/h/M/M7.svg" class="road-tag">,<img onclick="red('../../e/e60.html')" title="Európska cesta 60" src="files/images/countries/eu/h/E60.svg" class="road-tag red">,<img onclick="red('../../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/h/E71.svg" class="road-tag red">,<img onclick="red('../../e/e75.html')" title="Európska cesta 75" src="files/images/countries/eu/h/E75.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>18 - <img src="files/images/countries/h/exit.svg" class="icon"></td>
+                    <td class="direction">↑ Nagykanizsa <img title="Autópálya M7" src="files/images/countries/h/M/M7.svg" class="road-tag">,<img onclick="red('../../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"> ↑ | ↗ Érd</td>
+                    <td><img onclick="red('SV/8103.html')" title="" src="files/images/countries/h/SV/8103.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>23 - <img src="files/images/countries/h/exit.svg" class="icon"></td>
+                    <td class="direction">↑ Nagykanizsa <img title="Autópálya M7" src="files/images/countries/h/M/M7.svg" class="road-tag">,<img onclick="red('../../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"> ↑ | ↗ Pusztazámor, Tárnok, Sóskút</td>
+                    <td><img onclick="red('SV/8107.html')" title="" src="files/images/countries/h/SV/8107.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td></td>
+                    <td class="info">Tárnoki Pihenöhely</td>
+                    <td><img src="files/images/countries/h/info/p.svg" class="road-tag">,<img src="files/images/countries/h/info/csph-lpg.svg" class="road-tag">,<img src="files/images/countries/h/info/cafe.svg" class="road-tag">,<img src="files/images/countries/h/info/wc.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>30 - <img src="files/images/countries/h/exit.svg" class="icon"></td>
+                    <td class="direction">↑ Nagykanizsa <img title="Autópálya M7" src="files/images/countries/h/M/M7.svg" class="road-tag">,<img onclick="red('../../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"> ↑ | ↗ Martonvásár, Gyúró, Tordas</td>
+                    <td><img onclick="red('SH/7.html')" title="" src="files/images/countries/h/SH/7.svg" class="road-tag red">,<img onclick="red('SV/81108.html')" title="" src="files/images/countries/h/SV/81108.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td></td>
+                    <td class="info">Váli Völgyi Pihemöhely</td>
+                    <td><img src="files/images/countries/h/info/p.svg" class="road-tag">,<img src="files/images/countries/h/info/csph-lpg.svg" class="road-tag">,<img src="files/images/countries/h/info/motorest.svg" class="road-tag">,<img src="files/images/countries/h/info/wc.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>42 - <img src="files/images/countries/h/exit.svg" class="icon"></td>
+                    <td class="direction">↑ Nagykanizsa <img title="Autópálya M7" src="files/images/countries/h/M/M7.svg" class="road-tag">,<img onclick="red('../../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"> ↑ | ↗ Kápolnásnyék, Velence, Vereb, Pázmánd</td>
+                    <td><img onclick="red('SH/7.html')" title="" src="files/images/countries/h/SH/7.svg" class="road-tag red">,<img onclick="red('SV/8117.html')" title="" src="files/images/countries/h/SV/8117.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td></td>
+                    <td class="info">Velencei Pihenöhely</td>
+                    <td><img onclick="red('SV/8119html')" title="" src="files/images/countries/h/SV/8119.svg" class="road-tag red">,<img src="files/images/countries/h/info/p.svg" class="road-tag">,<img src="files/images/countries/h/info/csph-lpg.svg" class="road-tag">,<img src="files/images/countries/h/info/motorest.svg" class="road-tag">,<img src="files/images/countries/h/info/wc.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td></td>
+                    <td class="info">Pákozdi Pihenöhely</td>
+                    <td><img onclick="red('SV/8116html')" title="" src="files/images/countries/h/SV/8116.svg" class="road-tag red">,<img src="files/images/countries/h/info/p.svg" class="road-tag">,<img src="files/images/countries/h/info/motorest.svg" class="road-tag">,<img src="files/images/countries/h/info/wc.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>57 - <img src="files/images/countries/h/exit.svg" class="icon"></td>
+                    <td class="direction">↑ Nagykanizsa <img title="Autópálya M7" src="files/images/countries/h/M/M7.svg" class="road-tag">,<img onclick="red('../../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"> ↑ | ↗ Agárd, Székesfehérvár kelet</td>
+                    <td><img onclick="red('SH/7.html')" title="" src="files/images/countries/h/SH/7.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>60 - <img src="files/images/countries/h/exit.svg" class="icon"></td>
+                    <td class="direction">↑ Nagykanizsa <img title="Autópálya M7" src="files/images/countries/h/M/M7.svg" class="road-tag">,<img onclick="red('../../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"> ↑ | ↗ Dunaújváros, Székesfehérvár dél,<span class="info"> <img src="files/images/countries/h/info/p.svg" class="road-tag"> Fehérvári Pihenöhely</span></td>
+                    <td><img onclick="red('SH/62.html')" title="" src="files/images/countries/h/SH/62.svg" class="road-tag red">,<img onclick="red('../e/E66.html')" title="Európska cesta 66" src="files/images/countries/eu/h/E66.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>64 - <img src="files/images/countries/h/exit.svg" class="icon"></td>
+                    <td class="direction">↑ Nagykanizsa, Siófok <img title="Autópálya M7" src="files/images/countries/h/M/M7.svg" class="road-tag">,<img onclick="red('../../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"> ↑ | ↗ Szekszárd, Veszprém, Györ, Székesfehérvár-Centrum</td>
+                    <td><img onclick="red('SH/8.html')" title="" src="files/images/countries/h/SH/8.svg" class="road-tag red">,<img onclick="red('SH/63.html')" title="" src="files/images/countries/h/SH/63.svg" class="road-tag red">,<img onclick="red('SH/81.html')" title="" src="files/images/countries/h/SH/81.svg" class="road-tag red">,<img onclick="red('../e/E66.html')" title="Európska cesta 66" src="files/images/countries/eu/h/E66.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>70 - <img src="files/images/countries/h/exit.svg" class="icon"></td>
+                    <td class="direction">↑ Nagykanizsa, Siófok <img title="Autópálya M7" src="files/images/countries/h/M/M7.svg" class="road-tag">,<img onclick="red('../../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"> ↑ | ↗ Tác-Gorsium, Szabadbattyán, <img src="files/images/countries/h/info/p.svg" class="road-tag">,<img src="files/images/countries/h/info/wc.svg" class="road-tag"> <span class="info">Gorsium Pihenöhely</span></td>
+                    <td><img onclick="red('SV/6307.html')" title="" src="files/images/countries/h/SV/6307.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>80 - <img src="files/images/countries/h/exit.svg" class="icon"></td>
+                    <td class="direction">↑ Nagykanizsa, Siófok <img title="Autópálya M7" src="files/images/countries/h/M/M7.svg" class="road-tag">,<img onclick="red('../../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"> ↑ | ↗ Lepsény, Polgrádi</td>
+                    <td><img onclick="red('SH/7.html')" title="" src="files/images/countries/h/SH/7.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td></td>
+                    <td class="info">Lepsényi Pihenöhely</td>
+                    <td><img src="files/images/countries/h/info/p.svg" class="road-tag">,<img src="files/images/countries/h/info/csph-full.svg" class="road-tag">,<img src="files/images/countries/h/info/motorest.svg" class="road-tag">,<img src="files/images/countries/h/info/wc.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>90 - <img src="files/images/countries/h/exit.svg" class="icon"></td>
+                    <td class="direction">↑ Nagykanizsa, Siófok <img title="Autópálya M7" src="files/images/countries/h/M/M7.svg" class="road-tag">,<img onclick="red('../../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"> ↑ | ↗ Balatonvilágos, Ebying, Balatonakarattya, Veszprém, Balatonfüred</td>
+                    <td><img onclick="red('SH/64.html')" title="" src="files/images/countries/h/SH/64.svg" class="road-tag red">,<img onclick="red('SH/71.html')" title="" src="files/images/countries/h/SH/71.svg" class="road-tag red">,<img onclick="red('SH/72.html')" title="" src="files/images/countries/h/SH/72.svg" class="road-tag red">,<img onclick="red('SV/710.html')" title="" src="files/images/countries/h/SV/710.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td></td>
+                    <td class="info">Sóstói Pihenöhely</td>
+                    <td><img src="files/images/countries/h/info/p.svg" class="road-tag">,<img src="files/images/countries/h/info/csph-lpg.svg" class="road-tag">,<img src="files/images/countries/h/info/cafe.svg" class="road-tag">,<img src="files/images/countries/h/info/wc.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>98 - <img src="files/images/countries/h/exit.svg" class="icon"></td>
+                    <td class="direction">↑ Nagykanizsa <img title="Autópálya M7" src="files/images/countries/h/M/M7.svg" class="road-tag">,<img onclick="red('../../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"> ↑ | ↗ Siófok kelet, Siófok-Sóstó</td>
+                    <td><img onclick="red('SH/7.html')" title="" src="files/images/countries/h/SH/7.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td></td>
+                    <td class="info">Szabadi Pihenöhely</td>
+                    <td><img src="files/images/countries/h/info/p.svg" class="road-tag">,<img src="files/images/countries/h/info/cafe.svg" class="road-tag">,<img src="files/images/countries/h/info/wc.svg" class="road-tag">,<img src="files/images/countries/h/info/motorest.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>105 - <img src="files/images/countries/h/exit.svg" class="icon"></td>
+                    <td class="direction">↑ Nagykanizsa <img title="Autópálya M7" src="files/images/countries/h/M/M7.svg" class="road-tag">,<img onclick="red('../../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"> ↑ | ↗ Szekszárd, Siófok-Centrum</td>
+                    <td><img onclick="red('SH/65.html')" title="" src="files/images/countries/h/SH/65.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td></td>
+                    <td class="info">Töreki Pihenöhely</td>
+                    <td><img src="files/images/countries/h/info/p.svg" class="road-tag">,<img src="files/images/countries/h/info/wc.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>112 - <img src="files/images/countries/h/exit.svg" class="icon"></td>
+                    <td class="direction">↑ Nagykanizsa <img title="Autópálya M7" src="files/images/countries/h/M/M7.svg" class="road-tag">,<img onclick="red('../../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"> ↑ | ↗ Zamárdi felsö, Szántód <img src="files/images/countries/h/info/m-bridge.svg" class="road-tag">, Siófok - nyugat</td>
+                    <td><img onclick="red('SH/7.html')" title="" src="files/images/countries/h/SH/7.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>115 - <img src="files/images/countries/h/exit.svg" class="icon"></td>
+                    <td class="direction">↑ Nagykanizsa <img title="Autópálya M7" src="files/images/countries/h/M/M7.svg" class="road-tag">,<img onclick="red('../../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"> ↑ | ↗ Balatonendréd, Zamárdi, Tab</td>
+                    <td><img onclick="red('SV/6501.html')" title="" src="files/images/countries/h/SV/6501.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">hid</td>
+                    <td><img src="files/images/countries/h/info/bridge.svg" class="road-tag"></td>
+                    <td class="info">Köröshegyi völghíd</td>
+                    <td>1872 m</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>121 - <img src="files/images/countries/h/exit.svg" class="icon"></td>
+                    <td class="direction">↑ Nagykanizsa <img title="Autópálya M7" src="files/images/countries/h/M/M7.svg" class="road-tag">,<img onclick="red('../../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"> ↑ | ↗ Balatonföldvár, Bálványos</td>
+                    <td><img onclick="red('SV/6505.html')" title="" src="files/images/countries/h/SV/6505.svg" class="road-tag red">,<img onclick="red('SV/65116.html')" title="" src="files/images/countries/h/SV/65116.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>126 - <img src="files/images/countries/h/exit.svg" class="icon"></td>
+                    <td class="direction">↑ Nagykanizsa <img title="Autópálya M7" src="files/images/countries/h/M/M7.svg" class="road-tag">,<img onclick="red('../../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"> ↑ | ↗ Balatonszárszó</td>
+                    <td><img onclick="red('SH/7.html')" title="" src="files/images/countries/h/SH/7.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>130 - <img src="files/images/countries/h/exit.svg" class="icon"></td>
+                    <td class="direction">↑ Nagykanizsa <img title="Autópálya M7" src="files/images/countries/h/M/M7.svg" class="road-tag">,<img onclick="red('../../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"> ↑ | ↗ Balatonszemes, Balatonöszöd, Szólád</td>
+                    <td><img onclick="red('SV/6524.html')" title="" src="files/images/countries/h/SV/6524.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>135 - <img src="files/images/countries/h/exit.svg" class="icon"></td>
+                    <td class="direction">↑ Nagykanizsa, Fonyód, Balatonboglár <img title="Autópálya M7" src="files/images/countries/h/M/M7.svg" class="road-tag">,<img onclick="red('../../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"> ↑ | ↗ Balatonlelle, Kaposvár</td>
+                    <td><img onclick="red('SH/7.html')" title="" src="files/images/countries/h/SH/7.svg" class="road-tag red">,<img onclick="red('SH/67.html')" title="" src="files/images/countries/h/SH/67.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td></td>
+                    <td class="info">Balatonlellei Pihenöhely</td>
+                    <td><img src="files/images/countries/h/info/p.svg" class="road-tag">,<img src="files/images/countries/h/info/csph-lpg.svg" class="road-tag">,<img src="files/images/countries/h/info/wc.svg" class="road-tag">,<img src="files/images/countries/h/info/motorest.svg" class="road-tag">,</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>143 - <img src="files/images/countries/h/exit.svg" class="icon"></td>
+                    <td class="direction">↑ Nagykanizsa, Fonyód, Balatonboglár dél <img title="Autópálya M7" src="files/images/countries/h/M/M7.svg" class="road-tag">,<img onclick="red('../../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"> ↑ | ↗ Lengyeltóti, Balatonboglár centrum</td>
+                    <td><img onclick="red('SH/7.html')" title="" src="files/images/countries/h/SH/7.svg" class="road-tag red">,<img onclick="red('SV/6711.html')" title="" src="files/images/countries/h/SV/6711.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>145 - <img src="files/images/countries/h/exit.svg" class="icon"></td>
+                    <td class="direction">↑ Nagykanizsa, Balatonfenyves, Fonyód <img title="Autópálya M7" src="files/images/countries/h/M/M7.svg" class="road-tag">,<img onclick="red('../../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"> ↑ | ↗ Ordacsehi, Balatonboglár dél</td>
+                    <td><img onclick="red('SH/7.html')" title="" src="files/images/countries/h/SH/7.svg" class="road-tag red">,<img onclick="red('SV/67101.html')" title="" src="files/images/countries/h/SV/67101.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>150 - <img src="files/images/countries/h/exit.svg" class="icon"></td>
+                    <td class="direction">↑ Nagykanizsa, Balatonkeresztúr, Balatonfenyves <img title="Autópálya M7" src="files/images/countries/h/M/M7.svg" class="road-tag">,<img onclick="red('../../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"> ↑ | ↗ Lengyeltóti, Fonyód</td>
+                    <td><img onclick="red('SH/7.html')" title="" src="files/images/countries/h/SH/7.svg" class="road-tag red">,<img onclick="red('SV/6701.html')" title="" src="files/images/countries/h/SV/6701.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td></td>
+                    <td class="info">Táskai Pihenöhely</td>
+                    <td><img src="files/images/countries/h/info/p.svg" class="road-tag">,<img src="files/images/countries/h/info/wc.svg" class="road-tag">,</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>160 - <img src="files/images/countries/h/exit.svg" class="icon"></td>
+                    <td class="direction">↑ Nagykanizsa, Zalaegerszeg, Keszthely <img title="Autópálya M7" src="files/images/countries/h/M/M7.svg" class="road-tag">,<img onclick="red('../../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"> ↑ | ↗ Balatonfenyves</td>
+                    <td><img onclick="red('SH/7.html')" title="" src="files/images/countries/h/SH/7.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">hid</td>
+                    <td><img src="files/images/countries/h/info/bridge.svg" class="road-tag"></td>
+                    <td class="info">Nyugati övcsatorna</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td></td>
+                    <td class="info">Keresztúri Pihenöhely</td>
+                    <td><img src="files/images/countries/h/info/p.svg" class="road-tag">,<img src="files/images/countries/h/info/csph-lpg.svg" class="road-tag">,<img src="files/images/countries/h/info/wc.svg" class="road-tag">,<img src="files/images/countries/h/info/info.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>170 - <img src="files/images/countries/h/exit.svg" class="icon"></td>
+                    <td class="direction">↑ Nagykanizsa <img title="Autópálya M7" src="files/images/countries/h/M/M7.svg" class="road-tag">,<img onclick="red('../../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"> ↑ | ↗ Marcali, Balatonszentgyörgy, Balatonkeresztúr</td>
+                    <td><img onclick="red('SH/7.html')" title="" src="files/images/countries/h/SH/7.svg" class="road-tag red">,<img onclick="red('SH/68.html')" title="" src="files/images/countries/h/SH/68.svg" class="road-tag red">,<img onclick="red('SH/76.html')" title="" src="files/images/countries/h/SH/76.svg" class="road-tag red">,<img onclick="red('..e/E661.html')" title="Európska cesta 661" src="files/images/countries/eu/h/E661.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>175 - <img src="files/images/countries/h/exit.svg" class="icon"></td>
+                    <td class="direction">↑ Nagykanizsa <img title="Autópálya M7" src="files/images/countries/h/M/M7.svg" class="road-tag">,<img onclick="red('../../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"> ↑ | ↗  Zalaegerszeg, Hévíz <img src="files/images/countries/h/info/airport.svg" class="road-tag">, Keszthely, Hollád</td>
+                    <td><img onclick="red('M/76.html')" title="" src="files/images/countries/h/M/M76.svg" class="road-tag red">,<img onclick="red('SH/7.html')" title="" src="files/images/countries/h/SH/7.svg" class="road-tag red">,<img onclick="red('SH/71.html')" title="" src="files/images/countries/h/SH/71.svg" class="road-tag red">,<img src="files/images/countries/h/info/autout.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td></td>
+                    <td class="info">Szegerdöi Pihenöhely</td>
+                    <td><img src="files/images/countries/h/info/p.svg" class="road-tag">,<img src="files/images/countries/h/info/wc.svg" class="road-tag">,</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>183 - <img src="files/images/countries/h/exit.svg" class="icon"></td>
+                    <td class="direction">↑ Nagykanizsa <img title="Autópálya M7" src="files/images/countries/h/M/M7.svg" class="road-tag">,<img onclick="red('../../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"> ↑ | ↗ Sávoli, Szökedencs</td>
+                    <td><img onclick="red('SH/7.html')" title="" src="files/images/countries/h/SH/7.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">hid</td>
+                    <td><img src="files/images/countries/h/info/bridge.svg" class="road-tag"></td>
+                    <td class="info">Zala-somogyi határárok</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>191 - <img src="files/images/countries/h/exit.svg" class="icon"></td>
+                    <td class="direction">↑ Nagykanizsa <img title="Autópálya M7" src="files/images/countries/h/M/M7.svg" class="road-tag">,<img onclick="red('../../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"> ↑ | ↗ Zalakomár, Zalakaros</td>
+                    <td><img onclick="red('SH/7.html')" title="" src="files/images/countries/h/SH/7.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td></td>
+                    <td class="info">Zalakomári Pihenöhely</td>
+                    <td><img src="files/images/countries/h/info/csph-lpg.svg" class="road-tag">,<img src="files/images/countries/h/info/p.svg" class="road-tag">,<img src="files/images/countries/h/info/wc.svg" class="road-tag">,</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>206 - <img src="files/images/countries/h/exit.svg" class="icon"></td>
+                    <td class="direction">↑ Letenye <img title="Autópálya M7" src="files/images/countries/h/M/M7.svg" class="road-tag">,<img onclick="red('../../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"> ↑ | ↗ Nagykanisza-centrum, Kaposvár</td>
+                    <td><img onclick="red('SH/7.html')" title="" src="files/images/countries/h/SH/7.svg" class="road-tag red">,<img onclick="red('SH/61.html')" title="" src="files/images/countries/h/SH/61.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>211 - <img src="files/images/countries/h/exit.svg" class="icon"></td>
+                    <td class="direction">↑ Letenye <img title="Autópálya M7" src="files/images/countries/h/M/M7.svg" class="road-tag">,<img onclick="red('../../e/e65.html')" title="Európska cesta 65" src="files/images/countries/eu/h/E65.svg" class="road-tag red">,<img onclick="red('../../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"> ↑ | ↗ Nagykanisza, Gyékényes, Zalaegerszeg</td>
+                    <td><img onclick="red('SH/74.html')" title="" src="files/images/countries/h/SH/74.svg" class="road-tag red">,<img onclick="red('../../e/e65.html')" title="Európska cesta 65" src="files/images/countries/eu/h/E65.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td></td>
+                    <td class="info">Sormási Pihenöhely</td>
+                    <td><img src="files/images/countries/h/info/p.svg" class="road-tag">,<img src="files/images/countries/h/info/wc.svg" class="road-tag">,</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>219 - <img src="files/images/countries/h/exit.svg" class="icon"></td>
+                    <td class="direction">↑ Letenye <img title="Autópálya M7" src="files/images/countries/h/M/M7.svg" class="road-tag">,<img onclick="red('../../e/e65.html')" title="Európska cesta 65" src="files/images/countries/eu/h/E65.svg" class="road-tag red">,<img onclick="red('../../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"> ↑ | ↗ Eszteregnye, Sormás</td>
+                    <td><img onclick="red('SH/7.html')" title="" src="files/images/countries/h/SH/7.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>224 - <img src="files/images/countries/h/exit.svg" class="icon"></td>
+                    <td class="direction">↑ Letenye <img title="Autópálya M7" src="files/images/countries/h/M/M7.svg" class="road-tag">,<img onclick="red('../../e/e65.html')" title="Európska cesta 65" src="files/images/countries/eu/h/E65.svg" class="road-tag red">,<img onclick="red('../../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"> ↑ | ↗ Becsehely</td>
+                    <td><img onclick="red('SH/7.html')" title="" src="files/images/countries/h/SH/7.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>232 - <img src="files/images/countries/h/d-k.svg" class="icon"></td>
+                    <td class="direction">↖ Zágráb-Zagreb, Smer HR <img title="Autópálya M7" src="files/images/countries/h/M/M7.svg" class="road-tag">,<img onclick="red('../../e/e65.html')" title="Európska cesta 65" src="files/images/countries/eu/h/E65.svg" class="road-tag red">,<img onclick="red('../../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"> ↖↗ Ljubljana, Smer SLO, Letenye <img onclick="red('M/M70.html')" title="" src="files/images/countries/h/M/M70.svg" class="road-tag red">,<img onclick="red('SH/7.html')" title="" src="files/images/countries/h/SH/7.svg" class="road-tag red">,<img onclick="red('../../e/e653.html')" title="Európska cesta 653" src="files/images/countries/eu/h/E653.svg" class="road-tag red">  ↗</td>
+                    <td><img title="Autópálya M7" src="files/images/countries/h/M/M7.svg" class="road-tag">,<img onclick="red('M/M70.html')" title="" src="files/images/countries/h/M/M70.svg" class="road-tag red">,<img onclick="red('SH/7.html')" title="" src="files/images/countries/h/SH/7.svg" class="road-tag red">,<img onclick="red('../../e/e65.html')" title="Európska cesta 65" src="files/images/countries/eu/h/E65.svg" class="road-tag red">,<img onclick="red('../../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/h/E71.svg" class="road-tag red">,<img onclick="red('../../e/e653.html')" title="Európska cesta 653" src="files/images/countries/eu/h/E653.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">hid</td>
+                    <td><img src="files/images/countries/h/info/bridge.svg" class="road-tag"></td>
+                    <td class="info">Zrínyi völghíd</td>
+                    <td>216 m</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td><img src="files/images/countries/h/info/hw-end.svg" class="road-tag"></td>
+                    <td class="info">Koniec diaľnice, <span class="spoplatnenie">koniec úseku spoplatneného maďarskou diaľničnou známkou</span>.</td>
+                    <td><img title="Autópálya M7" src="files/images/countries/h/M/M7.svg" class="road-tag">,<img onclick="red('../../e/e65.html')" title="Európska cesta 65" src="files/images/countries/eu/h/E65.svg" class="road-tag red">,<img onclick="red('../../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">hranice</td>
+                    <td>Štátne hranice</td>
+                    <td class="hranice">Štátna hranica H <img src="files/images/flags/hungary.webp" class="flag"> / HR <img src="files/images/flags/croatia.webp" class="flag"></td>
+                    <td><img title="Autópálya M7" src="files/images/countries/h/M/M7.svg" class="road-tag"> ↑ | ↓ <img onclick="red('../hr/A/A4.html')" title="Autocesta A4" src="files/images/countries/hr/A/A4.svg" class="road-tag red">   <img onclick="red('../e/e65.html')" title="Európska cesta 65" src="files/images/countries/eu/h/E65.svg" class="road-tag red">,<img onclick="red('../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+            </table>
+	    <hr>
+            <h4>Objekty • Smer Letenye → Budapest</h4>
+            <table border="1" class="tabulka objekty" id="#dir2">
+                <tr>
+                    <th class="typ">
+                        Typ objektu
+                    </th>
+                    <th id="cv">
+                        Číslo výjazdu
+                    </th>
+                    <th id="main">
+                        Smer/-y
+                    </th>
+                    <th id="prej">
+                        Prejazdy
+                    </th>
+                    <th>
+                        Poznámka
+                    </th>
+                </tr>
+                <!-- ↑ ↓ ← → ↗ ↘ ↔ ↕ ⇐ ⇒ ⇑ ⇓ ⤳ ⤴ ⤵ 
+                    ↗ - šípka doprava hore diagonálna
+                    ↖ - šípka doľava hore diagonálna
+                -->
+                <tr>
+                    <td class="typ">hranice</td>
+                    <td>Štátne hranice</td>
+                    <td class="hranice">Štátna HR <img src="files/images/flags/croatia.webp" class="flag"> / hranica H <img src="files/images/flags/hungary.webp" class="flag"></td>
+                    <td><img onclick="red('../hr/A/A4.html')" title="Autocesta A4" src="files/images/countries/hr/A/A4.svg" class="road-tag red"> ↑ | ↓ <img title="Autópálya M7" src="files/images/countries/h/M/M7.svg" class="road-tag">   <img onclick="red('../e/e65.html')" title="Európska cesta 65" src="files/images/countries/eu/h/E65.svg" class="road-tag red">,<img onclick="red('../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td><img src="files/images/countries/h/info/hw-start.svg" class="road-tag"></td>
+                    <td class="info">Začiatok diaľnice, <span class="spoplatnenie">úsek spoplatnený maďarskou diaľničnou známkou</span>.</td>
+                    <td><img title="Autópálya M7" src="files/images/countries/h/M/M7.svg" class="road-tag">,<img onclick="red('../e/e65.html')" title="Európska cesta 65" src="files/images/countries/eu/h/E65.svg" class="road-tag red">,<img onclick="red('../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>232 - <img src="files/images/countries/h/d-k.svg" class="icon"></td>
+                    <td class="direction">↖ Budapest, Nagykanizsa <img title="Autópálya M7" src="files/images/countries/h/M/M7.svg" class="road-tag">,<img onclick="red('../e/e65.html')" src="files/images/countries/eu/h/E65.svg" class="road-tag red">,<img onclick="red('../../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"> ↖↗ Ljubljana, Smer SLO, Tornyiszentmiklós, Letenye <img onclick="red('M/M70.html')" title="Autópálya M70" src="files/images/countries/h/M/M70.svg" class="road-tag red">,<img onclick="red('SH/7.html')" title="" src="files/images/countries/h/SH/7.svg" class="road-tag red">,<img onclick="red('../../e/e653.html')" title="Európska cesta 653" src="files/images/countries/eu/h/E653.svg" class="road-tag red"> ↗</td>
+                    <td><img title="Autópálya M7" src="files/images/countries/h/M/M7.svg" class="road-tag">,<img onclick="red('M/M70.html')" title="Autópálya M70" src="files/images/countries/h/M/M70.svg" class="road-tag red">,<img onclick="red('SH/7.html')" title="" src="files/images/countries/h/SH/7.svg" class="road-tag red">,<img onclick="red('../../e/e65.html')" title="Európska cesta 65" src="files/images/countries/eu/h/E65.svg" class="road-tag red">,<img onclick="red('../../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/h/E71.svg" class="road-tag red">,<img onclick="red('../../e/e653.html')" title="Európska cesta 653" src="files/images/countries/eu/h/E653.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>224 - <img src="files/images/countries/h/exit.svg" class="icon"></td>
+                    <td class="direction">↑ Budapest, Nagykanizsa <img title="Autópálya M7" src="files/images/countries/h/M/M7.svg" class="road-tag">,<img onclick="red('../e/e65.html')" src="files/images/countries/eu/h/E65.svg" class="road-tag red">,<img onclick="red('../../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"> ↑ | ↗ Becsehely</td>
+                    <td><img onclick="red('SH/7.html')" title="" src="files/images/countries/h/SH/7.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>219 - <img src="files/images/countries/h/exit.svg" class="icon"></td>
+                    <td class="direction">↑ Budapest, Nagykanizsa <img title="Autópálya M7" src="files/images/countries/h/M/M7.svg" class="road-tag">,<img onclick="red('../e/e65.html')" src="files/images/countries/eu/h/E65.svg" class="road-tag red">,<img onclick="red('../../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"> ↑ | ↗ Eszteregnye, Sormás</td>
+                    <td><img onclick="red('SH/7.html')" title="" src="files/images/countries/h/SH/7.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td></td>
+                    <td class="info">Sormási Pihenöhely</td>
+                    <td><img src="files/images/countries/h/info/p.svg" class="road-tag">,<img src="files/images/countries/h/info/wc.svg" class="road-tag">,</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>211 - <img src="files/images/countries/h/exit.svg" class="icon"></td>
+                    <td class="direction">↑ Budapest, Siófok <img title="Autópálya M7" src="files/images/countries/h/M/M7.svg" class="road-tag">,<img onclick="red('../../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"> ↑ | ↗ Zalaegerszeg, Nagykanizsa-centrum, Gyékényes</td>
+                    <td><img onclick="red('SH/74.html')" title="" src="files/images/countries/h/SH/74.svg" class="road-tag red">,<img onclick="red('../e/e65.html')" src="files/images/countries/eu/h/E65.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>206 - <img src="files/images/countries/h/exit.svg" class="icon"></td>
+                    <td class="direction">↑ Budapest, Siófok <img title="Autópálya M7" src="files/images/countries/h/M/M7.svg" class="road-tag">,<img onclick="red('../../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"> ↑ | ↗ Nagykanizsa kelet, Kaposvár</td>
+                    <td><img onclick="red('SH/7.html')" title="" src="files/images/countries/h/SH/7.svg" class="road-tag red">,<img onclick="red('SH/61.html')" title="" src="files/images/countries/h/SH/61.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td></td>
+                    <td class="info">Zalakomári Pihenöhely</td>
+                    <td><img src="files/images/countries/h/info/csph-lpg.svg" class="road-tag">,<img src="files/images/countries/h/info/p.svg" class="road-tag">,<img src="files/images/countries/h/info/wc.svg" class="road-tag">,</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>191 - <img src="files/images/countries/h/exit.svg" class="icon"></td>
+                    <td class="direction">↑ Budapest, Siófok <img title="Autópálya M7" src="files/images/countries/h/M/M7.svg" class="road-tag">,<img onclick="red('../../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"> ↑ | ↗ Zalakomár, Zalakaros, Szökedencs</td>
+                    <td><img onclick="red('SH/7.html')" title="" src="files/images/countries/h/SH/7.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">hid</td>
+                    <td><img src="files/images/countries/h/info/bridge.svg" class="road-tag"></td>
+                    <td class="info">Zala-somogyi határárok</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>183 - <img src="files/images/countries/h/exit.svg" class="icon"></td>
+                    <td class="direction">↑ Budapest, Siófok <img title="Autópálya M7" src="files/images/countries/h/M/M7.svg" class="road-tag">,<img onclick="red('../../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"> ↑ | ↗ Sávoly</td>
+                    <td><img onclick="red('SH/7.html')" title="" src="files/images/countries/h/SH/7.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td></td>
+                    <td class="info">Szegerdöi Pihenöhely</td>
+                    <td><img src="files/images/countries/h/info/p.svg" class="road-tag">,<img src="files/images/countries/h/info/wc.svg" class="road-tag">,</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>175 - <img src="files/images/countries/h/exit.svg" class="icon"></td>
+                    <td class="direction">↑ Budapest, Siófok <img title="Autópálya M7" src="files/images/countries/h/M/M7.svg" class="road-tag">,<img onclick="red('../../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"> ↑ | ↗  Zalaegerszeg, Hévíz <img src="files/images/countries/h/info/airport.svg" class="road-tag">, Keszthely, Hollád</td>
+                    <td><img onclick="red('M/76.html')" title="" src="files/images/countries/h/M/M76.svg" class="road-tag red">,<img onclick="red('SH/7.html')" title="" src="files/images/countries/h/SH/7.svg" class="road-tag red">,<img onclick="red('SH/71.html')" title="" src="files/images/countries/h/SH/71.svg" class="road-tag red">,<img src="files/images/countries/h/info/autout.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>170 - <img src="files/images/countries/h/exit.svg" class="icon"></td>
+                    <td class="direction">↑ Budapest, Siófok <img title="Autópálya M7" src="files/images/countries/h/M/M7.svg" class="road-tag">,<img onclick="red('../../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"> ↑ | ↗ Marcali, Balatonszentgyörgy, Balatonkeresztúr</td>
+                    <td><img onclick="red('SH/7.html')" title="" src="files/images/countries/h/SH/7.svg" class="road-tag red">,<img onclick="red('SH/68.html')" title="" src="files/images/countries/h/SH/68.svg" class="road-tag red">,<img onclick="red('SH/76.html')" title="" src="files/images/countries/h/SH/76.svg" class="road-tag red">,<img onclick="red('..e/E661.html')" title="Európska cesta 661" src="files/images/countries/eu/h/E661.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td></td>
+                    <td class="info">Keresztúri Pihenöhely</td>
+                    <td><img src="files/images/countries/h/info/p.svg" class="road-tag">,<img src="files/images/countries/h/info/csph-lpg.svg" class="road-tag">,<img src="files/images/countries/h/info/wc.svg" class="road-tag">,<img src="files/images/countries/h/info/info.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>160 - <img src="files/images/countries/h/exit.svg" class="icon"></td>
+                    <td class="direction">↑ Budapest, Fonyód, Balatonboglár dél <img title="Autópálya M7" src="files/images/countries/h/M/M7.svg" class="road-tag">,<img onclick="red('../../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"> ↑ | ↗ Balatonfenyves</td>
+                    <td><img onclick="red('SH/7.html')" title="" src="files/images/countries/h/SH/7.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td></td>
+                    <td class="info">Táskai Pihenöhely</td>
+                    <td><img src="files/images/countries/h/info/p.svg" class="road-tag">,<img src="files/images/countries/h/info/wc.svg" class="road-tag">,</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">hid</td>
+                    <td><img src="files/images/countries/h/info/bridge.svg" class="road-tag"></td>
+                    <td class="info">Nyugati övcsatorna</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>150 - <img src="files/images/countries/h/exit.svg" class="icon"></td>
+                    <td class="direction">↑ Budapest, Siófok <img title="Autópálya M7" src="files/images/countries/h/M/M7.svg" class="road-tag">,<img onclick="red('../../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"> ↑ | ↗ Lengyeltóti, Fonyód</td>
+                    <td><img onclick="red('SH/7.html')" title="" src="files/images/countries/h/SH/7.svg" class="road-tag red">,<img onclick="red('SV/6701.html')" title="" src="files/images/countries/h/SV/6701.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>145 - <img src="files/images/countries/h/exit.svg" class="icon"></td>
+                    <td class="direction">↑ Budapest, Siófok <img title="Autópálya M7" src="files/images/countries/h/M/M7.svg" class="road-tag">,<img onclick="red('../../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"> ↑ | ↗ Ordacsehi, Balatonboglár dél</td>
+                    <td><img onclick="red('SH/7.html')" title="" src="files/images/countries/h/SH/7.svg" class="road-tag red">,<img onclick="red('SV/67101.html')" title="" src="files/images/countries/h/SV/67101.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>143 - <img src="files/images/countries/h/exit.svg" class="icon"></td>
+                    <td class="direction">↑ Budapest, Balatonöszöd, Balatonszemes <img title="Autópálya M7" src="files/images/countries/h/M/M7.svg" class="road-tag">,<img onclick="red('../../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"> ↑ | ↗ Szölösgyörök, Balatonboglár centrum, Balatonlelle</td>
+                    <td><img onclick="red('SH/7.html')" title="" src="files/images/countries/h/SH/7.svg" class="road-tag red">,<img onclick="red('SV/6711.html')" title="" src="files/images/countries/h/SV/6711.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td></td>
+                    <td class="info">Balatonlellei Pihenöhely</td>
+                    <td><img src="files/images/countries/h/info/p.svg" class="road-tag">,<img src="files/images/countries/h/info/csph-lpg.svg" class="road-tag">,<img src="files/images/countries/h/info/wc.svg" class="road-tag">,<img src="files/images/countries/h/info/motorest.svg" class="road-tag">,</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>135 - <img src="files/images/countries/h/exit.svg" class="icon"></td>
+                    <td class="direction">↑ Budapest, Balatonszárszó, Balatonöszöd <img title="Autópálya M7" src="files/images/countries/h/M/M7.svg" class="road-tag">,<img onclick="red('../../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"> ↑ | ↗ Balatonszemes, Kaposvár</td>
+                    <td><img onclick="red('SH/7.html')" title="" src="files/images/countries/h/SH/7.svg" class="road-tag red">,<img onclick="red('SH/67.html')" title="" src="files/images/countries/h/SH/67.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>130 - <img src="files/images/countries/h/exit.svg" class="icon"></td>
+                    <td class="direction">↑ Budapest, Balatonföldvár, Balatonszárszó <img title="Autópálya M7" src="files/images/countries/h/M/M7.svg" class="road-tag">,<img onclick="red('../../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"> ↑ | ↗ Balatonöszöd, Szólád</td>
+                    <td><img onclick="red('SV/6524.html')" title="" src="files/images/countries/h/SV/6524.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>126 - <img src="files/images/countries/h/exit.svg" class="icon"></td>
+                    <td class="direction">↑ Budapest, Zamárdi, Balatonföldvár <img title="Autópálya M7" src="files/images/countries/h/M/M7.svg" class="road-tag">,<img onclick="red('../../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"> ↑ | ↗ Balatonszárszó</td>
+                    <td><img onclick="red('SH/7.html')" title="" src="files/images/countries/h/SH/7.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">hid</td>
+                    <td><img src="files/images/countries/h/info/bridge.svg" class="road-tag"></td>
+                    <td class="info">Köröshegyi völghíd</td>
+                    <td>1872 m</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>121 - <img src="files/images/countries/h/exit.svg" class="icon"></td>
+                    <td class="direction">↑ Budapest, Siófok nyugat, Zamárdi <img title="Autópálya M7" src="files/images/countries/h/M/M7.svg" class="road-tag">,<img onclick="red('../../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"> ↑ | ↗ Balatonföldvár, Szántód <img src="files/images/countries/h/info/m-bridge.svg" class="road-tag">, Bálványos</td>
+                    <td><img onclick="red('SV/6505.html')" title="" src="files/images/countries/h/SV/6505.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>115 - <img src="files/images/countries/h/exit.svg" class="icon"></td>
+                    <td class="direction">↑ Budapest, Siófok-centrum, Siófok nyugat <img title="Autópálya M7" src="files/images/countries/h/M/M7.svg" class="road-tag">,<img onclick="red('../../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"> ↑ | ↗ Zamárdi, Tab, Balatonendréd</td>
+                    <td><img onclick="red('SV/6501.html')" title="" src="files/images/countries/h/SV/6501.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>112 - <img src="files/images/countries/h/exit.svg" class="icon"></td>
+                    <td class="direction">↑ Budapest, Siófok-centrum, Szekszárd <img title="Autópálya M7" src="files/images/countries/h/M/M7.svg" class="road-tag">,<img onclick="red('../../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"> ↑ | ↗ Siófok nyugat</td>
+                    <td><img onclick="red('SH/7.html')" title="" src="files/images/countries/h/SH/7.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td></td>
+                    <td class="info">Töreki Pihenöhely</td>
+                    <td><img src="files/images/countries/h/info/p.svg" class="road-tag">,<img src="files/images/countries/h/info/wc.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>105 - <img src="files/images/countries/h/exit.svg" class="icon"></td>
+                    <td class="direction">↑ Budapest, Székesfehérvár <img title="Autópálya M7" src="files/images/countries/h/M/M7.svg" class="road-tag">,<img onclick="red('../../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"> ↑ | ↗ Siófok-centrum, Székszárd</td>
+                    <td><img onclick="red('SH/65.html')" title="" src="files/images/countries/h/SH/65.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td></td>
+                    <td class="info">Szabadi Pihenöhely</td>
+                    <td><img src="files/images/countries/h/info/p.svg" class="road-tag">,<img src="files/images/countries/h/info/cafe.svg" class="road-tag">,<img src="files/images/countries/h/info/wc.svg" class="road-tag">,<img src="files/images/countries/h/info/motorest.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>98 - <img src="files/images/countries/h/exit.svg" class="icon"></td>
+                    <td class="direction">↑ Budapest, Székesfehérvár <img title="Autópálya M7" src="files/images/countries/h/M/M7.svg" class="road-tag">,<img onclick="red('../../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"> ↑ | ↗ Lepsény, Siófok kelet, Siófok-Sóstó</td>
+                    <td><img onclick="red('SH/7.html')" title="" src="files/images/countries/h/SH/7.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td></td>
+                    <td class="info">Sóstói Pihenöhely</td>
+                    <td><img src="files/images/countries/h/info/p.svg" class="road-tag">,<img src="files/images/countries/h/info/csph-lpg.svg" class="road-tag">,<img src="files/images/countries/h/info/cafe.svg" class="road-tag">,<img src="files/images/countries/h/info/wc.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>90 - <img src="files/images/countries/h/exit.svg" class="icon"></td>
+                    <td class="direction">↑ Budapest, Székesfehérvár <img title="Autópálya M7" src="files/images/countries/h/M/M7.svg" class="road-tag">,<img onclick="red('../../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"> ↑ | ↗ Balatonfüred, Balatonvilágos, Enying</td>
+                    <td><img onclick="red('SH/7.html')" title="" src="files/images/countries/h/SH/7.svg" class="road-tag red">,<img onclick="red('SH/64.html')" title="" src="files/images/countries/h/SH/64.svg" class="road-tag red">,<img onclick="red('SH/71.html')" title="" src="files/images/countries/h/SH/71.svg" class="road-tag red">,<img onclick="red('SV/710.html')" title="" src="files/images/countries/h/SV/710.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td></td>
+                    <td class="info">Lepsényi Pihenöhely</td>
+                    <td><img src="files/images/countries/h/info/p.svg" class="road-tag">,<img src="files/images/countries/h/info/csph-full.svg" class="road-tag">,<img src="files/images/countries/h/info/motorest.svg" class="road-tag">,<img src="files/images/countries/h/info/wc.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>80 - <img src="files/images/countries/h/exit.svg" class="icon"></td>
+                    <td class="direction">↑ Budapest, Székesfehérvár <img title="Autópálya M7" src="files/images/countries/h/M/M7.svg" class="road-tag">,<img onclick="red('../../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"> ↑ | ↗ Polgrádi, Lepsény</td>
+                    <td><img onclick="red('SH/7.html')" title="" src="files/images/countries/h/SH/7.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>70 - <img src="files/images/countries/h/exit.svg" class="icon"></td>
+                    <td class="direction">↑ Budapest, Székesfehérvár <img title="Autópálya M7" src="files/images/countries/h/M/M7.svg" class="road-tag">,<img onclick="red('../../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"> ↑ | ↗ Szabadbattyán, Tác-Gorsium</td>
+                    <td><img onclick="red('SV/6307.html')" title="" src="files/images/countries/h/SV/6307.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>64 - <img src="files/images/countries/h/exit.svg" class="icon"></td>
+                    <td class="direction">↑ Budapest ↑ <img title="Autópálya M7" src="files/images/countries/h/M/M7.svg" class="road-tag">,<img onclick="red('../../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"> ↑ | ↗ Veszprém, Györ, Székesfehérvár-centrum, Szekszárd</td>
+                    <td><img onclick="red('SH/8.html')" title="" src="files/images/countries/h/SH/8.svg" class="road-tag red">,<img onclick="red('SH/63.html')" title="" src="files/images/countries/h/SH/63.svg" class="road-tag red">,<img onclick="red('SH/81.html')" title="" src="files/images/countries/h/SH/81.svg" class="road-tag red">,<img onclick="red('../e/E66.html')" title="Európska cesta 66" src="files/images/countries/eu/h/E66.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>60 - <img src="files/images/countries/h/exit.svg" class="icon"></td>
+                    <td class="direction">↑ Budapest ↑ <img title="Autópálya M7" src="files/images/countries/h/M/M7.svg" class="road-tag">,<img onclick="red('../../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"> ↑ | ↗ Székesfehérvár-dél, Dunaújváros</td>
+                    <td><img onclick="red('SH/62.html')" title="" src="files/images/countries/h/SH/62.svg" class="road-tag red">,<img onclick="red('../e/E66.html')" title="Európska cesta 66" src="files/images/countries/eu/h/E66.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>57 - <img src="files/images/countries/h/exit.svg" class="icon"></td>
+                    <td class="direction">↑ Budapest ↑ <img title="Autópálya M7" src="files/images/countries/h/M/M7.svg" class="road-tag">,<img onclick="red('../../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"> ↑ | ↗ Székesfehérvár kelet, Gárdony, Agárd</td>
+                    <td><img onclick="red('SH/7.html')" title="" src="files/images/countries/h/SH/7.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td></td>
+                    <td class="info">Pákozdi Pihenöhely</td>
+                    <td><img onclick="red('SV/8116html')" title="" src="files/images/countries/h/SV/8116.svg" class="road-tag red">,<img src="files/images/countries/h/info/p.svg" class="road-tag">,<img src="files/images/countries/h/info/motorest.svg" class="road-tag">,<img src="files/images/countries/h/info/wc.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td></td>
+                    <td class="info">Velencei Pihenöhely</td>
+                    <td><img onclick="red('SV/8116.html')" title="" src="files/images/countries/h/SV/8116.svg" class="road-tag red">,<img src="files/images/countries/h/info/p.svg" class="road-tag">,<img src="files/images/countries/h/info/csph-lpg.svg" class="road-tag">,<img src="files/images/countries/h/info/motorest.svg" class="road-tag">,<img src="files/images/countries/h/info/wc.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>42 - <img src="files/images/countries/h/exit.svg" class="icon"></td>
+                    <td class="direction">↑ Budapest ↑ <img title="Autópálya M7" src="files/images/countries/h/M/M7.svg" class="road-tag">,<img onclick="red('../../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"> ↑ | ↗ Kápolnásnyék, Velence, Vereb, Pázmánd</td>
+                    <td><img onclick="red('SV/8117.html')" title="" src="files/images/countries/h/SV/8117.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td></td>
+                    <td class="info">Váli Völgyi Pihemöhely</td>
+                    <td><img src="files/images/countries/h/info/p.svg" class="road-tag">,<img src="files/images/countries/h/info/csph-lpg.svg" class="road-tag">,<img src="files/images/countries/h/info/motorest.svg" class="road-tag">,<img src="files/images/countries/h/info/wc.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>30 - <img src="files/images/countries/h/exit.svg" class="icon"></td>
+                    <td class="direction">↑ Budapest ↑ <img title="Autópálya M7" src="files/images/countries/h/M/M7.svg" class="road-tag">,<img onclick="red('../../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"> ↑ | ↗ Gyúró, Tordas, Martonvásár</td>
+                    <td><img onclick="red('SH/7.html')" title="" src="files/images/countries/h/SH/7.svg" class="road-tag red">,<img onclick="red('SV/81108.html')" title="" src="files/images/countries/h/SV/81108.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td></td>
+                    <td class="info">Tárnoki Pihenöhely</td>
+                    <td><img src="files/images/countries/h/info/p.svg" class="road-tag">,<img src="files/images/countries/h/info/csph-lpg.svg" class="road-tag">,<img src="files/images/countries/h/info/cafe.svg" class="road-tag">,<img src="files/images/countries/h/info/wc.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>23 - <img src="files/images/countries/h/exit.svg" class="icon"></td>
+                    <td class="direction">↑ Budapest ↑ <img title="Autópálya M7" src="files/images/countries/h/M/M7.svg" class="road-tag">,<img onclick="red('../../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"> ↑ | ↗ Tárnok, Pusztazámor, Sóskút</td>
+                    <td><img onclick="red('SV/8107.html')" title="" src="files/images/countries/h/SV/8107.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>18 - <img src="files/images/countries/h/exit.svg" class="icon"></td>
+                    <td class="direction">↑ Budapest ↑ <img title="Autópálya M7" src="files/images/countries/h/M/M7.svg" class="road-tag">,<img onclick="red('../../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"> ↑ | ↗ Érd</td>
+                    <td><img onclick="red('SV/8103.html')" title="" src="files/images/countries/h/SV/8103.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>16 - <img src="files/images/countries/h/exit.svg" class="icon"></td>
+                    <td class="direction">↑ Budapest-centrum <img title="Autópálya M7" src="files/images/countries/h/M/M7.svg" class="road-tag"> ↑ | ↗ Ring <img onclick="red('M/M0.html')" title="Autóút M0" src="files/images/countries/h/M/M0.svg" class="road-tag red">,<img onclick="red('../../e/e60.html')" title="Európska cesta 60" src="files/images/countries/eu/h/E60.svg" class="road-tag red">,<img onclick="red('../../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/h/E71.svg" class="road-tag red">,<img onclick="red('../../e/e75.html')" title="Európska cesta 75" src="files/images/countries/eu/h/E75.svg" class="road-tag red"></td>
+                    <td><img onclick="red('M/M0.html')" title="Autóút M0" src="files/images/countries/h/M/M0.svg" class="road-tag red">,<img title="Autópálya M7" src="files/images/countries/h/M/M7.svg" class="road-tag">,<img onclick="red('../../e/e60.html')" title="Európska cesta 60" src="files/images/countries/eu/h/E60.svg" class="road-tag red">,<img onclick="red('../../e/e71.html')" title="Európska cesta 71" src="files/images/countries/eu/h/E71.svg" class="road-tag red">,<img onclick="red('../../e/e75.html')" title="Európska cesta 75" src="files/images/countries/eu/h/E75.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>14 - <img src="files/images/countries/h/exit.svg" class="icon"></td>
+                    <td class="direction">↑ Budapest-centrum <img title="Autópálya M7" src="files/images/countries/h/M/M7.svg" class="road-tag"> ↑ | ↗ Budakeszi, Törökbálint</td>
+                    <td><img onclick="red('SV/8102.html')" title="" src="files/images/countries/h/SV/8102.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td></td>
+                    <td class="direction">Začiatok peáže s <img onclick="red('M/M1.html')" title="Autópálya M1" src="files/images/countries/h/M/M1.svg" class="road-tag red">.</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>10 - <img src="files/images/countries/h/exit.svg" class="icon"></td>
+                    <td class="direction">↑ Budapest-centrum ↑ <img onclick="red('M/M1.html')" title="Autópálya M1" src="files/images/countries/h/M/M1.svg" class="road-tag red">,<img title="Autópálya M7" src="files/images/countries/h/M/M7.svg" class="road-tag"> ↑ | ↗ Budaörs-centrum, Törökbálint-DEPO, Budaörs nyugat, Budaörsi Pihenöhely <img src="files/images/countries/h/info/p.svg" class="road-tag"> ↗</td>
+                    <td><img onclick="red('SV/8105.html')" title="" src="files/images/countries/h/SV/8105.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td><img src="files/images/countries/h/info/hw-end.svg" class="road-tag"></td>
+                    <td class="info">Koniec diaľnice, <span class="spoplatnenie">koniec úseku spoplatneného maďarskou diaľničnou známkou</span>.</td>
+                    <td><img onclick="red('M/M1.html')" title="Autópálya M1" src="files/images/countries/h/M/M1.svg" class="road-tag red">,<img title="Autópálya M7" src="files/images/countries/h/M/M7.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>7 - <img src="files/images/countries/h/exit.svg" class="icon"></td>
+                    <td class="direction">↑ Budapest-centrum ↑ <img onclick="red('M/M1.html')" title="Autópálya M1" src="files/images/countries/h/M/M1.svg" class="road-tag red">,<img title="Autópálya M7" src="files/images/countries/h/M/M7.svg" class="road-tag"> ↑ | ↗ Rákóczi hid, Budapest-Gazdagrét</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td></td>
+                    <td class="info">Koniec cesty <img title="Autópálya M7" src="files/images/countries/h/M/M7.svg" class="road-tag">.</td>
+                    <td><img onclick="red('M/M1.html')" title="Autópálya M1" src="files/images/countries/h/M/M1.svg" class="road-tag red">,<img title="Autópálya M7" src="files/images/countries/h/M/M7.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+  </body>
+  <hr>
+  <footer>
+    <span>Posledná aktualizácia: 14/ 8/ 2026 10:33:56</span><br><span class="f-info">Označené ako hotové: 14/ 8/ 2026 10:32:17</span>
+  </footer>
+</html>

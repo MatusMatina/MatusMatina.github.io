@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="sk">
+  <head>
+    <title>Maďarsko • 21</title>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../../../styles/index.css">
+    <link rel="stylesheet" href="../../../../styles/road.css">
+    <script src="../../../../scripts/loadExit.js" defer></script>
+    <script src="../../../../scripts/road.js" defer></script>
+    <script src="../../../../scripts/h-road.js" defer></script>
+    <base href="../../../../">
+  </head>
+  <body>
+  <div id="header">
+        <h2><img src="files/images/countries/h/SH/21.svg" class="road-tag">Štátna cesta 21, Maďarsko • Hatvan - Somoskőújfalu</h2>
+        <hr>
+        <h3>Krajské mestá, cez/okolo ktorých cesta prechádza:</h3><span>Salgótarján</span>
+    </div>
+    <div id="selection">
+        <span>Toto je beta verzia funkcie.</span>
+        <button onclick="history.back()">Späť</button>
+        <button onclick="direction('dir1')">Hatvan → Somoskőújfalu</button>
+        <button onclick="direction('dir2')">Somoskőújfalu → Hatvan</button>
+    </div>
+    <div id="objekty-na-trase">
+        <h3>Objekty na trase:</h3>
+        <div id="objekty">
+            <h4 id="dir1">Objekty • Smer Hatvan → Somoskőújfalu</h4>
+            <table border="1" class="tabulka objekty">
+                <tr>
+                    <th class="typ">
+                        Typ objektu
+                    </th>
+                    <th id="cv">
+                        Číslo výjazdu
+                    </th>
+                    <th id="main">
+                        Smer/-y
+                    </th>
+                    <th id="prej">
+                        Prejazdy
+                    </th>
+                    <th>
+                        Poznámka
+                    </th>
+                </tr>
+                <!-- ↑ ↓ ← → ↗ ↘ ↔ ↕ ⇐ ⇒ ⇑ ⇓ ⤳ ⤴ ⤵ 
+                    ↗ - šípka doprava hore diagonálna
+                    ↖ - šípka doľava hore diagonálna
+                -->
+            </table>
+            <h4 id="dir2">Objekty • Smer Somoskőújfalu → Hatvan</h4>
+            <table border="1" class="tabulka objekty">
+                <tr>
+                    <th class="typ">
+                        Typ objektu
+                    </th>
+                    <th id="cv">
+                        Číslo výjazdu
+                    </th>
+                    <th id="main">
+                        Smer/-y
+                    </th>
+                    <th id="prej">
+                        Prejazdy
+                    </th>
+                    <th>
+                        Poznámka
+                    </th>
+                </tr>
+                <!-- ↑ ↓ ← → ↗ ↘ ↔ ↕ ⇐ ⇒ ⇑ ⇓ ⤳ ⤴ ⤵ 
+                    ↗ - šípka doprava hore diagonálna
+                    ↖ - šípka doľava hore diagonálna
+                -->
+                <tr>
+                    <td class="typ">hranice</td>
+                    <td><img src="files/images/countries/sk/info/hranice-eu.svg" class="road-tag"></td>
+                    <td class="hranice">Štátna hranica SK <img src="files/images/flags/slovakia.svg" class="flag"> / H <img onclick="red('../hungary.html')" src="files/images/flags/hungary.svg" class="flag red"></td>
+                    <td><img src="files/images/countries/sk/I/I-71.svg" class="road-tag"> ↑ | ↓ <img onclick="red('../h/SH/21.html')" src="files/images/countries/h/SH/21.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>65,65</td>
+                    <td class="info">Začiatok obce: Somoskőújaflu</td>
+                    <td><img src="files/images/countries/h/sh/21.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>65,39 - <img src="files/images/countries/sk/u-k.svg" class="icon"></td>
+                    <td class="direction"> ← | ↑ Hatvan, <span class="zajm">Smer: <img onclick="red('M/M3.html')" title="Autópálya M3" src="files/images/countries/h/M/M3.svg" class="road-tag red">,<img onclick="red('../e/e71.html')" title="Európska cesta E71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"></span> <img src="files/images/countries/h/sh/21.svg" class="road-tag"></td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>65,31 - <img src="files/images/countries/sk/u-k.svg" class="icon"></td>
+                    <td class="direction">Hatvan, <span class="zajm">Smer: <img onclick="red('M/M3.html')" title="Autópálya M3" src="files/images/countries/h/M/M3.svg" class="road-tag red">,<img onclick="red('../e/e71.html')" title="Európska cesta E71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"></span> <img src="files/images/countries/h/sh/21.svg" class="road-tag"> ↑ | →</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>65,12 - <img src="files/images/countries/sk/u-k.svg" class="icon"></td>
+                    <td class="direction"> ← | ↑ Hatvan, <span class="zajm">Smer: <img onclick="red('M/M3.html')" title="Autópálya M3" src="files/images/countries/h/M/M3.svg" class="road-tag red">,<img onclick="red('../e/e71.html')" title="Európska cesta E71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"></span> <img src="files/images/countries/h/sh/21.svg" class="road-tag"></td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>64,95 - <img src="files/images/countries/sk/u-k.svg" class="icon"></td>
+                    <td class="direction">Salgóbánya, Somoskő ← | ↑ Hatvan, <span class="zajm">Smer: <img onclick="red('M/M3.html')" title="Autópálya M3" src="files/images/countries/h/M/M3.svg" class="road-tag red">,<img onclick="red('../e/e71.html')" title="Európska cesta E71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"></span> <img src="files/images/countries/h/sh/21.svg" class="road-tag"></td>
+                    <td>23103</td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>64,89 - <img src="files/images/countries/sk/u-k.svg" class="icon"></td>
+                    <td class="direction"> ← | ↑ Hatvan, <span class="zajm">Smer: <img onclick="red('M/M3.html')" title="Autópálya M3" src="files/images/countries/h/M/M3.svg" class="road-tag red">,<img onclick="red('../e/e71.html')" title="Európska cesta E71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"></span> <img src="files/images/countries/h/sh/21.svg" class="road-tag"> | →</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>64,52 - <img src="files/images/countries/sk/u-k.svg" class="icon"></td>
+                    <td class="direction"> ← | ↑ Hatvan, <span class="zajm">Smer: <img onclick="red('M/M3.html')" title="Autópálya M3" src="files/images/countries/h/M/M3.svg" class="road-tag red">,<img onclick="red('../e/e71.html')" title="Európska cesta E71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"></span> <img src="files/images/countries/h/sh/21.svg" class="road-tag"></td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>64,18 - <img src="files/images/countries/sk/u-k.svg" class="icon"></td>
+                    <td class="direction"> ← | ↑ Hatvan, <span class="zajm">Smer: <img onclick="red('M/M3.html')" title="Autópálya M3" src="files/images/countries/h/M/M3.svg" class="road-tag red">,<img onclick="red('../e/e71.html')" title="Európska cesta E71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"></span> <img src="files/images/countries/h/sh/21.svg" class="road-tag"></td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>64,09 - <img src="files/images/countries/sk/u-k.svg" class="icon"></td>
+                    <td class="direction"> ← | ↑ Hatvan, <span class="zajm">Smer: <img onclick="red('M/M3.html')" title="Autópálya M3" src="files/images/countries/h/M/M3.svg" class="road-tag red">,<img onclick="red('../e/e71.html')" title="Európska cesta E71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"></span> <img src="files/images/countries/h/sh/21.svg" class="road-tag"></td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>63,94 - <img src="files/images/countries/sk/u-k.svg" class="icon"></td>
+                    <td class="direction"> ← | ↑ Hatvan, <span class="zajm">Smer: <img onclick="red('M/M3.html')" title="Autópálya M3" src="files/images/countries/h/M/M3.svg" class="road-tag red">,<img onclick="red('../e/e71.html')" title="Európska cesta E71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"></span> <img src="files/images/countries/h/sh/21.svg" class="road-tag"></td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>63,82 - <img src="files/images/countries/sk/u-k.svg" class="icon"></td>
+                    <td class="direction"> ← | ↑ Hatvan, <span class="zajm">Smer: <img onclick="red('M/M3.html')" title="Autópálya M3" src="files/images/countries/h/M/M3.svg" class="road-tag red">,<img onclick="red('../e/e71.html')" title="Európska cesta E71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"></span> <img src="files/images/countries/h/sh/21.svg" class="road-tag"></td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>63,62 - <img src="files/images/countries/sk/u-k.svg" class="icon"></td>
+                    <td class="direction">Hatvan, <span class="zajm">Smer: <img onclick="red('M/M3.html')" title="Autópálya M3" src="files/images/countries/h/M/M3.svg" class="road-tag red">,<img onclick="red('../e/e71.html')" title="Európska cesta E71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"></span> <img src="files/images/countries/h/sh/21.svg" class="road-tag"> ↑ | →</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>63,39 - <img src="files/images/countries/sk/u-k.svg" class="icon"></td>
+                    <td class="direction"> ← | ↑ Hatvan, <span class="zajm">Smer: <img onclick="red('M/M3.html')" title="Autópálya M3" src="files/images/countries/h/M/M3.svg" class="road-tag red">,<img onclick="red('../e/e71.html')" title="Európska cesta E71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"></span> <img src="files/images/countries/h/sh/21.svg" class="road-tag"></td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>63,18</td>
+                    <td class="info">Koniec obce: Somoskőújaflu</td>
+                    <td><img src="files/images/countries/h/sh/21.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>62,48 - <img src="files/images/countries/sk/u-k.svg" class="icon"></td>
+                    <td class="direction"> ← | ↑ Hatvan, <span class="zajm">Smer: <img onclick="red('M/M3.html')" title="Autópálya M3" src="files/images/countries/h/M/M3.svg" class="road-tag red">,<img onclick="red('../e/e71.html')" title="Európska cesta E71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"></span> <img src="files/images/countries/h/sh/21.svg" class="road-tag"></td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>61,76 - <img src="files/images/countries/sk/u-k.svg" class="icon"></td>
+                    <td class="direction"> ← | ↑ Hatvan, <span class="zajm">Smer: <img onclick="red('M/M3.html')" title="Autópálya M3" src="files/images/countries/h/M/M3.svg" class="road-tag red">,<img onclick="red('../e/e71.html')" title="Európska cesta E71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"></span> <img src="files/images/countries/h/sh/21.svg" class="road-tag"> | →</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>61,38</td>
+                    <td class="info">Začiatok obce: Salgótarján</td>
+                    <td><img src="files/images/countries/h/sh/21.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>61,33 - <img src="files/images/countries/sk/u-k.svg" class="icon"></td>
+                    <td class="direction"> ← | ↑ Hatvan, <span class="zajm">Smer: <img onclick="red('M/M3.html')" title="Autópálya M3" src="files/images/countries/h/M/M3.svg" class="road-tag red">,<img onclick="red('../e/e71.html')" title="Európska cesta E71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"></span> <img src="files/images/countries/h/sh/21.svg" class="road-tag"></td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">objazd</td>
+                    <td>60,6 - <img src="files/images/countries/h/objazd.svg" class="icon"></td>
+                    <td class="direction">3. Besztrece lakótelep, 2. Salgótarján-centrum, 1. Hatvan, <span class="zajm">Smer: <img onclick="red('M/M3.html')" title="Autópálya M3" src="files/images/countries/h/M/M3.svg" class="road-tag red">,<img onclick="red('../e/e71.html')" title="Európska cesta E71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"></span>  <img src="files/images/countries/h/sh/21.svg" class="road-tag"></td>
+                    <td class="direction">1. <img src="files/images/countries/h/sh/21.svg" class="road-tag">, 2. <img onclick="red('SV/211.html')" title="" src="files/images/countries/h/SV/211.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>59,87 - <img src="files/images/countries/sk/u-k.svg" class="icon"></td>
+                    <td class="direction">Hatvan, <span class="zajm">Smer: <img onclick="red('M/M3.html')" title="Autópálya M3" src="files/images/countries/h/M/M3.svg" class="road-tag red">,<img onclick="red('../e/e71.html')" title="Európska cesta E71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"></span> <img src="files/images/countries/h/sh/21.svg" class="road-tag"> ↑ | →</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>58,53 - <img src="files/images/countries/sk/u-k.svg" class="icon"><img src="files/images/countries/h/warn/semafor.svg" class="icon"></td>
+                    <td class="direction">Hatvan, <span class="zajm">Smer: <img onclick="red('M/M3.html')" title="Autópálya M3" src="files/images/countries/h/M/M3.svg" class="road-tag red">,<img onclick="red('../e/e71.html')" title="Európska cesta E71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"></span> <img src="files/images/countries/h/sh/21.svg" class="road-tag"> ↑ | →</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>58,03 - <img src="files/images/countries/sk/u-k.svg" class="icon"></td>
+                    <td class="direction">Hatvan, <span class="zajm">Smer: <img onclick="red('M/M3.html')" title="Autópálya M3" src="files/images/countries/h/M/M3.svg" class="road-tag red">,<img onclick="red('../e/e71.html')" title="Európska cesta E71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"></span> <img src="files/images/countries/h/sh/21.svg" class="road-tag"> ↑ | →</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>57,57 - <img src="files/images/countries/sk/u-k.svg" class="icon"></td>
+                    <td class="direction"> ← | ↑ Hatvan, <span class="zajm">Smer: <img onclick="red('M/M3.html')" title="Autópálya M3" src="files/images/countries/h/M/M3.svg" class="road-tag red">,<img onclick="red('../e/e71.html')" title="Európska cesta E71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"></span> <img src="files/images/countries/h/sh/21.svg" class="road-tag"></td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>57,39 - <img src="files/images/countries/sk/u-k.svg" class="icon"><img src="files/images/countries/h/warn/semafor.svg" class="icon"></td>
+                    <td class="direction">Salgótarján-centrum <img onclick="red('SV/211.html')" title="" src="files/images/countries/h/SV/211.svg" class="road-tag red"> ← | ↑ Hatvan, <span class="zajm">Smer: <img onclick="red('M/M3.html')" title="Autópálya M3" src="files/images/countries/h/M/M3.svg" class="road-tag red">,<img onclick="red('../e/e71.html')" title="Európska cesta E71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"></span> <img src="files/images/countries/h/sh/21.svg" class="road-tag"> | → Litke, Ipolytarnóc 2206</td>
+                    <td><img onclick="red('SV/211.html')" title="" src="files/images/countries/h/SV/211.svg" class="road-tag red">,2206</td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>57,29 - <img src="files/images/countries/sk/u-k.svg" class="icon"></td>
+                    <td class="direction"> ← | ↑ Hatvan, <span class="zajm">Smer: <img onclick="red('M/M3.html')" title="Autópálya M3" src="files/images/countries/h/M/M3.svg" class="road-tag red">,<img onclick="red('../e/e71.html')" title="Európska cesta E71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"></span> <img src="files/images/countries/h/sh/21.svg" class="road-tag"></td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>56,85 - <img src="files/images/countries/sk/u-k.svg" class="icon"></td>
+                    <td class="direction">Hatvan, <span class="zajm">Smer: <img onclick="red('M/M3.html')" title="Autópálya M3" src="files/images/countries/h/M/M3.svg" class="road-tag red">,<img onclick="red('../e/e71.html')" title="Európska cesta E71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"></span> <img src="files/images/countries/h/sh/21.svg" class="road-tag"> ↑ | →</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>56,8 - <img src="files/images/countries/sk/u-k.svg" class="icon"></td>
+                    <td class="direction">Hatvan, <span class="zajm">Smer: <img onclick="red('M/M3.html')" title="Autópálya M3" src="files/images/countries/h/M/M3.svg" class="road-tag red">,<img onclick="red('../e/e71.html')" title="Európska cesta E71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"></span> <img src="files/images/countries/h/sh/21.svg" class="road-tag"> ↑ | →</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>56,71 - <img src="files/images/countries/sk/u-k.svg" class="icon"></td>
+                    <td class="direction">Hatvan, <span class="zajm">Smer: <img onclick="red('M/M3.html')" title="Autópálya M3" src="files/images/countries/h/M/M3.svg" class="road-tag red">,<img onclick="red('../e/e71.html')" title="Európska cesta E71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"></span> <img src="files/images/countries/h/sh/21.svg" class="road-tag"> ↑ | →</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>56,38 - <img src="files/images/countries/sk/u-k.svg" class="icon"></td>
+                    <td class="direction">Hatvan, <span class="zajm">Smer: <img onclick="red('M/M3.html')" title="Autópálya M3" src="files/images/countries/h/M/M3.svg" class="road-tag red">,<img onclick="red('../e/e71.html')" title="Európska cesta E71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"></span> <img src="files/images/countries/h/sh/21.svg" class="road-tag"> ↑ | →</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>56,17 - <img src="files/images/countries/sk/u-k.svg" class="icon"></td>
+                    <td class="direction">Hatvan, <span class="zajm">Smer: <img onclick="red('M/M3.html')" title="Autópálya M3" src="files/images/countries/h/M/M3.svg" class="road-tag red">,<img onclick="red('../e/e71.html')" title="Európska cesta E71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"></span> <img src="files/images/countries/h/sh/21.svg" class="road-tag"> ↑ | →</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>55,45 - <img src="files/images/countries/sk/u-k.svg" class="icon"></td>
+                    <td class="direction">Hatvan, <span class="zajm">Smer: <img onclick="red('M/M3.html')" title="Autópálya M3" src="files/images/countries/h/M/M3.svg" class="road-tag red">,<img onclick="red('../e/e71.html')" title="Európska cesta E71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"></span> <img src="files/images/countries/h/sh/21.svg" class="road-tag"> ↑ | →</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>54 - <img src="files/images/countries/sk/u-k.svg" class="icon"><img src="files/images/countries/h/warn/semafor.svg" class="icon"></td>
+                    <td class="direction"> ← | ↑ Hatvan, <span class="zajm">Smer: <img onclick="red('M/M3.html')" title="Autópálya M3" src="files/images/countries/h/M/M3.svg" class="road-tag red">,<img onclick="red('../e/e71.html')" title="Európska cesta E71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"></span> <img src="files/images/countries/h/sh/21.svg" class="road-tag"></td>
+                    <td>2307</td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>53,85 - <img src="files/images/countries/sk/u-k.svg" class="icon"></td>
+                    <td class="direction">Hatvan, <span class="zajm">Smer: <img onclick="red('M/M3.html')" title="Autópálya M3" src="files/images/countries/h/M/M3.svg" class="road-tag red">,<img onclick="red('../e/e71.html')" title="Európska cesta E71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"></span> <img src="files/images/countries/h/sh/21.svg" class="road-tag"> ↑ | →</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>53,77 - <img src="files/images/countries/sk/u-k.svg" class="icon"><img src="files/images/countries/h/warn/semafor.svg" class="icon"></td>
+                    <td class="direction"> ← | ↑ Hatvan, <span class="zajm">Smer: <img onclick="red('M/M3.html')" title="Autópálya M3" src="files/images/countries/h/M/M3.svg" class="road-tag red">,<img onclick="red('../e/e71.html')" title="Európska cesta E71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"></span> <img src="files/images/countries/h/sh/21.svg" class="road-tag"></td>
+                    <td>2307</td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>53,49 - <img src="files/images/countries/sk/u-k.svg" class="icon"></td>
+                    <td class="direction">Hatvan, <span class="zajm">Smer: <img onclick="red('M/M3.html')" title="Autópálya M3" src="files/images/countries/h/M/M3.svg" class="road-tag red">,<img onclick="red('../e/e71.html')" title="Európska cesta E71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"></span> <img src="files/images/countries/h/sh/21.svg" class="road-tag"> ↑ | →</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>53,24 - <img src="files/images/countries/sk/u-k.svg" class="icon"></td>
+                    <td class="direction">Hatvan, <span class="zajm">Smer: <img onclick="red('M/M3.html')" title="Autópálya M3" src="files/images/countries/h/M/M3.svg" class="road-tag red">,<img onclick="red('../e/e71.html')" title="Európska cesta E71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"></span> <img src="files/images/countries/h/sh/21.svg" class="road-tag"> ↑ | →</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>53,18 - <img src="files/images/countries/sk/u-k.svg" class="icon"></td>
+                    <td class="direction">Hatvan, <span class="zajm">Smer: <img onclick="red('M/M3.html')" title="Autópálya M3" src="files/images/countries/h/M/M3.svg" class="road-tag red">,<img onclick="red('../e/e71.html')" title="Európska cesta E71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"></span> <img src="files/images/countries/h/sh/21.svg" class="road-tag"> ↑ | →</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>52,85 - <img src="files/images/countries/sk/u-k.svg" class="icon"></td>
+                    <td class="direction">Hatvan, <span class="zajm">Smer: <img onclick="red('M/M3.html')" title="Autópálya M3" src="files/images/countries/h/M/M3.svg" class="road-tag red">,<img onclick="red('../e/e71.html')" title="Európska cesta E71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"></span> <img src="files/images/countries/h/sh/21.svg" class="road-tag"> ↑ | →</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">objazd</td>
+                    <td>52,74 - <img src="files/images/countries/h/objazd.svg" class="icon"></td>
+                    <td class="direction">3. Salgglas zrt., Tarján glass kft., 2. Hatvan, <span class="zajm">Smer: <img onclick="red('M/M3.html')" title="Autópálya M3" src="files/images/countries/h/M/M3.svg" class="road-tag red">,<img onclick="red('../e/e71.html')" title="Európska cesta E71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"></span> <img src="files/images/countries/h/sh/21.svg" class="road-tag"> ↑ | ↑ Balassagyarmat, Szécsény <img onclick="red('SH/22.html')" title="" src="files/images/countries/h/SH/22.svg" class="road-tag red"> </td>
+                    <td class="direction">2. <img src="files/images/countries/h/sh/21.svg" class="road-tag">, 1. <img onclick="red('SH/22.html')" title="" src="files/images/countries/h/SH/22.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">objazd</td>
+                    <td>52,57 - <img src="files/images/countries/h/objazd.svg" class="icon"></td>
+                    <td class="direction">3. Kazár, 2. Hatvan, <span class="zajm">Smer: <img onclick="red('M/M3.html')" title="Autópálya M3" src="files/images/countries/h/M/M3.svg" class="road-tag red">,<img onclick="red('../e/e71.html')" title="Európska cesta E71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"></span> <img src="files/images/countries/h/sh/21.svg" class="road-tag"> ↑ | ↑ Kürtgyarmat utca</td>
+                    <td class="direction">2. <img src="files/images/countries/h/sh/21.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>52,38</td>
+                    <td class="info">Koniec obce: Salgótarján</td>
+                    <td><img src="files/images/countries/h/sh/21.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>51,86 - <img src="files/images/countries/sk/u-k.svg" class="icon"></td>
+                    <td class="direction">↑ Hatvan, <span class="zajm">Smer: <img onclick="red('M/M3.html')" title="Autópálya M3" src="files/images/countries/h/M/M3.svg" class="road-tag red">,<img onclick="red('../e/e71.html')" title="Európska cesta E71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"></span> <img src="files/images/countries/h/sh/21.svg" class="road-tag"> ↑→</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>51,26 - <img src="files/images/countries/sk/u-k.svg" class="icon"></td>
+                    <td class="direction"> ← | ↑ Hatvan, <span class="zajm">Smer: <img onclick="red('M/M3.html')" title="Autópálya M3" src="files/images/countries/h/M/M3.svg" class="road-tag red">,<img onclick="red('../e/e71.html')" title="Európska cesta E71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"></span> <img src="files/images/countries/h/sh/21.svg" class="road-tag"> ↑</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>51,13 - <img src="files/images/countries/sk/u-k.svg" class="icon"></td>
+                    <td class="direction">↑ Hatvan, <span class="zajm">Smer: <img onclick="red('M/M3.html')" title="Autópálya M3" src="files/images/countries/h/M/M3.svg" class="road-tag red">,<img onclick="red('../e/e71.html')" title="Európska cesta E71" src="files/images/countries/eu/h/E71.svg" class="road-tag red"></span> <img src="files/images/countries/h/sh/21.svg" class="road-tag"> ↑ | →</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+  </body>
+  <hr>
+  <footer>
+    <span>Posledná aktualizácia: 23/ 8/ 2026 14:15:10</span><br><span class="f-info" style="display:none;">Označené ako hotové 29/ 6/ 2026 15:25:01.</span>
+  </footer>
+</html>
