@@ -1,0 +1,1400 @@
+<!DOCTYPE html>
+<html lang="sk">
+  <head>
+    <title>Slovensko • R1</title>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../../../styles/index.css">
+    <link rel="stylesheet" href="../../../../styles/road.css">
+    <script src="../../../../scripts/loadExit.js" defer></script>
+    <script src="../../../../scripts/road.js" defer></script>
+    <base href="../../../../">
+  </head>
+  <body>
+  <div id="header">
+        <h2><img title="Diaľnica R1" src="files/images/countries/sk/r-d/R1.svg" class="road-tag">Diaľnica R1, Slovensko  •  Trnava - B. Bystrica (Ružomberok)</h2>
+        <hr>
+        <h3>Krajské mestá, cez/okolo ktorých cesta prechádza:</h3><span> Trnava, Nitra, Banská Bystrica</span>
+    </div>
+    <div id="objekty-na-trase">
+        <h3>Objekty na trase:</h3>
+        <div id="objekty">
+            <h3 id="dir1">Objekty • Smer Trnava → Slovenská Ľupča (Ružomberok)</h4>
+            <table border="1" class="tabulka objekty">
+                <tr>
+                    <th class="typ">
+                        Typ objektu
+                    </th>
+                    <th id="cv">
+                        Číslo výjazdu
+                    </th>
+                    <th id="main">
+                        Smer/-y
+                    </th>
+                    <th id="prej">
+                        Prejazdy
+                    </th>
+                    <th>
+                        Poznámka
+                    </th>
+                </tr>
+                <!-- ↑ ↓ ← → ↗ ↘ ↔ ↕ ⇐ ⇒ ⇑ ⇓ ⤳ ⤴ ⤵ 
+                    ↗ - šípka doprava hore diagonálna
+                    ↖ - šípka doľava hore diagonálna
+                -->
+                <tr>
+                    <td class="typ">info</td>
+                    <td></td>
+                    <td class="info">→ Trnavský kraj, → Okres Trnava</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td><img src="files/images/countries/sk/info/dialnica-zaciatok.svg" class="road-tag"></td>
+                    <td class="info">Začiatok diaľnice, <span class="spoplatnenie">Nespoplatnený úsek</span></td>
+                    <td><img src="files/images/countries/sk/info/spoplatnenie-koniec.svg" class="road-tag">,<img title="Diaľnica R1" src="files/images/countries/sk/r-d/R1.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>1 - <img src="files/images/countries/sk/vyjazd.svg" class="icon"><br>Trnava<br>-sever</td>
+                    <td class="direction">↑ Banská Bystrica, Bratislava, Nitra <img title="Diaľnica R1" src="files/images/countries/sk/r-d/R1.svg" class="road-tag">,<img src="files/images/countries/sk/info/spoplatnenie-zaciatok.svg" class="road-tag"> ↑ | ↗ Senica, Hlohovec, Trnava - sever</td>
+                    <td><img onclick="red('I/I-51.html')" src="files/images/countries/sk/I/I-51.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>1</td>
+                    <td class="spoplatnenie">Začiatok spoplatnenia</td>
+                    <td><img src="files/images/countries/sk/info/spoplatnenie-zaciatok.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>2 - <img src="files/images/countries/sk/vyjazd.svg" class="icon"><br>Trnava<br>-Modranka</td>
+                    <td class="direction">↑ Banská Bystrica, Bratislava, Nitra <img title="Diaľnica R1" src="files/images/countries/sk/r-d/R1.svg" class="road-tag"> ↑ | ↗ Trnava - Modranka</td>
+                    <td><img onclick="red('III/III-1279.html')" title="Cesta tretej triedy číslo 1279" src="files/images/countries/sk/III/III-1279.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">krizovatka-dialnica</td>
+                    <td>3 - <img src="files/images/countries/sk/d-k.svg" class="icon"><br>Trnava</td>
+                    <td class="direction">↑ Banská Bystrica, Nitra, Vlčkovce <img title="Diaľnica R1" src="files/images/countries/sk/r-d/R1.svg" class="road-tag">,<img onclick="red('../e/e58.html')" title="Európska cesta 58" src="files/images/countries/eu/sk/E58.svg" class="road-tag red">,<img onclick="red('../e/e571.html')" title="Európska cesta 571" src="files/images/countries/eu/sk/E571.svg" class="road-tag red"> ↑ | ↗ Trenčín <img onclick="red('r-d/D1.html')" title="Diaľnica D1" src="files/images/countries/sk/r-d/D1.svg" class="road-tag red">,<img onclick="red('../e/e75.html')" title="Európska cesta 75" src="files/images/countries/eu/sk/E75.svg" class="road-tag red"> | ↗ Bratislava <img onclick="red('r-d/D1.html')" title="Diaľnica D1" src="files/images/countries/sk/r-d/D1.svg" class="road-tag red">,<img onclick="red('../e/e58.html')" title="Európska cesta 58" src="files/images/countries/eu/sk/E58.svg" class="road-tag red">,<img onclick="red('../e/e75.html')" title="Európska cesta 75" src="files/images/countries/eu/sk/E75.svg" class="road-tag red">,<img onclick="red('../e/e571.html')" title="Európska cesta 571" src="files/images/countries/eu/sk/E571.svg" class="road-tag red"></td>
+                    <td><img onclick="red('r-d/D1.html')" title="Diaľnica D1" src="files/images/countries/sk/r-d/D1.svg" class="road-tag red">,<img src="files/images/countries/sk/r-d/R1.svg" title="Diaľnica R1" class="road-tag">,<img onclick="red('../e/e58.html')" title="Európska cesta 58" src="files/images/countries/eu/sk/E58.svg" class="road-tag red">,<img onclick="red('../e/e75.html')" title="Európska cesta 75" src="files/images/countries/eu/sk/E75.svg" class="road-tag red">,<img onclick="red('../e/e571.html')" title="Európska cesta 571" src="files/images/countries/eu/sk/E571.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>6 - <img src="files/images/countries/sk/vyjazd.svg" class="icon"><br>Vlčkovce<br>-sever</td>
+                    <td class="direction">↑ Banská Bystrica, Nitra, Sereď <img title="Diaľnica R1" src="files/images/countries/sk/r-d/R1.svg" class="road-tag">,<img onclick="red('../e/e58.html')" title="Európska cesta 58" src="files/images/countries/eu/sk/E58.svg" class="road-tag red">,<img onclick="red('../e/e571.html')" title="Európska cesta 571" src="files/images/countries/eu/sk/E571.svg" class="road-tag red"> ↑ | ↗ Vlčkovce - sever</td>
+                    <td><img onclick="red('III/III-1337.html')" title="Cesta tretej triedy číslo 1337" src="files/images/countries/sk/III/III-1337.svg" class="road-tag red"></td>
+                    <td class="info"><img src="files/images/countries/sk/zakaz-tir.png" class="road-tag"> nad 12t, okrem dopravnej obsluhy</td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>8,24</td>
+                    <td class="info"><img src="files/images/countries/sk/pruhy-doprava/2-1.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>10,8</td>
+                    <td class="info">Okres Trnava → Okres Galanta</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>12 - <img src="files/images/countries/sk/vyjazd.svg" class="icon"><br>Sereď<br>-sever</td>
+                    <td class="direction">↑ Banská Bystrica, Nitra, Sládkovičovo <img title="Diaľnica R1" src="files/images/countries/sk/r-d/R1.svg" class="road-tag">,<img onclick="red('../e/e58.html')" title="Európska cesta 58" src="files/images/countries/eu/sk/E58.svg" class="road-tag red">,<img onclick="red('../e/e571.html')" title="Európska cesta 571" src="files/images/countries/eu/sk/E571.svg" class="road-tag red"> ↑ | ↗ Sereď - sever</td>
+                    <td><img onclick="red('III/III-1331.html')" title="Cesta tretej triedy číslo 1331" src="files/images/countries/sk/III/III-1331.svg" class="road-tag red"></td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>14 - <img src="files/images/countries/sk/vyjazd.svg" class="icon"><br>Sládkovičovo</td>
+                    <td class="direction">↑ Banská Bystrica, Nitra, Dolná Streda <img title="Diaľnica R1" src="files/images/countries/sk/r-d/R1.svg" class="road-tag">,<img onclick="red('../e/e58.html')" title="Európska cesta 58" src="files/images/countries/eu/sk/E58.svg" class="road-tag red">,<img onclick="red('../e/e571.html')" title="Európska cesta 571" src="files/images/countries/eu/sk/E571.svg" class="road-tag red"> ↑ | ↗ Sládkovičovo, Sereď - juh</td>
+                    <td><img onclick="red('I/I-62.html')" title="Cesta prvej triedy číslo 62" src="files/images/countries/sk/I/I-62.svg" class="road-tag red"></td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>16 - <img src="files/images/countries/sk/vyjazd.svg" class="icon"><br>Dolná Streda</td>
+                    <td class="direction">↑ Banská Bystrica, Nitra, Šintava <img title="Diaľnica R1" src="files/images/countries/sk/r-d/R1.svg" class="road-tag">,<img onclick="red('../e/e58.html')" title="Európska cesta 58" src="files/images/countries/eu/sk/E58.svg" class="road-tag red">,<img onclick="red('../e/e571.html')" title="Európska cesta 571" src="files/images/countries/eu/sk/E571.svg" class="road-tag red"> ↑ | ↗ Dolná Streda, Galanta</td>
+                    <td><img onclick="red('I/I-35.html')" title="Cesta prvej triedy číslo 35" src="files/images/countries/sk/I/I-35.svg" class="road-tag red">,<img onclick="red('ii-507.html')" src="files/images/countries/sk/ii-507.png" class="road-tag red"></td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>16,86</td>
+                    <td class="info">Odpočívadlo Dolná Streda</td>
+                    <td><img src="files/images/countries/sk/info/csph.svg" class="road-tag">,<img src="files/images/countries/sk/info/obcerstvenie.svg" class="road-tag"></td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>17,38</td>
+                    <td class="info"><img src="files/images/countries/sk/warn/smyk.svg" class="road-tag"> 2km ↓</td>
+                    <td></td>
+                    <td class="">Pri nepriaznivých podmienkach</td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>18,71</td>
+                    <td class="info">Most M6128 (R1-018_PM)</td>
+                    <td></td>
+                    <td class=""></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>21 - <img src="files/images/countries/sk/vyjazd.svg" class="icon"><br>Šintava</td>
+                    <td class="direction">↑ Banská Bystrica, Nitra, Pata <img title="Diaľnica R1" src="files/images/countries/sk/r-d/R1.svg" class="road-tag">,<img onclick="red('../e/e58.html')" title="Európska cesta 58" src="files/images/countries/eu/sk/E58.svg" class="road-tag red">,<img onclick="red('../e/e571.html')" title="Európska cesta 571" src="files/images/countries/eu/sk/E571.svg" class="road-tag red"> ↑ | ↗ Šintava, Šaľa, Šoporňa</td>
+                    <td><img onclick="red('I/I-62.html')" title="Cesta prvej trirdy číslo 62" src="files/images/countries/sk/I/I-62.svg" class="road-tag red">,<img onclick="red('II/II-573.html')" title="Cesta druhej triedy číslo 573" src="files/images/countries/sk/II/II-573.svg" class="road-tag red"></td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>23 - <img src="files/images/countries/sk/vyjazd.svg" class="icon"><br>Šoporňa</td>
+                    <td class="direction">↑ Banská Bystrica, Nitra, Hájske <img title="Diaľnica R1" src="files/images/countries/sk/r-d/R1.svg" class="road-tag">,<img onclick="red('../e/e58.html')" title="Európska cesta 58" src="files/images/countries/eu/sk/E58.svg" class="road-tag red">,<img onclick="red('../e/e571.html')" title="Európska cesta 571" src="files/images/countries/eu/sk/E571.svg" class="road-tag red"> ↑ | ↗ Pata</td>
+                    <td><img onclick="red('III/III-1313.html')" title="Cesta tretej triedy číslo 1313" src="files/images/countries/sk/III/III-1313.svg" class="road-tag red"></td>
+                    <td class="info"><img src="files/images/countries/sk/zakaz-tir.png" class="road-tag"> nad 12t, okrem dopravnej obsluhy</td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>26,22</td>
+                    <td class="info">Trnavský kraj → Nitriansky kraj, Okres Galanta → Okres Nitra</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>27 - <img src="files/images/countries/sk/vyjazd.svg" class="icon"><br>Hájske<br>-Mladý Háj</td>
+                    <td class="direction">↑ Banská Bystrica, Nitra, Báb <img title="Diaľnica R1" src="files/images/countries/sk/r-d/R1.svg" class="road-tag">,<img onclick="red('../e/e58.html')" title="Európska cesta 58" src="files/images/countries/eu/sk/E58.svg" class="road-tag red">,<img onclick="red('../e/e571.html')" title="Európska cesta 571" src="files/images/countries/eu/sk/E571.svg" class="road-tag red"> ↑ | ↗ Hájske - Mladý háj</td>
+                    <td><img onclick="red('III/III-1653.html')" title="Cesta tretej triedy číslo 1653" src="files/images/countries/sk/III/III-1653.svg" class="road-tag red"></td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>28,92</td>
+                    <td class="info"><img src="files/images/countries/sk/info/csph.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>29 - <img src="files/images/countries/sk/vyjazd.svg" class="icon"><br>Báb</td>
+                    <td class="direction">↑ Banská Bystrica, Zvolen, Nitra <img title="Diaľnica R1" src="files/images/countries/sk/r-d/R1.svg" class="road-tag">,<img onclick="red('../e/e58.html')" title="Európska cesta 58" src="files/images/countries/eu/sk/E58.svg" class="road-tag red">,<img onclick="red('../e/e571.html')" title="Európska cesta 571" src="files/images/countries/eu/sk/E571.svg" class="road-tag red"> ↑ | ↗ Báb, Veľké Zálužie</td>
+                    <td><img onclick="red('III/III-1674.html')" title="Cesta tretej triedy číslo 1674" src="files/images/countries/sk/III/III-1674.svg" class="road-tag red"></td>
+                    <td class="info"><img src="files/images/countries/sk/reg/zakaz-tir.svg" class="road-tag"> nad 12t, okrem dopravnej obsluhy</td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>32,54</td>
+                    <td class="info"><img src="files/images/countries/sk/warn/vietor.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>33,82</td>
+                    <td class="info">Odpočívadlo Veľké Zálužie</td>
+                    <td><img src="files/images/countries/sk/info/parkovisko.svg" class="road-tag">,<img src="files/images/countries/sk/reg/zakaz-tir.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>34,04</td>
+                    <td class="info"><img src="files/images/countries/sk/warn/vietor.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>38,18</td>
+                    <td class="info"><img src="files/images/countries/sk/info/odstavna-plocha.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>38,86</td>
+                    <td class="spoplatnenie">Koniec spoplatnenia</td>
+                    <td><img src="files/images/countries/sk/info/spoplatnenie-koniec.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">krizovatka-dialnica</td>
+                    <td>39 - <img src="files/images/countries/sk/d-k.svg" class="icon"><br>Nitra-západ</td>
+                    <td class="direction">↑ Banská Bystrica, Zvolen, Nitra - juh <img title="Diaľnica R1" src="files/images/countries/sk/r-d/R1.svg" class="road-tag">,<img onclick="red('../e/e58.html')" title="Európska cesta 58" src="files/images/countries/eu/sk/E58.svg" class="road-tag red">,<img onclick="red('../e/e571.html')" title="Európska cesta 571" src="files/images/countries/eu/sk/E571.svg" class="road-tag red"> ↑ \/ ↗ Nitra - západ, Topoľčany, Partizánske <img onclick="red('r-d/R1a.html')" src="files/images/countries/sk/r-d/R1a.png" class="road-tag red"></td>
+                    <td><img title="Diaľnica R1" src="files/images/countries/sk/r-d/R1.svg" class="road-tag">,<img onclick="red('r-d/R1a.html')" src="files/images/countries/sk/r-d/R1a.png" class="road-tag red">,<img onclick="red('../e/e58.html')" title="Európska cesta 58" src="files/images/countries/eu/sk/E58.svg" class="road-tag red">,<img onclick="red('../e/e571.html')" title="Európska cesta 571" src="files/images/countries/eu/sk/E571.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>40,62</td>
+                    <td class="info">Výjazd vozidiel údržby</td>
+                    <td></td>
+                    <td class=""></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>41,85</td>
+                    <td class="info">Výjazd vozidiel údržby</td>
+                    <td></td>
+                    <td class=""></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>41,94</td>
+                    <td class="info"><img src="files/images/countries/sk/info/odstavna-plocha.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>45 - <img src="files/images/countries/sk/vyjazd.svg" class="icon"><br>Nitra-juh</td>
+                    <td class="direction">↑ Banská Bystrica, Zvolen, Nitra - východ <img title="Diaľnica R1" src="files/images/countries/sk/r-d/R1.svg" class="road-tag">,<img onclick="red('../e/e58.html')" title="Európska cesta 58" src="files/images/countries/eu/sk/E58.svg" class="road-tag red">,<img onclick="red('../e/e571.html')" title="Európska cesta 571" src="files/images/countries/eu/sk/E571.svg" class="road-tag red"> ↑ | ↗ Nitra - juh, Nové Zámky, Šaľa</td>
+                    <td><img onclick="red('II/II-562.html')" title="Cesta druhej triedy číslo 562" src="files/images/countries/sk/II/II-562.svg" class="road-tag red"></td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>45,77</td>
+                    <td class="info"><img src="files/images/countries/sk/info/odstavna-plocha.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>50</td>
+                    <td class="info">Stredisko správy a údržby rýchlostných ciest 1</td>
+                    <td><img src="files/images/countries/sk/reg/zakazvjazdu.svg" class="road-tag"> okrem vozidiel SSÚR 1, údržby, polície a návštev.</td>
+                    <td class=""></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>51 - <img src="files/images/countries/sk/vyjazd.svg" class="icon"><br>Nitra-východ</td>
+                    <td class="direction">↑ Banská Bystrica, Zvolen, Beladice <img title="Diaľnica R1" src="files/images/countries/sk/r-d/R1.svg" class="road-tag">,<img onclick="red('../e/e58.html')" title="Európska cesta 58" src="files/images/countries/eu/sk/E58.svg" class="road-tag red">,<img onclick="red('../e/e571.html')" title="Európska cesta 571" src="files/images/countries/eu/sk/E571.svg" class="road-tag red"> ↑ | ↗ Nitra - východ, Levice, Vráble</td>
+                    <td><img onclick="red('I/I-51.html')" title="Cesta prvej triedy číslo 51" src="files/images/countries/sk/I/I-51.svg" class="road-tag red"></td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>51,18</td>
+                    <td class="info"><span class="spoplatnenie">Začiatok spoplatnenia</span></td>
+                    <td><img src="files/images/countries/sk/info/spoplatnenie-zaciatok.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>53</td>
+                    <td class="info">Pohranice</td>
+                    <td><img src="files/images/countries/sk/info/csph-alt.svg" class="road-tag">,<img src="files/images/countries/sk/info/motorest.svg" class="road-tag">,<img src="files/images/countries/sk/info/parkovisko.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>54,5</td>
+                    <td class="info"><img src="files/images/countries/sk/info/odstavna-plocha.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>55,83</td>
+                    <td class="info">Výjazd vozidiel údržby</td>
+                    <td></td>
+                    <td class=""></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>56,65</td>
+                    <td class="info">Výjazd vozidiel údržby</td>
+                    <td></td>
+                    <td class=""></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>58,64</td>
+                    <td class="info"><img src="files/images/countries/sk/info/odstavna-plocha.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>59,8</td>
+                    <td class="info">Okres Nitra → Okres Zlaté Moravce</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>62 - <img src="files/images/countries/sk/vyjazd.svg" class="icon"><br>Beladice</td>
+                    <td class="direction">↑ Banská Bystrica, Zvolen, Zlaté Moravce <img title="Diaľnica R1" src="files/images/countries/sk/r-d/R1.svg" class="road-tag">,<img onclick="red('../e/e58.html')" title="Európska cesta 58" src="files/images/countries/eu/sk/E58.svg" class="road-tag red">,<img onclick="red('../e/e571.html')" title="Európska cesta 571" src="files/images/countries/eu/sk/E571.svg" class="road-tag red"> ↑ | ↗ Beladice, Pohranice</td>
+                    <td><img onclick="red('III/III-1669.html')" title="Cesta tretej triedy číslo 1669" src="files/images/countries/sk/III/III-1669.svg" class="road-tag red"></td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>61,66</td>
+                    <td class="info">Výjazd vozidiel údržby</td>
+                    <td></td>
+                    <td class=""></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>61,91</td>
+                    <td class="info"><img src="files/images/countries/sk/info/odstavna-plocha.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>63,92</td>
+                    <td class="info">Výjazd vozidiel údržby</td>
+                    <td></td>
+                    <td class=""></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>64</td>
+                    <td class="info">Výjazd vozidiel údržby</td>
+                    <td></td>
+                    <td class=""></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>64,33</td>
+                    <td class="info">Výjazd vozidiel údržby</td>
+                    <td></td>
+                    <td class=""></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>66,4</td>
+                    <td class="info"><img src="files/images/countries/sk/info/odstavna-plocha.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>66,82</td>
+                    <td class="info">Výjazd vozidiel údržby</td>
+                    <td></td>
+                    <td class=""></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>67,84</td>
+                    <td class="info">Výjazd vozidiel údržby</td>
+                    <td></td>
+                    <td class=""></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>68,37</td>
+                    <td class="info">Výjazd vozidiel údržby</td>
+                    <td></td>
+                    <td class=""></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>70 - <img src="files/images/countries/sk/vyjazd.svg" class="icon"><br>Zlaté Moravce</td>
+                    <td class="direction">↑ Banská Bystrica, Zvolen, Čaradice <img title="Diaľnica R1" src="files/images/countries/sk/r-d/R1.svg" class="road-tag">,<img onclick="red('../e/e58.html')" title="Európska cesta 58" src="files/images/countries/eu/sk/E58.svg" class="road-tag red">,<img onclick="red('../e/e571.html')" title="Európska cesta 571" src="files/images/countries/eu/sk/E571.svg" class="road-tag red"> ↑ | ↗ Zlaté Moravce, Vráble</td>
+                    <td><img onclick="red('I/I-65.html')" title="Cesta prvej triedy číslo 65" src="files/images/countries/sk/I/I-65.svg" class="road-tag red"></td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>71,71</td>
+                    <td class="info"><img src="files/images/countries/sk/info/odstavna-plocha.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>71,96</td>
+                    <td class="info">Výjazd vozidiel údržby</td>
+                    <td></td>
+                    <td class=""></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>73,17</td>
+                    <td class="info">Výjazd vozidiel údržby</td>
+                    <td></td>
+                    <td class=""></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>75,14</td>
+                    <td class="info">Výjazd vozidiel údržby</td>
+                    <td></td>
+                    <td class=""></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>75,44</td>
+                    <td class="info"><img src="files/images/countries/sk/info/odstavna-plocha.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>76,14</td>
+                    <td class="info">Výjazd vozidiel údržby</td>
+                    <td></td>
+                    <td class=""></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>77,94</td>
+                    <td class="info"><img src="files/images/countries/sk/info/odstavna-plocha.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>78,56</td>
+                    <td class="info">Výjazd vozidiel údržby</td>
+                    <td></td>
+                    <td class=""></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>78,79</td>
+                    <td class="info">Výjazd vozidiel údržby</td>
+                    <td></td>
+                    <td class=""></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>80 - <img src="files/images/countries/sk/vyjazd.svg" class="icon"><br>Čaradice</td>
+                    <td class="direction">↑ Banská Bystrica, Zvolen, Hronský Beňadik <img title="Diaľnica R1" src="files/images/countries/sk/r-d/R1.svg" class="road-tag">,<img onclick="red('../e/e58.html')" title="Európska cesta 58" src="files/images/countries/eu/sk/E58.svg" class="road-tag red">,<img onclick="red('../e/e571.html')" title="Európska cesta 571" src="files/images/countries/eu/sk/E571.svg" class="road-tag red"> ↑ | ↗ Čaradice</td>
+                    <td><img onclick="red('I/I-65.html')" title="Cesta prvej triedy číslo 65" src="files/images/countries/sk/I/I-65.svg" class="road-tag red"></td>
+                    <td class="info"><img src="files/images/countries/sk/reg/zakaz-tir.svg" class="road-tag"> nad 12t, okrem dopravnej obsluhy</td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>80,04</td>
+                    <td class="info">Výjazd vozidiel údržby</td>
+                    <td></td>
+                    <td class=""></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>80,85</td>
+                    <td class="info">Výjazd vozidiel údržby</td>
+                    <td></td>
+                    <td class=""></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>81,65</td>
+                    <td class="info"><img src="files/images/countries/sk/info/odstavna-plocha.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>83,59</td>
+                    <td class="info">Výjazd vozidiel údržby</td>
+                    <td></td>
+                    <td class=""></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>83,6</td>
+                    <td class="info">Tekovské Nemce</td>
+                    <td><img src="files/images/countries/sk/info/csph.svg" class="road-tag">,<img src="files/images/countries/sk/info/motorest.svg" class="road-tag">,<img src="files/images/countries/sk/info/wc.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>86,68</td>
+                    <td class="info">Okres Zlaté Moravce → Okres Žarnovica</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>87 - <img src="files/images/countries/sk/vyjazd.svg" class="icon"><br>Hronský Beňadik</td>
+                    <td class="direction">↑ Banská Bystrica, Zvolen, Nová Baňa <img title="Diaľnica R1" src="files/images/countries/sk/r-d/R1.svg" class="road-tag">,<img onclick="red('../e/e58.html')" title="Európska cesta 58" src="files/images/countries/eu/sk/E58.svg" class="road-tag red">,<img onclick="red('../e/e571.html')" title="Európska cesta 571" src="files/images/countries/eu/sk/E571.svg" class="road-tag red"> ↑ | ↗ Hronský Beňadik, Levice</td>
+                    <td><img onclick="red('I/I-76.html')" title="Cesta prvej triedy číslo 76" src="files/images/countries/sk/I/I-76.svg" class="road-tag red"></td>
+                    <td class="info"><img src="files/images/countries/sk/reg/zakaz-tir.svg" class="road-tag"> nad 12t, okrem dopravnej obsluhy</td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>95</td>
+                    <td class="info">↗ Stredisko správy a údržby rýchlostných ciest 2, Nová Baňa</td>
+                    <td></td>
+                    <td class=""></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>95 - <img src="files/images/countries/sk/vyjazd.svg" class="icon"><br>Nová Baňa</td>
+                    <td class="direction">↑ Banská Bystrica, Zvolen, Žarnovica <img title="Diaľnica R1" src="files/images/countries/sk/r-d/R1.svg" class="road-tag">,<img onclick="red('../e/e58.html')" title="Európska cesta 58" src="files/images/countries/eu/sk/E58.svg" class="road-tag red">,<img onclick="red('../e/e571.html')" title="Európska cesta 571" src="files/images/countries/eu/sk/E571.svg" class="road-tag red"> ↑ | ↗ Nová Baňa, Brehy</td>
+                    <td><img onclick="red('I/I-65.html')" title="Cesta prvej triedy číslo 65" src="files/images/countries/sk/I/I-65.svg" class="road-tag red">, III/2515</td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>103,2</td>
+                    <td class="info">Odpočívadlo Voznica</td>
+                    <td><img src="files/images/countries/sk/info/parkovisko.svg" class="road-tag">,<img src="files/images/countries/sk/info/wc.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>105 - <img src="files/images/countries/sk/vyjazd.svg" class="icon"><br>Žarnovica-juh</td>
+                    <td class="direction">↑ Banská Bystrica, Zvolen, Bzenica <img title="Diaľnica R1" src="files/images/countries/sk/r-d/R1.svg" class="road-tag">,<img onclick="red('../e/e58.html')" title="Európska cesta 58" src="files/images/countries/eu/sk/E58.svg" class="road-tag red">,<img onclick="red('../e/e571.html')" title="Európska cesta 571" src="files/images/countries/eu/sk/E571.svg" class="road-tag red"> ↑ | ↗ Žarnovica</td>
+                    <td><img onclick="red('II/II-428.html')" title="Cesta druhej tridy číslo 428" src="files/images/countries/sk/II/II-428.svg" class="road-tag red"></td>
+                    <td class="info">Len výjazd. <img src="files/images/countries/sk/reg/zakaz-tir.svg" class="road-tag"> nad 12t, okrem dopravnej obsluhy</td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>106,12</td>
+                    <td class="info"><img src="files/images/countries/sk/rych/110.svg" class="road-tag"></td>
+                    <td></td>
+                    <td class=""></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>106,21</td>
+                    <td class="info">Výjazd vozidiel údržby</td>
+                    <td></td>
+                    <td class=""></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>106,88</td>
+                    <td class="info"><img src="files/images/countries/sk/rych/110k.svg" class="road-tag"></td>
+                    <td></td>
+                    <td class=""></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>107,84</td>
+                    <td class="info">Výjazd vozidiel údržby</td>
+                    <td></td>
+                    <td class=""></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>108,26</td>
+                    <td class="info">Výjazd vozidiel údržby</td>
+                    <td></td>
+                    <td class=""></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>108,99</td>
+                    <td class="info">Výjazd vozidiel údržby</td>
+                    <td></td>
+                    <td class=""></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>109,62</td>
+                    <td class="info"><img src="files/images/countries/sk/rych/100.svg" class="road-tag"></td>
+                    <td></td>
+                    <td class=""></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>109,97</td>
+                    <td class="info"><img src="files/images/countries/sk/rych/80.svg" class="road-tag"></td>
+                    <td></td>
+                    <td class=""></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>110 - <img src="files/images/countries/sk/vyjazd.svg" class="icon"><br>Bzenica</td>
+                    <td class="direction">↑ Banská Bystrica, Zvolen, Lehôtka pod Brehmi <img title="Diaľnica R1" src="files/images/countries/sk/r-d/R1.svg" class="road-tag">,<img onclick="red('../e/e58.html')" title="Európska cesta 58" src="files/images/countries/eu/sk/E58.svg" class="road-tag red">,<img onclick="red('../e/e571.html')" title="Európska cesta 571" src="files/images/countries/eu/sk/E571.svg" class="road-tag red"> ↑ | ↗ Bzenica</td>
+                    <td><img onclick="red('I/I-65.html')" title="Cesta prvej triedy číslo 65" src="files/images/countries/sk/I/I-65.svg" class="road-tag red"></td>
+                    <td class="info">Len výjazd</td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>110,35</td>
+                    <td class="info"><img src="files/images/countries/sk/rych/80k.svg" class="road-tag"></td>
+                    <td></td>
+                    <td class=""></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>111,33</td>
+                    <td class="info">Okres Žarnovica → Okres Žiar nad Hronom</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>112,63</td>
+                    <td class="info"><img src="files/images/countries/sk/warn/smyk.svg" class="road-tag"> 800m ↓</td>
+                    <td></td>
+                    <td class=""></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>115,08</td>
+                    <td class="info">Výjazd vozidiel údržby</td>
+                    <td></td>
+                    <td class=""></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>119</td>
+                    <td class="direction">↑ Banská Bystrica, Zvolen, <img src="files/images/countries/sk/d-k.svg" class="road-icon">Žiar nad Hronom <img title="Diaľnica R1" src="files/images/countries/sk/r-d/R1.svg" class="road-tag">,<img onclick="red('../e/e58.html')" title="Európska cesta 58" src="files/images/countries/eu/sk/E58.svg" class="road-tag red">,<img onclick="red('../e/e571.html')" title="Európska cesta 571" src="files/images/countries/eu/sk/E571.svg" class="road-tag red"> ↑ | ↗ Lehôtka pod Brehmi, Žiar nad Hronom, Hliník nad Hronom</td>
+                    <td><img onclick="red('I/I-65.html')" title="Cesta prvej triedy číslo 65" src="files/images/countries/sk/I/I-65.svg" class="road-tag red"></td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>122,59</td>
+                    <td class="info">Výjazd vozidiel údržby</td>
+                    <td></td>
+                    <td class=""></td>
+                </tr>
+                <tr>
+                    <td class="typ">krizovatka-dialnica</td>
+                    <td>123 - <img src="files/images/countries/sk/d-k.svg" class="icon"><br>Žiar nad Hronom</td>
+                    <td>↑ Smer PL<img src="files/images/flags/poland.svg" class="road-tag red">, Smer UA<img src="files/images/flags/ukraine.svg" class="road-tag red">, Banská Bystrica, Zvolen, Žiar nad Hronom - východ  <img title="Diaľnica R1" src="files/images/countries/sk/r-d/R1.svg" class="road-tag">,<img onclick="red('../e/e58.html')" title="Európska cesta 58" src="files/images/countries/eu/sk/E58.svg" class="road-tag red">,<img onclick="red('../e/e571.html')" title="Európska cesta 571" src="files/images/countries/eu/sk/E571.svg" class="road-tag red"> ↑ \/ ↗ Smer CZ<img onclick="red('../czechrepublic.html')" src="files/images/flags/czechrepublic.svg" class="road-tag red">, Trenčín, Prievidza <img onclick="red('r-d/R2.html')" title="Diaľnica R2/Rýchlostná cesta R2" src="files/images/countries/sk/r-d/R2.svg" class="road-tag red">,<img onclick="red('../e/e572.html')" title="Európska cesta 572" src="files/images/countries/eu/sk/E572.png" class="road-tag red"></td>
+                    <td><img title="Diaľnica R1" src="files/images/countries/sk/r-d/R1.svg" class="road-tag">,<img onclick="red('r-d/R2.html')" title="Diaľnica R2/Rýchlostná cesta R2" src="files/images/countries/sk/r-d/R2.svg" class="road-tag red">,<img onclick="red('../e/e58.html')" title="Európska cesta 58" src="files/images/countries/eu/sk/E58.svg" class="road-tag red">,<img onclick="red('../e/e571.html')" title="Európska cesta 571" src="files/images/countries/eu/sk/E571.svg" class="road-tag red">,<img onclick="red('../e/e572.html')" title="Európska cesta 572" src="files/images/countries/eu/sk/E572.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>123,66</td>
+                    <td class=""><img src="files/images/countries/sk/warn/smyk.svg" class="road-tag"> 800m ↓</td>
+                    <td></td>
+                    <td class=""></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>124,42</td>
+                    <td class="info">Výjazd vozidiel údržby</td>
+                    <td></td>
+                    <td class=""></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>124,5</td>
+                    <td class="info">Výjazd vozidiel údržby</td>
+                    <td></td>
+                    <td class=""></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>125,46</td>
+                    <td class="info">Výjazd vozidiel údržby</td>
+                    <td></td>
+                    <td class=""></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>128 - <img src="files/images/countries/sk/vyjazd.svg" class="icon"><br>Žiar nad Hronom -východ</td>
+                    <td class="direction">↑ Banská Bystrica, Zvolen, Hronská Breznica <img title="Diaľnica R1" src="files/images/countries/sk/r-d/R1.svg" class="road-tag">,<img onclick="red('../e/e58.html')" title="Európska cesta 58" src="files/images/countries/eu/sk/E58.svg" class="road-tag red">,<img onclick="red('../e/e571.html')" title="Európska cesta 571" src="files/images/countries/eu/sk/E571.svg" class="road-tag red"> ↑ | ↗ Martin, Kremnica, Žiar nad Hronom</td>
+                    <td><img onclick="red('I/I-65.html')" title="Cesta prvej triedy číslo 65" title="Cesta prvej triedy číslo 65" src="files/images/countries/sk/I/I-65.svg" class="road-tag red"></td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>128,90</td>
+                    <td class=""><img src="files/images/countries/sk/warn/lad.svg" class="road-tag"> 2km ↓</td>
+                    <td></td>
+                    <td class=""></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>130,39</td>
+                    <td class="info"><img src="files/images/countries/sk/warn/smyk.svg" class="road-tag">,<img src="files/images/countries/sk/110.png" class="road-tag"> pri nepriaznivých podmienkach</td>
+                    <td></td>
+                    <td class=""></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>131,48</td>
+                    <td class=""><img src="files/images/countries/sk/warn/lad.svg" class="road-tag"> 2km ↓</td>
+                    <td></td>
+                    <td class=""></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>132,26</td>
+                    <td class=""><img src="files/images/countries/sk/rych/110k.svg" class="road-tag"></td>
+                    <td></td>
+                    <td class=""></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>134,04</td>
+                    <td class=""><img src="files/images/countries/sk/warn/lad.svg" class="road-tag"></td>
+                    <td></td>
+                    <td class=""></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>135,24</td>
+                    <td class="info">Okres Žiar nad Hronom → Okres Zvolen</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>135,29</td>
+                    <td class=""><img src="files/images/countries/sk/warn/lad.svg" class="road-tag"> 4km ↓</td>
+                    <td></td>
+                    <td class=""></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>135,35</td>
+                    <td class="info"><img src="files/images/countries/sk/warn/smyk.svg" class="road-tag">,<img src="files/images/countries/sk/rych/110.svg" class="road-tag"> pri nepriaznivých podmienkach</td>
+                    <td></td>
+                    <td class=""></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>137 - <img src="files/images/countries/sk/vyjazd.svg" class="icon"><br>Hronská Breznica</td>
+                    <td class="direction">↑ Banská Bystrica, Zvolen, Hronská Dúbrava <img title="Diaľnica R1" src="files/images/countries/sk/r-d/R1.svg" class="road-tag">,<img onclick="red('../e/e58.html')" title="Európska cesta 58" src="files/images/countries/eu/sk/E58.svg" class="road-tag red">,<img onclick="red('../e/e571.html')" title="Európska cesta 571" src="files/images/countries/eu/sk/E571.svg" class="road-tag red"> ↑ | ↗ Banská Štiavnica, Hronská Breznica</td>
+                    <td><img onclick="red('I/I-51.html')" title="Cesta prvej triedy číslo 51" src="files/images/countries/sk/I/I-51.svg" class="road-tag red"></td>
+                    <td class="info"></td>
+                </tr>
+                <tr class="nespoplatneny-usek">
+                    <td class="typ">info</td>
+                    <td><img src="files/images/countries/sk/info/spoplatnenie-koniec.svg" class="road-tag"></td>
+                    <td class=""><span class="">Úsek v priestore výjazdov 137 je nespoplatnený!</span></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>137,4</td>
+                    <td class="info"><img src="files/images/countries/sk/warn/smyk.png" class="road-tag">,<img src="files/images/countries/sk/110.png" class="road-tag"> pri nepriaznivých podmienkach</td>
+                    <td></td>
+                    <td class=""></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>137 - <img src="files/images/countries/sk/vyjazd.svg" class="icon"><br>Hronská Dúbrava</td>
+                    <td class="direction">↑ Banská Bystrica, Zvolen, Budča <img title="Diaľnica R1" src="files/images/countries/sk/r-d/R1.svg" class="road-tag">,<img onclick="red('../e/e58.html')" title="Európska cesta 58" src="files/images/countries/eu/sk/E58.svg" class="road-tag red">,<img onclick="red('../e/e571.html')" title="Európska cesta 571" src="files/images/countries/eu/sk/E571.svg" class="road-tag red"> ↑ | ↗ Hronská Dúbrava</td>
+                    <td>III/2492</td>
+                    <td class="info"><img src="files/images/countries/sk/reg/zakaz-tir.svg" class="road-tag"> nad 12t, okrem dopravnej obsluhy</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>140</td>
+                    <td>↑ <img title="Diaľnica R1" src="files/images/countries/sk/r-d/R1.svg" class="road-tag">,<img onclick="red('../e/e58.html')" title="Európska cesta 58" src="files/images/countries/eu/sk/E58.svg" class="road-tag red">,<img onclick="red('../e/e571.html')" title="Európska cesta 571" src="files/images/countries/eu/sk/E571.svg" class="road-tag red"> ↑</span> | <span class="direction">↗ Ostrá Lúka, Budča</span></td>
+                    <td>III/2440</td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>141</td>
+                    <td class="info">Odpočívadlo Budča</td>
+                    <td><img src="files/images/countries/sk/info/parkovisko.svg" class="road-tag">,<img src="files/images/countries/sk/info/csph.svg" class="road-tag">,<img src="files/images/countries/sk/info/motorest.svg" class="road-tag"></td>
+                    <td class=""></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>141,57</td>
+                    <td class="info"><img src="files/images/countries/sk/warn/smyk.png" class="road-tag">,<img src="files/images/countries/sk/rych/110.svg" class="road-tag"> pri nepriaznivých podmienkach</td>
+                    <td></td>
+                    <td class=""></td>
+                </tr>
+                <tr>
+                    <td class="typ">krizovatka-dialnica</td>
+                    <td>142 - <img src="files/images/countries/sk/krizovatka_dialnica.svg" class="road-tag"></td>
+                    <td>↑ Ružomberok, Banská Bystrica, Zvolen - Stráže <img title="Diaľnica R1" src="files/images/countries/sk/r-d/R1.svg" class="road-tag"> ↑ \/ ↗ Košice, Zvolen <img onclick="red('r-d/R2.html')" src="files/images/countries/sk/r-d/R2.svg" class="road-tag red">,<img onclick="red('../e/e58.html')" title="Európska cesta 58" src="files/images/countries/eu/sk/E58.svg" class="road-tag red">,<img onclick="red('../e/e571.html')" title="Európska cesta 571" src="files/images/countries/eu/sk/E571.svg" class="road-tag red"></td>
+                    <td><img title="Diaľnica R1" src="files/images/countries/sk/r-d/R1.svg" class="road-tag">,<img onclick="red('r-d/R2.html')" src="files/images/countries/sk/r-d/R2.svg" class="road-tag red">,<img onclick="red('../e/e58.html')" title="Európska cesta 58" src="files/images/countries/eu/sk/E58.svg" class="road-tag red">,<img onclick="red('../e/e571.html')" title="Európska cesta 571" src="files/images/countries/eu/sk/E571.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>144 - <img src="files/images/countries/sk/vyjazd.svg" class="icon"><br>Zvolen-Stráže</td>
+                    <td>↑ Ružomberok, Banská Bystrica, Kováčová <img title="Diaľnica R1" src="files/images/countries/sk/r-d/R1.svg" class="road-tag"> ↑ | ↗ Zvolen - Stráže</td>
+                    <td>III/2460</td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>146 - <img src="files/images/countries/sk/vyjazd.svg" class="icon"><br>Kováčová</td>
+                    <td>↑ <img title="Diaľnica R1" src="files/images/countries/sk/r-d/R1.svg" class="road-tag"> ↑ | ↗ Kováčová</td>
+                    <td><img onclick="red('I/I-66.html')" title="Cesta prvej triedy číslo 66" src="files/images/countries/sk/I/I-66.svg" class="road-tag red"></td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>147,25</td>
+                    <td class="info"><img src="files/images/countries/sk/rych/110.svg" class="road-tag"></td>
+                    <td></td>
+                    <td class=""></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>147,95</td>
+                    <td class="info"><img src="files/images/countries/sk/110k.svg" class="road-tag"></td>
+                    <td></td>
+                    <td class=""></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>150 - <img src="files/images/countries/sk/vyjazd.svg" class="icon"><br>Sliač</td>
+                    <td class="direction">↑ Ružomberok, Banská Bystrica <img title="Diaľnica R1" src="files/images/countries/sk/r-d/R1.svg" class="road-tag">,<img onclick="red('../e/e77.html')" src="files/images/countries/eu/sk/E77.svg" class="road-tag red"> ↑ | ↗ Sliač, Sielnica</td>
+                    <td>III/2448, <img src="files/images/countries/sk/info/letisko_rovno.svg" class="road-tag"></td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>151,8</td>
+                    <td class="info">Okres Zvolen → Okres Banská Bystrica</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>154,6</td>
+                    <td class="info">Odpočívadlo Badín</td>
+                    <td><img src="files/images/countries/sk/info/csph.svg" class="road-tag">,<img src="files/images/countries/sk/info/motorest.svg" class="road-tag">,<img src="files/images/countries/sk/info/servis.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>157 - <img src="files/images/countries/sk/vyjazd.svg" class="icon"><br>Banská Bystrica<br>-Západ</td>
+                    <td class="direction">↑ Ružomberok, Brezno, Banská Bystrica - Centrum <img title="Diaľnica R1" src="files/images/countries/sk/r-d/R1.svg" class="road-tag">,<img onclick="red('../e/e77.html')" src="files/images/countries/eu/sk/E77.svg" class="road-tag red"> ↑ | ↗ Banská Bystrica - Kremnička</td>
+                    <td><img onclick="red('I/I-66.html')" title="Cesta prvej triedy číslo 66" src="files/images/countries/sk/I/I-66.svg" class="road-tag red"></td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>157,07</td>
+                    <td class="info"><img src="files/images/countries/sk/rych/100.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>158,41</td>
+                    <td class="spoplatnenie">Koniec spoplatnenia</td>
+                    <td><img src="files/images/countries/sk/info/spoplatnenie-koniec.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>158,7</td>
+                    <td class="info"><img src="files/images/countries/sk/rych/100.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>160,37</td>
+                    <td class="info"><img src="files/images/countries/sk/pruhy-rozsirenie/2+1-l.svg" class="road-tag">,<img src="files/images/countries/sk/rych/100.svg" class="road-tag"></td>                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>162 - <img src="files/images/countries/sk/vyjazd.svg" class="icon"><br>Banská Bystrica<br>-Centrum</td>
+                    <td class="direction">↑ Ružomberok, Brezno, Banská Bystrica - Podlavice <img title="Diaľnica R1" src="files/images/countries/sk/r-d/R1.svg" class="road-tag">,<img onclick="red('../e/e77.html')" src="files/images/countries/eu/sk/E77.svg" class="road-tag red"> ↑ | ↗ Banská Bystrica - Centrum, Banská Bystrica - Hušták, Europa SC ↗</td>
+                    <td><img onclick="red('I/I-66.html')" title="Cesta prvej triedy číslo 66" src="files/images/countries/sk/I/I-66.svg" class="road-tag red"></td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>161,59</td>
+                    <td class="info"><img src="files/images/countries/sk/rych/100.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>162,42</td>
+                    <td class="info"><img src="files/images/countries/sk/rych/80.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>163 - <img src="files/images/countries/sk/vyjazd.svg" class="icon"><br>Banská Bystrica<br>-Podlavice</td>
+                    <td class="direction">↑ Ružomberok, Brezno, Banská Bystrica - sever <img title="Diaľnica R1" src="files/images/countries/sk/r-d/R1.svg" class="road-tag">,<img onclick="red('../e/e77.html')" src="files/images/countries/eu/sk/E77.svg" class="road-tag red"> ↑ | ↗ Banská Bystrica - Podlavice, Nemocnica</td>
+                    <td><img onclick="red('II/II-578.html')" title="Cesta druhej triedy číslo 578" src="files/images/countries/sk/II/II-578.svg" class="road-tag red"></td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>163,24</td>
+                    <td class="info"><img src="files/images/countries/sk/rych/100.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>163,37</td>
+                    <td class="info">Odpočívadlo Graniar</td>
+                    <td><img src="files/images/countries/sk/info/parkovisko.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>163,93</td>
+                    <td class="info"><img src="files/images/countries/sk/rych/80.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>164 - <img src="files/images/countries/sk/vyjazd.svg" class="icon"><br>Banská Bystrica<br>-sever</td>
+                    <td class="direction">↑ Brezno, Banská Bystrica - stred <img title="Diaľnica R1" src="files/images/countries/sk/r-d/R1.svg" class="road-tag"> ↑</span> | <span class="direction">↗ Banská Bystrica - sever, Martin, Ružomberok, Smer (PL)<img src="files/images/flags/poland.webp" class="road-tag red"></span></td>
+                    <td><img onclick="red('i-59.html')" src="files/images/countries/sk/I/I-59.svg" class="road-tag red">,<img onclick="red('../e/e77.html')" src="files/images/countries/eu/sk/E77.svg" class="road-tag red"></td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>164,07</td>
+                    <td class="info"><img src="files/images/countries/sk/60.png" class="road-tag">,<img src="files/images/countries/sk/warn/zakruta-p.png" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>164,75</td>
+                    <td class="info"><img src="files/images/countries/sk/80.png" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>165</td>
+                    <td>↑ <img title="Diaľnica R1" src="files/images/countries/sk/r-d/R1.svg" class="road-tag"> ↑</span> | <span class="direction">↗ Banská Bystrica - stred, Banská Bystrica - Rudlová, Banská Bystrica - Sásová</span></td>
+                    <td>Cesta v intraviláne obce: Banská Bystrica</td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>166,60</td>
+                    <td class="info"><img src="files/images/countries/sk/80.png" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>167,78</td>
+                    <td class="info">Výjazd vozidiel údržby</td>
+                    <td></td>
+                    <td class=""></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>168</td>
+                    <td>↑ <img title="Diaľnica R1" src="files/images/countries/sk/r-d/R1.svg" class="road-tag"> ↑</span> | <span class="direction">↗ Banská Bystrica - východ, Banská Bystrica - Majer, Selce</span></td>
+                    <td><img onclick="red('i-66.html')" src="files/images/countries/sk/I/I-66.svg" class="road-tag red">, III/2418</td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>168,48</td>
+                    <td class="vystavba"><img src="files/images/countries/sk/spoj-do2-p.png" class="road-tag">,<img src="files/images/countries/sk/warn/kolony.png" class="road-tag"> → <strong>POZOR !</strong> Cesta je aktuálne (16/ 6/ 2026 19:39:46) v prestavbe, prebieha preložka cesty I/66 a preto sú v platnosti dopravné obmedzenia a realita sa môže mierne líšiť od uvedených informácií. Vždy sledujte aktuálnu dopravnú situáciu na zdrojoch ako sú Mapy Google alebo Waze!</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>168,48</td>
+                    <td class="vystavba"><img src="files/images/countries/sk/spoj-do1-l.png" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>169 - <img src="files/images/countries/sk/warn/pracanaceste.png" class="road-tag"></td>
+                    <td class="vystavba">Koniec diaľnice <img src="files/images/countries/sk/dialnica-koniec.svg" class="road-tag">,<img src="files/images/countries/sk/info/spoplatnenie-koniec.svg" class="road-tag"></td>
+                    <td>Prechod na <img onclick="red('i-66.html')" src="files/images/countries/sk/I/I-66.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+            </table>
+            <hr>
+            <h4>Objekty • Smer Banská Bystrica (Ružomberok) → Trnava</h4>
+            <table border="1" class="tabulka objekty" id="#dir2">
+                <tr>
+                    <th class="typ">
+                        Typ objektu
+                    </th>
+                    <th id="cv">
+                        Číslo výjazdu
+                    </th>
+                    <th id="main">
+                        Smer/-y
+                    </th>
+                    <th id="prej">
+                        Prejazdy
+                    </th>
+                    <th>
+                        Poznámka
+                    </th>
+                </tr>
+                <!-- ↑ ↓ ← → ↗ ↘ ↔ ↕ ⇐ ⇒ ⇑ ⇓ ⤳ ⤴ ⤵ 
+                    ↗ - šípka doprava hore diagonálna
+                    ↖ - šípka doľava hore diagonálna
+                -->
+                <tr>
+                    <td class="typ">info</td>
+                    <td>169,5 - <img src="files/images/countries/sk/warn/pracanaceste.png" class="road-tag"></td>
+                    <td class="vystavba">Začiatok diaľnice <img src="files/images/countries/sk/dialnica-zaciatok.svg" class="road-tag">,<img src="files/images/countries/sk/plus-do2-l.png" class="road-tag"></td>
+                    <td>Prechod z <img onclick="red('i-66.html')" src="files/images/countries/sk/I/I-66.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>169,5</td>
+                    <td class="info"><span class="spoplatnenie">Nespoplatnený úsek (obchvat mesta Banská Bystrica)</span></td>
+                    <td><img src="files/images/countries/sk/info/spoplatnenie-koniec.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr class="uzavierka">
+                    <td class="typ">vyjazd</td>
+                    <td>169</td>
+                    <td>↑ <img title="Diaľnica R1" src="files/images/countries/sk/r-d/R1.svg" class="road-tag"> ↑</span> | <span class="">↗ Banská Bystrica - Sásová ↗ <img src="files/images/countries/sk/zakazvjazdu.png" class="road-tag"></span></td>
+                    <td><img onclick="red('i-66.html')" src="files/images/countries/sk/I/I-66.svg" class="road-tag red"></td>
+                    <td class="">Výjazd uzavretý!</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>168</td>
+                    <td>↑ <img title="Diaľnica R1" src="files/images/countries/sk/r-d/R1.svg" class="road-tag"> ↑</span> | <span class="direction">↗ Banská Bystrica - východ, Banská Bystrica - Majer, Selce</span></td>
+                    <td><img onclick="red('i-66.html')" src="files/images/countries/sk/I/I-66.svg" class="road-tag red">, III/2418</td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>166</td>
+                    <td>↑ <img title="Diaľnica R1" src="files/images/countries/sk/r-d/R1.svg" class="road-tag"> ↑</span> | <span class="direction">↗ Banská Bystrica - stred, Banská Bystrica - Rudlová, Banská Bystrica - Sásová</span></td>
+                    <td>Cesta v intraviláne obce: Banská Bystrica</td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>164</td>
+                    <td>↑ <img title="Diaľnica R1" src="files/images/countries/sk/r-d/R1.svg" class="road-tag">,<img onclick="red('../e/e77.html')" src="files/images/countries/eu/sk/E77.svg" class="road-tag red"> ↑</span> | <span class="direction">↗ Banská Bystrica - sever, Martin, Ružomberok, Smer (PL)<img src="files/images/flags/poland.webp" class="road-tag red"></span></td>
+                    <td><img onclick="red('i-59.html')" src="files/images/countries/sk/i-59.png" class="road-tag red">,<img onclick="red('../e/e77.html')" src="files/images/countries/eu/sk/E77.svg" class="road-tag red"></td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>164,14</td>
+                    <td class="info"><img src="files/images/countries/sk/spoj-do1-p.png" class="road-tag">,<img src="files/images/countries/sk/dajprednost.png" class="road-tag"></td>
+                    <td></td>
+                    <td class="pozn">Toto je jediné pripojenie na diaľniciach na území SR, kde sa diaľnica pripája z ľavej strany k ceste nižšej triedy. Preto je to unikát, pretože tu sú hneď dve výnimky zároveň.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>163</td>
+                    <td>↑ <img title="Diaľnica R1" src="files/images/countries/sk/r-d/R1.svg" class="road-tag">,<img onclick="red('../e/e77.html')" src="files/images/countries/eu/sk/E77.svg" class="road-tag red"> ↑</span> | <span class="direction">↗ Banská Bystrica - centrum</span></td>
+                    <td>Cesta v intraviláne obce: Banská Bystrica</td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>163</td>
+                    <td>↑ <img title="Diaľnica R1" src="files/images/countries/sk/r-d/R1.svg" class="road-tag">,<img onclick="red('../e/e77.html')" src="files/images/countries/eu/sk/E77.svg" class="road-tag red"> ↑</span> | <span class="direction">↗ Banská Bystrica - Podlavice, Nemocnica</span></td>
+                    <td><img onclick="red('ii-578.html')" src="files/images/countries/sk/ii-578.png" class="road-tag red"></td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>160</td>
+                    <td>↑ <img title="Diaľnica R1" src="files/images/countries/sk/r-d/R1.svg" class="road-tag">,<img onclick="red('../e/e77.html')" src="files/images/countries/eu/sk/E77.svg" class="road-tag red"> ↑</span> | <span class="direction">↗ Banská Bystrica - Kremnička, Banská Bystrica - Radvaň</span></td>
+                    <td>Cesta v intraviláne obce: Banská Bystrica</td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>160</td>
+                    <td>↑ <img title="Diaľnica R1" src="files/images/countries/sk/r-d/R1.svg" class="road-tag">,<img onclick="red('../e/e77.html')" src="files/images/countries/eu/sk/E77.svg" class="road-tag red"> ↑</span> | <span class="direction">↗ Banská Bystrica - Kremnička, Badín, Radvaň Park</span></td>
+                    <td>Cesta v intraviláne obce: Banská Bystrica</td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>160</td>
+                    <td class="info"><span class="spoplatnenie">Začiatok spoplatnenia</span></td>
+                    <td><img src="files/images/countries/sk/info/spoplatnenie-zaciatok.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>150</td>
+                    <td>↑ <img title="Diaľnica R1" src="files/images/countries/sk/r-d/R1.svg" class="road-tag">,<img onclick="red('../e/e77.html')" src="files/images/countries/eu/sk/E77.svg" class="road-tag red"> ↑</span> | <span class="direction">↗ Sliač, Sielnica</span></td>
+                    <td>III/2448, <img src="files/images/countries/sk/letisko_rovno.png" class="road-tag"></td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>148</td>
+                    <td>↑ <img title="Diaľnica R1" src="files/images/countries/sk/r-d/R1.svg" class="road-tag">,<img onclick="red('../e/e77.html')" src="files/images/countries/eu/sk/E77.svg" class="road-tag red"> ↑</span> | <span class="direction">↗ Zvolen - sever</span></td>
+                    <td>III/2460</td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>146B</td>
+                    <td>↑ <img title="Diaľnica R1" src="files/images/countries/sk/r-d/R1.svg" class="road-tag">,<img onclick="red('../e/e77.html')" src="files/images/countries/eu/sk/E77.svg" class="road-tag red"> ↑</span> | <span class="direction">↗ Kováčová</span></td>
+                    <td><img onclick="red('i-66.html')" src="files/images/countries/sk/I/I-66.svg" class="road-tag red"></td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>146A</td>
+                    <td>↑ <img title="Diaľnica R1" src="files/images/countries/sk/r-d/R1.svg" class="road-tag"> ↑</span> | <span class="direction">↗ Košice, Šahy, Zvolen, smer (H)<img src="files/images/flags/hungary.webp" class="road-tag red"></span></td>
+                    <td><img onclick="red('i-66.html')" src="files/images/countries/sk/I/I-66.svg" class="road-tag red">,<img onclick="red('../e/e77.html')" src="files/images/countries/eu/sk/E77.svg" class="road-tag red"></td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>142</td>
+                    <td><span class="direction">↑ <img title="Diaľnica R1" src="files/images/countries/sk/r-d/R1.svg" class="road-tag">,<img onclick="red('../e/e58.html')" title="Európska cesta 58" src="files/images/countries/eu/sk/E58.svg" class="road-tag red">,<img onclick="red('../e/e571.html')" title="Európska cesta 571" src="files/images/countries/eu/sk/E571.svg" class="road-tag red"> ↑ ↖</span></td>
+                    <td><img title="Diaľnica R1" src="files/images/countries/sk/r-d/R1.svg" class="road-tag">,<img onclick="red('r2.html')" src="files/images/countries/sk/r-d/R2.svg" class="road-tag red">,<img onclick="red('../e/e58.html')" title="Európska cesta 58" src="files/images/countries/eu/sk/E58.svg" class="road-tag red">,<img onclick="red('../e/e571.html')" title="Európska cesta 571" src="files/images/countries/eu/sk/E571.svg" class="road-tag red"></td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>140</td>
+                    <td>↑ <img title="Diaľnica R1" src="files/images/countries/sk/r-d/R1.svg" class="road-tag">,<img onclick="red('../e/e58.html')" title="Európska cesta 58" src="files/images/countries/eu/sk/E58.svg" class="road-tag red">,<img onclick="red('../e/e571.html')" title="Európska cesta 571" src="files/images/countries/eu/sk/E571.svg" class="road-tag red"> ↑</span> | <span class="direction">↗ Budča, Ostrá Lúka</span></td>
+                    <td>III/2440</td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>137,0B</td>
+                    <td>↑ <img title="Diaľnica R1" src="files/images/countries/sk/r-d/R1.svg" class="road-tag">,<img onclick="red('../e/e58.html')" title="Európska cesta 58" src="files/images/countries/eu/sk/E58.svg" class="road-tag red">,<img onclick="red('../e/e571.html')" title="Európska cesta 571" src="files/images/countries/eu/sk/E571.svg" class="road-tag red"> ↑</span> | <span class="direction">↗ Hronská Dúbrava</span></td>
+                    <td>III/2492</td>
+                    <td class="info"><img src="files/images/countries/sk/zakaz-tir.png" class="road-tag"> nad 12t, okrem dopravnej obsluhy</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>137,0A</td>
+                    <td>↑ <img title="Diaľnica R1" src="files/images/countries/sk/r-d/R1.svg" class="road-tag">,<img onclick="red('../e/e58.html')" title="Európska cesta 58" src="files/images/countries/eu/sk/E58.svg" class="road-tag red">,<img onclick="red('../e/e571.html')" title="Európska cesta 571" src="files/images/countries/eu/sk/E571.svg" class="road-tag red"> ↑</span> | <span class="direction">↗ Banská Štiavnica, Hronská Breznica</span></td>
+                    <td><img onclick="red('..i-51.html')" src="files/images/countries/sk/I/I-51.svg" class="road-tag red"></td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>128,0</td>
+                    <td>↑ <img title="Diaľnica R1" src="files/images/countries/sk/r-d/R1.svg" class="road-tag">,<img onclick="red('../e/e58.html')" title="Európska cesta 58" src="files/images/countries/eu/sk/E58.svg" class="road-tag red">,<img onclick="red('../e/e571.html')" title="Európska cesta 571" src="files/images/countries/eu/sk/E571.svg" class="road-tag red"> ↑</span> | <span class="direction">↗ Žiar nad Hronom, Martin, Kremnica</span></td>
+                    <td><img onclick="red('..i-65.html')" src="files/images/countries/sk/I/I-65.svg" class="road-tag red"></td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">krizovatka-dialnica</td>
+                    <td>123 - <img src="files/images/countries/sk/krizovatka_dialnica.svg" class="road-tag"></td>
+                    <td><img title="Diaľnica R1" src="files/images/countries/sk/r-d/R1.svg" class="road-tag">,<img onclick="red('../e/e58.html')" title="Európska cesta 58" src="files/images/countries/eu/sk/E58.svg" class="road-tag red">,<img onclick="red('../e/e571.html')" title="Európska cesta 571" src="files/images/countries/eu/sk/E571.svg" class="road-tag red"><span class="direction"> ↑ Bratislava, Nitra, Lehôtka pod Brehmi, Smer (H)<img src="files/images/flags/hungary.webp" class="road-tag red">, (A)<img src="files/images/flags/austria.webp" class="road-tag red">  ↑ \/ </span><span class="direction">↗ Trenčín, Prievidza, Smer (CZ)<img src="files/images/flags/czechrepublic.webp" class="road-tag red"></span> <img onclick="red('r2.html')" src="files/images/countries/sk/r-d/R2.svg" class="road-tag red">,<img onclick="red('../e/e572.html')" src="files/images/countries/eu/sk/E572.png" class="road-tag red"></td>
+                    <td><img title="Diaľnica R1" src="files/images/countries/sk/r-d/R1.svg" class="road-tag">,<img onclick="red('r2.html')" src="files/images/countries/sk/r-d/R2.svg" class="road-tag red">,<img onclick="red('../e/e58.html')" title="Európska cesta 58" src="files/images/countries/eu/sk/E58.svg" class="road-tag red">,<img onclick="red('../e/e571.html')" title="Európska cesta 571" src="files/images/countries/eu/sk/E571.svg" class="road-tag red">,<img onclick="red('../e/e572.html')" src="files/images/countries/eu/sk/E572.png" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>119</td>
+                    <td>↑ <img title="Diaľnica R1" src="files/images/countries/sk/r-d/R1.svg" class="road-tag">,<img onclick="red('../e/e58.html')" title="Európska cesta 58" src="files/images/countries/eu/sk/E58.svg" class="road-tag red">,<img onclick="red('../e/e571.html')" title="Európska cesta 571" src="files/images/countries/eu/sk/E571.svg" class="road-tag red"> ↑</span> | <span class="direction">↗ Žiar nad Hronom, Hliník nad Hronom, Lehôtka pod Brehmi</span></td>
+                    <td><img onclick="red('..i-65.html')" src="files/images/countries/sk/I/I-65.svg" class="road-tag red"></td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>109</td>
+                    <td>↑ <img title="Diaľnica R1" src="files/images/countries/sk/r-d/R1.svg" class="road-tag">,<img onclick="red('../e/e58.html')" title="Európska cesta 58" src="files/images/countries/eu/sk/E58.svg" class="road-tag red">,<img onclick="red('../e/e571.html')" title="Európska cesta 571" src="files/images/countries/eu/sk/E571.svg" class="road-tag red"> ↑</span> | <span class="direction">↗ Žarnovica</span></td>
+                    <td><img onclick="red('..i-65.html')" src="files/images/countries/sk/I/I-65.svg" class="road-tag red">,<img onclick="red('..ii-428.html')" src="files/images/countries/sk/II-428.png" class="road-tag red"></td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>95</td>
+                    <td class="info">↗ Stredisko správy a údržby rýchlostných ciest 2, Nová Baňa</td>
+                    <td></td>
+                    <td class=""></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>95</td>
+                    <td>↑ <img title="Diaľnica R1" src="files/images/countries/sk/r-d/R1.svg" class="road-tag">,<img onclick="red('../e/e58.html')" title="Európska cesta 58" src="files/images/countries/eu/sk/E58.svg" class="road-tag red">,<img onclick="red('../e/e571.html')" title="Európska cesta 571" src="files/images/countries/eu/sk/E571.svg" class="road-tag red"> ↑</span> | <span class="direction">↗ Nová Baňa, Brehy</span></td>
+                    <td><img onclick="red('..i-65.html')" src="files/images/countries/sk/I/I-65.svg" class="road-tag red">, III/2515</td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>87</td>
+                    <td>↑ <img title="Diaľnica R1" src="files/images/countries/sk/r-d/R1.svg" class="road-tag">,<img onclick="red('../e/e58.html')" title="Európska cesta 58" src="files/images/countries/eu/sk/E58.svg" class="road-tag red">,<img onclick="red('../e/e571.html')" title="Európska cesta 571" src="files/images/countries/eu/sk/E571.svg" class="road-tag red"> ↑</span> | <span class="direction">↗ Hronský Beňadik, Levice</span></td>
+                    <td><img onclick="red('..i-76.html')" src="files/images/countries/sk/I-76.png" class="road-tag red"></td>
+                    <td class="info"><img src="files/images/countries/sk/zakaz-tir.png" class="road-tag"> nad 12t, okrem dopravnej obsluhy</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>80</td>
+                    <td>↑ <img title="Diaľnica R1" src="files/images/countries/sk/r-d/R1.svg" class="road-tag">,<img onclick="red('../e/e58.html')" title="Európska cesta 58" src="files/images/countries/eu/sk/E58.svg" class="road-tag red">,<img onclick="red('../e/e571.html')" title="Európska cesta 571" src="files/images/countries/eu/sk/E571.svg" class="road-tag red"> ↑</span> | <span class="direction">↗ Čaradice</span></td>
+                    <td><img onclick="red('..i-65.html')" src="files/images/countries/sk/I/I-65.svg" class="road-tag red"></td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>70</td>
+                    <td>↑ <img title="Diaľnica R1" src="files/images/countries/sk/r-d/R1.svg" class="road-tag">,<img onclick="red('../e/e58.html')" title="Európska cesta 58" src="files/images/countries/eu/sk/E58.svg" class="road-tag red">,<img onclick="red('../e/e571.html')" title="Európska cesta 571" src="files/images/countries/eu/sk/E571.svg" class="road-tag red"> ↑</span> | <span class="direction">↗ Zlaté Moravce, Vráble</span></td>
+                    <td><img onclick="red('..i-65.html')" src="files/images/countries/sk/I/I-65.svg" class="road-tag red"></td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>62</td>
+                    <td>↑ <img title="Diaľnica R1" src="files/images/countries/sk/r-d/R1.svg" class="road-tag">,<img onclick="red('../e/e58.html')" title="Európska cesta 58" src="files/images/countries/eu/sk/E58.svg" class="road-tag red">,<img onclick="red('../e/e571.html')" title="Európska cesta 571" src="files/images/countries/eu/sk/E571.svg" class="road-tag red"> ↑</span> | <span class="direction">↗ Beladice, Pohranice</span></td>
+                    <td>III/1669</td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>51</td>
+                    <td class="info"><span class="spoplatnenie">Koniec spoplatnenia (obchvat mesta Nitra)</span></td>
+                    <td><img src="files/images/countries/sk/info/spoplatnenie-zaciatok.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>51</td>
+                    <td>↑ <img title="Diaľnica R1" src="files/images/countries/sk/r-d/R1.svg" class="road-tag">,<img onclick="red('../e/e58.html')" title="Európska cesta 58" src="files/images/countries/eu/sk/E58.svg" class="road-tag red">,<img onclick="red('../e/e571.html')" title="Európska cesta 571" src="files/images/countries/eu/sk/E571.svg" class="road-tag red"> ↑</span> | <span class="direction">↗ Nitra - východ, Levice, Vráble</span></td>
+                    <td><img onclick="red('..i-51.html')" src="files/images/countries/sk/I/I-51.svg" class="road-tag red"></td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>45</td>
+                    <td>↑ <img title="Diaľnica R1" src="files/images/countries/sk/r-d/R1.svg" class="road-tag">,<img onclick="red('../e/e58.html')" title="Európska cesta 58" src="files/images/countries/eu/sk/E58.svg" class="road-tag red">,<img onclick="red('../e/e571.html')" title="Európska cesta 571" src="files/images/countries/eu/sk/E571.svg" class="road-tag red"> ↑</span> | <span class="direction">↗ Nitra - juh, Nové Zámky, Šaľa</span></td>
+                    <td><img onclick="red('..ii-562.html')" src="files/images/countries/sk/II-562.png" class="road-tag red"></td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">krizovatka-dialnica</td>
+                    <td>39 - <img src="files/images/countries/sk/krizovatka_dialnica.svg" class="road-tag"></td>
+                    <td><img title="Diaľnica R1" src="files/images/countries/sk/r-d/R1.svg" class="road-tag">,<img onclick="red('../e/e58.html')" title="Európska cesta 58" src="files/images/countries/eu/sk/E58.svg" class="road-tag red">,<img onclick="red('../e/e571.html')" title="Európska cesta 571" src="files/images/countries/eu/sk/E571.svg" class="road-tag red"><span class="direction"> ↑ Bratislava, Trnava, Báb ↑ \/ </span><span class="direction">↗ Nitra - západ, Topoľčany, Partizánske </span><img onclick="red('r1a.html')" src="files/images/countries/sk/r1a.png" class="road-tag red"></td>
+                    <td><img title="Diaľnica R1" src="files/images/countries/sk/r-d/R1.svg" class="road-tag">,<img onclick="red('r1a.html')" src="files/images/countries/sk/r1a.png" class="road-tag red">,<img onclick="red('../e/e58.html')" title="Európska cesta 58" src="files/images/countries/eu/sk/E58.svg" class="road-tag red">,<img onclick="red('../e/e571.html')" title="Európska cesta 571" src="files/images/countries/eu/sk/E571.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>39</td>
+                    <td class="info"><span class="spoplatnenie">Začiatok spoplatnenia</span></td>
+                    <td><img src="files/images/countries/sk/info/spoplatnenie-zaciatok.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>29</td>
+                    <td>↑ <img title="Diaľnica R1" src="files/images/countries/sk/r-d/R1.svg" class="road-tag">,<img onclick="red('../e/e58.html')" title="Európska cesta 58" src="files/images/countries/eu/sk/E58.svg" class="road-tag red">,<img onclick="red('../e/e571.html')" title="Európska cesta 571" src="files/images/countries/eu/sk/E571.svg" class="road-tag red"> ↑</span> | <span class="direction">↗ Báb, Veľké Zálužie</span></td>
+                    <td>III/1674</td>
+                    <td class="info"><img src="files/images/countries/sk/zakaz-tir.png" class="road-tag"> nad 12t, okrem dopravnej obsluhy</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>27</td>
+                    <td>↑ <img title="Diaľnica R1" src="files/images/countries/sk/r-d/R1.svg" class="road-tag">,<img onclick="red('../e/e58.html')" title="Európska cesta 58" src="files/images/countries/eu/sk/E58.svg" class="road-tag red">,<img onclick="red('../e/e571.html')" title="Európska cesta 571" src="files/images/countries/eu/sk/E571.svg" class="road-tag red"> ↑</span> | <span class="direction">↗ Hájske - Mladý háj</span></td>
+                    <td>III/1653, III/1330</td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>23</td>
+                    <td>↑ <img title="Diaľnica R1" src="files/images/countries/sk/r-d/R1.svg" class="road-tag">,<img onclick="red('../e/e58.html')" title="Európska cesta 58" src="files/images/countries/eu/sk/E58.svg" class="road-tag red">,<img onclick="red('../e/e571.html')" title="Európska cesta 571" src="files/images/countries/eu/sk/E571.svg" class="road-tag red"> ↑</span> | <span class="direction">↗ Šaľa, Šoporňa, Pata</span></td>
+                    <td>III/1313</td>
+                    <td class="info"><img src="files/images/countries/sk/zakaz-tir.png" class="road-tag"> nad 12t, okrem dopravnej obsluhy</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>21</td>
+                    <td>↑ <img title="Diaľnica R1" src="files/images/countries/sk/r-d/R1.svg" class="road-tag">,<img onclick="red('../e/e58.html')" title="Európska cesta 58" src="files/images/countries/eu/sk/E58.svg" class="road-tag red">,<img onclick="red('../e/e571.html')" title="Európska cesta 571" src="files/images/countries/eu/sk/E571.svg" class="road-tag red"> ↑</span> | <span class="direction">↗ Šintava</span></td>
+                    <td><img onclick="red('i-62.html')" src="files/images/countries/sk/i-62.png" class="road-tag red"></td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>16</td>
+                    <td>↑ <img title="Diaľnica R1" src="files/images/countries/sk/r-d/R1.svg" class="road-tag">,<img onclick="red('../e/e58.html')" title="Európska cesta 58" src="files/images/countries/eu/sk/E58.svg" class="road-tag red">,<img onclick="red('../e/e571.html')" title="Európska cesta 571" src="files/images/countries/eu/sk/E571.svg" class="road-tag red"> ↑</span> | <span class="direction">↗ Dolná Streda, Galanta</span></td>
+                    <td><img onclick="red('i-35.html')" src="files/images/countries/sk/i-35.png" class="road-tag red">,<img onclick="red('ii-507.html')" src="files/images/countries/sk/ii-507.png" class="road-tag red"></td>
+                    <td class="info"></td>
+                </tr>
+                <tr class="nespoplatneny-usek">
+                    <td class="typ">info</td>
+                    <td style="display:grid;justify-content:center">↑↓</td>
+                    <td class=""><span class="">Úsek v priestore výjazdov 14 až 16 je nespoplatnený (náhradná trasa)</span></td>
+                    <td><img src="files/images/countries/sk/info/spoplatnenie-koniec.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>14</td>
+                    <td>↑ <img title="Diaľnica R1" src="files/images/countries/sk/r-d/R1.svg" class="road-tag">,<img onclick="red('../e/e58.html')" title="Európska cesta 58" src="files/images/countries/eu/sk/E58.svg" class="road-tag red">,<img onclick="red('../e/e571.html')" title="Európska cesta 571" src="files/images/countries/eu/sk/E571.svg" class="road-tag red"> ↑</span> | <span class="direction">↗ Sládkovičovo, Sereď - juh</span></td>
+                    <td><img onclick="red('i-62.html')" src="files/images/countries/sk/i-62.png" class="road-tag red"></td>
+                    <td class="info"></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>8</td>
+                    <td>↑ <img title="Diaľnica R1" src="files/images/countries/sk/r-d/R1.svg" class="road-tag">,<img onclick="red('../e/e58.html')" title="Európska cesta 58" src="files/images/countries/eu/sk/E58.svg" class="road-tag red">,<img onclick="red('../e/e571.html')" title="Európska cesta 571" src="files/images/countries/eu/sk/E571.svg" class="road-tag red"> ↑</span> | <span class="direction">↗ Vlčkovce - juh</span></td>
+                    <td>III/1280</td>
+                    <td class="info"><img src="files/images/countries/sk/zakaz-tir.png" class="road-tag"> nad 12t, okrem dopravnej obsluhy</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>6</td>
+                    <td>↑ <img title="Diaľnica R1" src="files/images/countries/sk/r-d/R1.svg" class="road-tag">,<img onclick="red('../e/e58.html')" title="Európska cesta 58" src="files/images/countries/eu/sk/E58.svg" class="road-tag red">,<img onclick="red('../e/e571.html')" title="Európska cesta 571" src="files/images/countries/eu/sk/E571.svg" class="road-tag red"> ↑</span> | <span class="direction">↗ Vlčkovce - sever</span></td>
+                    <td>III/1337</td>
+                    <td class="info"><img src="files/images/countries/sk/zakaz-tir.png" class="road-tag"> nad 12t, okrem dopravnej obsluhy</td>
+                </tr>
+                <tr>
+                    <td class="typ">krizovatka-dialnica</td>
+                    <td>3B - <img src="files/images/countries/sk/krizovatka_dialnica.svg" class="road-tag"></td>
+                    <td><img title="Diaľnica R1" src="files/images/countries/sk/r-d/R1.svg" class="road-tag">,<img onclick="red('../e/e58.html')" title="Európska cesta 58" src="files/images/countries/eu/sk/E58.svg" class="road-tag red">,<img onclick="red('../e/e571.html')" title="Európska cesta 571" src="files/images/countries/eu/sk/E571.svg" class="road-tag red"><span class="direction"> ↑ Trnava, Bratislava ↑ \/ </span><span class="direction">↗ Trenčín </span><img onclick="red('d1.html')" src="files/images/countries/sk/r-d/D1.svg" class="road-tag red">,<img onclick="red('../e/e75.html')" src="files/images/countries/eu/sk/E75.svg" class="road-tag red">    </td>
+                    <td><img onclick="red('d1.html')" src="files/images/countries/sk/r-d/D1.svg" class="road-tag red">,<img title="Diaľnica R1" src="files/images/countries/sk/r-d/R1.svg" class="road-tag">,<img onclick="red('../e/e58.html')" title="Európska cesta 58" src="files/images/countries/eu/sk/E58.svg" class="road-tag red">,<img onclick="red('../e/e75.html')" src="files/images/countries/eu/sk/E75.svg" class="road-tag red">,<img onclick="red('../e/e571.html')" title="Európska cesta 571" src="files/images/countries/eu/sk/E571.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">krizovatka-dialnica</td>
+                    <td>3A - <img src="files/images/countries/sk/krizovatka_dialnica.svg" class="road-tag"></td>
+                    <td><img title="Diaľnica R1" src="files/images/countries/sk/r-d/R1.svg" class="road-tag"><span class="direction"> ↑ Trnava ↑ \/ </span><span class="direction">↗ Bratislava </span><img onclick="red('d1.html')" src="files/images/countries/sk/r-d/D1.svg" class="road-tag red">,<img onclick="red('../e/e58.html')" title="Európska cesta 58" src="files/images/countries/eu/sk/E58.svg" class="road-tag red">,<img onclick="red('../e/e75.html')" src="files/images/countries/eu/sk/E75.svg" class="road-tag red">,<img onclick="red('../e/e571.html')" title="Európska cesta 571" src="files/images/countries/eu/sk/E571.svg" class="road-tag red"></td>
+                    <td><img onclick="red('d1.html')" src="files/images/countries/sk/r-d/D1.svg" class="road-tag red">,<img title="Diaľnica R1" src="files/images/countries/sk/r-d/R1.svg" class="road-tag">,<img onclick="red('../e/e58.html')" title="Európska cesta 58" src="files/images/countries/eu/sk/E58.svg" class="road-tag red">,<img onclick="red('../e/e75.html')" src="files/images/countries/eu/sk/E75.svg" class="road-tag red">,<img onclick="red('../e/e571.html')" title="Európska cesta 571" src="files/images/countries/eu/sk/E571.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>2</td>
+                    <td>↑ <img title="Diaľnica R1" src="files/images/countries/sk/r-d/R1.svg" class="road-tag"> ↑</span> | <span class="direction">↗ Trnava - Modranka</span></td>
+                    <td>III/1279</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>1</td>
+                    <td>↑ <img title="Diaľnica R1" src="files/images/countries/sk/r-d/R1.svg" class="road-tag">,<img src="files/images/countries/sk/info/spoplatnenie-koniec.svg" class="road-tag"> ↑</span> | <span class="direction">↗ Senica, Hlohovec, Trnava - sever</span></td>
+                    <td><img onclick="red('i-51.html')" src="files/images/countries/sk/I/I-51.svg" class="road-tag red">,<img onclick="red('i-651.html')" src="files/images/countries/sk/I-61.png" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr class="nespoplatneny-usek">
+                    <td class="typ">info</td>
+                    <td style="display:grid;justify-content:center">↑↓</td>
+                    <td class=""><span class="">Úsek nie je spoplatnený (Obchvat Trnavy)</span></td>
+                    <td><img src="files/images/countries/sk/info/spoplatnenie-koniec.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>0</td>
+                    <td class="info">Koniec diaľnice</td>
+                    <td><img src="files/images/countries/sk/dialnica-koniec.svg" class="road-tag">,<img title="Diaľnica R1" src="files/images/countries/sk/r-d/R1.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+            </table><!-- ### -->
+        </div>
+    </div>
+  </body>
+  <hr>
+  <footer>
+    <span>Posledná aktualizácia: 19/ 6/ 2026 21:41:43</span>
+  </footer>
+</html>

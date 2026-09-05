@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="sk">
+  <head>
+    <title>Slovensko • D4</title>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../../../styles/index.css">
+    <link rel="stylesheet" href="../../../../styles/road.css">
+    <script src="../../../../scripts/loadExit.js" defer></script>
+    <script src="../../../../scripts/road.js" defer></script>
+    <base href="../../../../">
+  </head>
+  <body>
+    <div id="header">
+        <h2><img src="files/images/countries/sk/r-d/D4.svg" class="road-tag">Diaľnica D4, Slovensko  •  Bratislava-Jarovce - Bratislava-Rača + Záhorská Bystrica - Volkswagen (Bratislava-Jarovce - Stupava) <span class="pozn">Bratislavský obchvat</span></h2>
+        <hr>
+        <h3>Krajské mestá, cez/okolo ktorých cesta prechádza:</h3><span>Bratislava</span>
+    </div>
+    <div id="selection">
+        <span>Toto je beta verzia funkcie.</span>
+        <button onclick="history.back()">Späť</button>
+        <button onclick="direction('dir1')">BA-Jarovce → BA-Rača (Stupava)</button>
+        <button onclick="direction('dir2')">BA Rača (Stupava) → BA-Jarovce</button>
+    </div>
+    <div id="objekty-na-trase">
+        <h3>Objekty na trase:</h3>
+        <div id="objekty">
+            <h4 id="dir1">Objekty - smer Bratislava-Jarovce → Bratislava-Rača (Stupava)</h4>
+            <table border="1" class="tabulka objekty">
+                <tr>
+                    <th class="typ">
+                        Typ objektu
+                    </th>
+                    <th id="cv">
+                        Číslo výjazdu
+                    </th>
+                    <th id="main">
+                        Smer/-y
+                    </th>
+                    <th id="prej">
+                        Prejazdy
+                    </th>
+                    <th>
+                        Poznámka
+                    </th>
+                </tr>
+                <!-- ↑ ↓ ← → ↗ ↘ ↔ ↕ ⇐ ⇒ ⇑ ⇓ ⤳ ⤴ ⤵ 
+                    ↗ - šípka doprava hore diagonálna
+                    ↖ - šípka doľava hore diagonálna
+                -->
+                <tr>
+                    <td class="typ">info</td>
+                    <td></td>
+                    <td class="info">→ Bratislavský samosprávny kraj, → Okres Bratislava</td>
+                    <td></td>
+                    <td></td>                    
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td><img src="files/images/countries/sk/info/dialnica-zaciatok.svg" class="road-tag"></td>
+                    <td class="info">Začiatok diaľnice, <span class="spoplatnenie">začiatok spoplatnenia slovenskou diaľničnou známkou/elektronickým mýtom</span>.</td>
+                    <td><img src="files/images/countries/sk/r-d/D4.svg" class="road-tag">,<img onclick="red('../e/e58.html')" title="Európska cesta 58" src="files/images/countries/eu/sk/E58.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>0,46</td>
+                    <td class="info"><img src="files/images/countries/sk/pruhy-doprava/2-1.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>1,56</td>
+                    <td class="spoplatnenie"><img src="files/images/countries/sk/info/spoplatnenie-koniec.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>2 - <img src="files/images/countries/sk/d-k.svg" class="icon"><br>Bratislava<br>-Jarovce</td>
+                    <td class="direction">↑ Brno, Smer CZ, Bratislava-Karlova Ves <img onclick="red('r-d/D2.html')" title="Diaľnica D2" src="files/images/countries/sk/r-d/D2.svg" class="road-tag red">,<img onclick="red('../e/e65.html')" title="Európska cesta 65" src="files/images/countries/eu/sk/E65.svg" class="road-tag red"> ↑↗ Budapest, Szombathely, Smer H, Žilina, Komárno, Bratislava-Petržalka, Bratislava <img src="files/images/countries/sk/info/letisko.svg" class="road-tag"> <img onclick="red('r-d/D2.html')" title="Diaľnica D2" src="files/images/countries/sk/r-d/D2.svg" class="road-tag red">,<img src="files/images/countries/sk/r-d/D4.svg" class="road-tag">,<img onclick="red('../e/e58.html')" title="Európska cesta 58" src="files/images/countries/eu/sk/E58.svg" class="road-tag red">,<img onclick="red('../e/e65.html')" title="Európska cesta 65" src="files/images/countries/eu/sk/E65.svg" class="road-tag red">,<img onclick="red('../e/e75.html')" title="Európska cesta 75" src="files/images/countries/eu/sk/E75.svg" class="road-tag red">↗</td>
+                    <td><img onclick="red('r-d/D2.html')" title="Diaľnica D2" src="files/images/countries/sk/r-d/D2.svg" class="road-tag red">,<img src="files/images/countries/sk/r-d/D4.svg" class="road-tag">,<img onclick="red('../e/e58.html')" title="Európska cesta 58" src="files/images/countries/eu/sk/E58.svg" class="road-tag red">,<img onclick="red('../e/e65.html')" title="Európska cesta 65" src="files/images/countries/eu/sk/E65.svg" class="road-tag red">,<img onclick="red('../e/e75.html')" title="Európska cesta 75" src="files/images/countries/eu/sk/E75.svg" class="road-tag red"></td>
+                    <td>↗<img src="files/images/countries/sk/r-d/D4.svg" class="road-tag"></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>2 - <img src="files/images/countries/sk/d-k.svg" class="icon"><br>Bratislava<br>-Jarovce</td>
+                    <td class="direction">↑ Žilina, Komárno, Bratislava-Petržalka, Bratislava <img src="files/images/countries/sk/info/letisko.svg" class="road-tag"> <img src="files/images/countries/sk/r-d/D4.svg" class="road-tag">,<img onclick="red('../e/e58.html')" title="Európska cesta 58" src="files/images/countries/eu/sk/E58.svg" class="road-tag red">,<img onclick="red('../e/e75.html')" title="Európska cesta 75" src="files/images/countries/eu/sk/E75.svg" class="road-tag red"> ↑ | ↗ Budapest, Szombathely, Smer H <img onclick="red('r-d/D2.html')" title="Diaľnica D2" src="files/images/countries/sk/r-d/D2.svg" class="road-tag red">,<img onclick="red('../e/e65.html')" title="Európska cesta 65" src="files/images/countries/eu/sk/E65.svg" class="road-tag red">,<img onclick="red('../e/e75.html')" title="Európska cesta 75" src="files/images/countries/eu/sk/E75.svg" class="road-tag red"></td>
+                    <td><img onclick="red('r-d/D2.html')" title="Diaľnica D2" src="files/images/countries/sk/r-d/D2.svg" class="road-tag red">,<img src="files/images/countries/sk/r-d/D4.svg" class="road-tag">,<img onclick="red('../e/e58.html')" title="Európska cesta 58" src="files/images/countries/eu/sk/E58.svg" class="road-tag red">,<img onclick="red('../e/e65.html')" title="Európska cesta 65" src="files/images/countries/eu/sk/E65.svg" class="road-tag red">,<img onclick="red('../e/e75.html')" title="Európska cesta 75" src="files/images/countries/eu/sk/E75.svg" class="road-tag red"></td>
+                    <td>↑<img src="files/images/countries/sk/r-d/D4.svg" class="road-tag">↑</td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>3,52</td>
+                    <td class="info"><img src="files/images/countries/sk/info/odstavna-plocha.svg" class="road-tag"></td>
+                    <td><img src="files/images/countries/sk/info/sos.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>4 - <img src="files/images/countries/sk/vyjazd.svg" class="icon"></td>
+                    <td class="direction">↑ Žilina, Komárno, <img src="files/images/countries/sk/d-k.svg" class="icon">Bratislava-Juh, Bratislava <img src="files/images/countries/sk/info/letisko.svg" class="road-tag"> <img src="files/images/countries/sk/r-d/D4.svg" class="road-tag">,<img onclick="red('../e/e58.html')" title="Európska cesta 58" src="files/images/countries/eu/sk/E58.svg" class="road-tag red">,<img onclick="red('../e/e75.html')" title="Európska cesta 75" src="files/images/countries/eu/sk/E75.svg" class="road-tag red"> ↑ | ↗ Bratislava -Rusovce, -Petržalka</td>
+                    <td><img onclick="red('I/I-2.html')" title="Cesta prvej triedy číslo 2" src="files/images/countries/sk/I/I-2.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>4,76</td>
+                    <td class="info"><img src="files/images/countries/sk/info/rieka.svg" class="road-tag"> Lužný most</td>
+                    <td class="info">Dunaj</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>9 - <img src="files/images/countries/sk/d-k.svg" class="icon"><br>Bratislava<br>-Juh</td>
+                    <td class="direction">↑ Žilina, Pezinok, Bratislava-Podunajské Biskupice <img src="files/images/countries/sk/r-d/D4.svg" class="road-tag">,<img onclick="red('../e/e58.html')" title="Európska cesta 58" src="files/images/countries/eu/sk/E58.svg" class="road-tag red">,<img onclick="red('../e/e75.html')" title="Európska cesta 75" src="files/images/countries/eu/sk/E75.svg" class="road-tag red"> ↑ | ↗ Komárno, Bratislava-Ružinov, Bratislava <img src="files/images/countries/sk/info/letisko.svg" class="road-tag">,<img src="files/images/countries/sk/info/pristav.svg" class="road-tag"> <img onclick="red('r-d/R7.html')" title="Rýchlostná cesta R7" src="files/images/countries/sk/r-d/R7.svg" class="road-tag red">,<img onclick="red('../e/e575.html')" title="Európska cesta 575" src="files/images/countries/eu/sk/E575.svg" class="road-tag red">↗</td>
+                    <td><img src="files/images/countries/sk/r-d/D4.svg" class="road-tag">,<img onclick="red('r-d/R7.html')" title="Rýchlostná cesta R7" src="files/images/countries/sk/r-d/R7.svg" class="road-tag red">,<img onclick="red('../e/e58.html')" title="Európska cesta 58" src="files/images/countries/eu/sk/E58.svg" class="road-tag red">,<img onclick="red('../e/e75.html')" title="Európska cesta 75" src="files/images/countries/eu/sk/E75.svg" class="road-tag red">,<img onclick="red('../e/e575.html')" title="Európska cesta 575" src="files/images/countries/eu/sk/E575.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>9,28</td>
+                    <td class="info"><img src="files/images/countries/sk/pruhy-doprava/2-2.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>10,05</td>
+                    <td class="info"><img src="files/images/countries/sk/info/odstavna-plocha.svg" class="road-tag"></td>
+                    <td><img src="files/images/countries/sk/info/sos.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">odpocivadlo</td>
+                    <td>10,84</td>
+                    <td class="info">Odpočívadlo Rovinka</td>
+                    <td><img src="files/images/countries/sk/info/csph-alt.svg" class="road-tag">,<img src="files/images/countries/sk/info/motorest.svg" class="road-tag">,<img src="files/images/countries/sk/info/sluzby-tir.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>12,06</td>
+                    <td class="info"><img src="files/images/countries/sk/info/odstavna-plocha.svg" class="road-tag"></td>
+                    <td><img src="files/images/countries/sk/info/sos.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>13 - <img src="files/images/countries/sk/vyjazd.svg" class="icon"></td>
+                    <td class="direction">↑ Žilina, Pezinok, Bratislava-Vrakuňa <img src="files/images/countries/sk/r-d/D4.svg" class="road-tag">,<img onclick="red('../e/e58.html')" title="Európska cesta 58" src="files/images/countries/eu/sk/E58.svg" class="road-tag red">,<img onclick="red('../e/e75.html')" title="Európska cesta 75" src="files/images/countries/eu/sk/E75.svg" class="road-tag red"> ↑ | ↗ Bratislava-Podunajské Biskupice | ↗ Rovinka</td>
+                    <td><img onclick="red('I/I-63.html')" title="Cesta prvej triedy číslo 63" src="files/images/countries/sk/I/I-63.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+            </table>
+            <hr>
+            <h3 id="dir2">Objekty • Smer Bratislava-Rača (Stupava) → Bratislava-Jarovce</h3>
+            <table border="1" class="tabulka vyjazdy">
+                <tr>
+                    <th class="typ">
+                        Typ
+                    </th>
+                    <th id="cv">
+                        Číslo výjazdu
+                    </th>
+                    <th id="main">
+                        Smer/-y
+                    </th>
+                    <th id="prej">
+                        Prejazdy
+                    </th>
+                    <th>
+                        Poznámka
+                    </th>
+                </tr>
+                <!-- ↑ ↓ ← → ↗ ↘ ↔ ↕ ⇐ ⇒ ⇑ ⇓ ⤳ ⤴ ⤵ 
+                    ↗ - šípka doprava hore diagonálna
+                    ↖ - šípka doľava hore diagonálna
+                -->
+                <tr>
+                    <td>0 - iba smer D2</td>
+                    <td><span class="direction">↑ Smer (H) <img src="files/images/flags/hungary.webp" class="flag">, Smer (A) <img src="files/images/flags/austria.webp" class="flag">, Budapest, Wien, Bratská ulica ↑ </span></td>
+                    <td><img onclick="red('d2.html')" src="files/images/countries/sk/r-d/d2.svg" class="road-tag red">,<img onclick="red('../e/e58.html')" src="files/images/countries/eu/sk/e58.svg" class="road-tag red">,<img src="files/images/countries/eu/sk/E65.png" class="road-tag">,<img onclick ="red('../e/e75.html')" src="files/images/countries/eu/sk/e75.svg" class="road-tag red"></td>
+                </tr>
+                <tr>
+                    <td>0 - iba smer D2</td>
+                    <td><span class="gray">↑ ↑ \/</span><span class="direction"> ↗ Smer (CZ) <img src="files/images/flags/czechrepublic.webp" class="flag">, Brno, Dúbravka, Karlova Ves ↗</span></td>
+                    <td><img onclick="red('d2.html')" src="files/images/countries/sk/r-d/d2.svg" class="road-tag red">,<img onclick ="red('../e/e75.html')" src="files/images/countries/eu/sk/e75.svg" class="road-tag red"></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td><span class="gray">↑ ↖</span><span class="direction"> ↗ Einsteinova ulica, Dolnozemská cesta, Výstavisko Incheba ↗</span></td>
+                    <td><img onclick="red('i-2.html')" src="files/images/countries/sk/i/i-2.svg" class="road-tag red">,<img onclick="red('i-61.html')" src="files/images/countries/sk/i/i-61.svg" class="road-tag red"></td>
+                </tr>
+                <tr>
+                    <td>5 - križovatka<br>Bratislava - Prievoz</td>
+                    <td><span class="gray">↑ ↖</span><span class="direction">↗ Komárno, Bajkalská ulica, Prístav, Centrum ↗</span></td>
+                    <td><img src="files/images/countries/sk/r-d/R7.svg" class="road-tag">,<img onclick="red('i-61.html')" src="files/images/countries/sk/i/i-61.svg" class="road-tag red"></td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td><span class="gray">↑ ↑ \/</span><span class="direction"> ↗ Gagarinova ulica, Prievoz, Podunajské Biskupice</span></td>
+                    <td><img src="files/images/countries/sk/I-63.png" class="road-tag"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+  </body>
+  <hr>
+  <footer>
+    <span>Posledná aktualizácia: 19/ 8/ 2026 20:35:37</span>
+  </footer>
+</html>
+
