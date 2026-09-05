@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="sk">
+  <head>
+    <title>Slovensko • I/71</title>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../../styles/index.css">
+    <link rel="stylesheet" href="../../../../styles/road.css">
+    <script src="../../../../scripts/loadExit.js" defer></script>
+    <script src="../../../../scripts/road.js" defer></script>
+    <base href="../../../../">
+  </head>
+  <body>
+  <div id="header">
+        <h2><img src="files/images/countries/sk/I/I-71.svg" class="road-tag">Cesta prvej triedy 71, Slovensko  •  Lučenec - Šiatorská Bukovinka</h2>
+        <hr>
+    </div>
+    <div id="selection">
+        <span>Toto je beta verzia funkcie.</span>
+        <button onclick="history.back()">Späť</button>
+        <button onclick="direction('dir1')">Lučenec → Šiatorská Bukovinka</button>
+        <button onclick="direction('dir2')">Šiatorská Bukovinka → Lučenec</button>
+    </div>
+    <div id="objekty-na-trase">
+        <h3>Objekty na trase:</h3>
+        <div id="objekty">
+            <h4 id="dir1">Objekty • Smer Lučenec → Šiatorská Bukovinka</h4>
+            <table border="1" class="tabulka objekty">
+                <tr>
+                    <th class="typ">
+                        Typ objektu
+                    </th>
+                    <th id="cv">
+                        Číslo výjazdu
+                    </th>
+                    <th id="main">
+                        Smer/-y
+                    </th>
+                    <th id="prej">
+                        Prejazdy
+                    </th>
+                    <th>
+                        Poznámka
+                    </th>
+                </tr>
+                <!-- ↑ ↓ ← → ↗ ↘ ↔ ↕ ⇐ ⇒ ⇑ ⇓ ⤳ ⤴ ⤵ 
+                    ↗ - šípka doprava hore diagonálna
+                    ↖ - šípka doľava hore diagonálna
+                -->
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>0,23 - <img src="files/images/countries/sk/u-k.svg" class="icon"></td>
+                    <td class="direction">← | ↑ Fiľakovo, Šiatorská Bukovinka</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>1,71</td>
+                    <td class="info"><img src="files/images/countries/sk/rych/70.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>1,78 - <img src="files/images/countries/sk/u-k.svg" class="icon"></td>
+                    <td class="direction">Fiľakovo, Šiatorská Bukovinka ↑ | →</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>1,86 - <img src="files/images/countries/sk/u-k.svg" class="icon"></td>
+                    <td class="direction">Boľkovce ← | ↑ Fiľakovo, Šiatorská Bukovinka | → Lučenec</td>
+                    <td>III/2655</td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>2,17</td>
+                    <td class="info">Začiatok obce: Lučenec časť Fabianka</td>
+                    <td><img src="files/images/countries/sk/i/i-71.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>2,22 - <img src="files/images/countries/sk/u-k.svg" class="icon"></td>
+                    <td class="direction">← | ↑ Fiľakovo, Šiatorská Bukovinka </td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>2,33 - <img src="files/images/countries/sk/u-k.svg" class="icon"></td>
+                    <td class="direction">← | ↑ Fiľakovo, Šiatorská Bukovinka</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>2,42</td>
+                    <td class="info"><img src="files/images/countries/sk/info/bus.svg" class="road-tag"> Lučenec, Fabianka</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>2,45</td>
+                    <td class="info"><img src="files/images/countries/sk/rych/70.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>2,75 - <img src="files/images/countries/sk/u-k.svg" class="icon"></td>
+                    <td class="direction">← | ↑ Fiľakovo, Šiatorská Bukovinka</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>3,35</td>
+                    <td class="info"><img src="files/images/countries/sk/info/bus.svg" class="road-tag"> Lučenec, Malá Fabianka</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>3,37 - <img src="files/images/countries/sk/u-k.svg" class="icon"></td>
+                    <td class="direction">Fiľakovo, Šiatorská Bukovinka ↑ | →</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>3,4</td>
+                    <td class="info">Koniec obce: Lučenec časť Fabianka</td>
+                    <td><img src="files/images/countries/sk/i/i-71.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>3,99</td>
+                    <td class="info"><img src="files/images/countries/sk/info/bus.svg" class="road-tag"> Lučenec, Fabianka záhradky</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>4,06 - <img src="files/images/countries/sk/u-k.svg" class="icon"></td>
+                    <td class="direction">← | ↑ Fiľakovo, Šiatorská Bukovinka</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>4,82</td>
+                    <td class="info">Začiatok obce: Holiša časť Krutkova osada</td>
+                    <td><img src="files/images/countries/sk/i/i-71.svg" class="road-tag">,<img src="files/images/countries/sk/rych/70.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>5,16</td>
+                    <td class="info"><img src="files/images/countries/sk/info/bus.svg" class="road-tag"> Holiša, Krutkova osada</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>5,38</td>
+                    <td class="info">Koniec obce: Holiša časť Krutkova osada</td>
+                    <td><img src="files/images/countries/sk/i/i-71.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>6,55</td>
+                    <td class="info"><img src="files/images/countries/sk/info/bus.svg" class="road-tag"> Fiľakovské Kováče, Fiľakovské Kľačany, rázcestie</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>6,63 - <img src="files/images/countries/sk/u-k.svg" class="icon"></td>
+                    <td class="direction">Nitra nad Ipľom, Holiša ← | ↑ Fiľakovo, Šiatorská Bukovinka</td>
+                    <td>III/2668</td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>6,86 - <img src="files/images/countries/sk/u-k.svg" class="icon"></td>
+                    <td class="direction">Fiľakovo, Šiatorská Bukovinka ↑ | → Kalonda, Rapovce, Trebeľovce <img src="files/images/countries/sk/hm/25t.svg" class="road-tag"></td>
+                    <td>III/2652</td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>7,64</td>
+                    <td class="info">Začiatok obce: Fiľakovské Kováče časť Fiľakovské Kľačany</td>
+                    <td><img src="files/images/countries/sk/i/i-71.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>7,73</td>
+                    <td class="info"><img src="files/images/countries/sk/warn/dvoj_z-lavo.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>8,02 - <img src="files/images/countries/sk/u-k.svg" class="icon"></td>
+                    <td class="direction">← | ↑ Fiľakovo, Šiatorská Bukovinka</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>8,1</td>
+                    <td class="info"><img src="files/images/countries/sk/info/bus.svg" class="road-tag"> Fiľakovské Kováče, Fiľakovské Kľačany</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>8,24 - <img src="files/images/countries/sk/u-k.svg" class="icon"></td>
+                    <td class="direction">← | ↑ Fiľakovo, Šiatorská Bukovinka</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>8,35</td>
+                    <td class="info">Koniec obce: Fiľakovské Kováče časť Fiľakovské Kľačany</td>
+                    <td><img src="files/images/countries/sk/i/i-71.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>9,4</td>
+                    <td class="info">Začiatok obce: Fiľakovské Kováče</td>
+                    <td><img src="files/images/countries/sk/i/i-71.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>9,48 - <img src="files/images/countries/sk/u-k.svg" class="icon"></td>
+                    <td class="direction">← | ↑ Fiľakovo, Šiatorská Bukovinka</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>9,78</td>
+                    <td class="info"><img src="files/images/countries/sk/info/priechod.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>9,81</td>
+                    <td class="info"><img src="files/images/countries/sk/info/bus.svg" class="road-tag"> Fiľakovské Kováče</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>9,82 - <img src="files/images/countries/sk/u-k.svg" class="icon"></td>
+                    <td class="direction">← | ↑ Fiľakovo, Šiatorská Bukovinka | →</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>9,97</td>
+                    <td class="info">Koniec obce: Fiľakovské Kováče</td>
+                    <td><img src="files/images/countries/sk/i/i-71.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>10,61</td>
+                    <td class="info"><img src="files/images/countries/sk/rych/70.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>10,79 - <img src="files/images/countries/sk/u-k.svg" class="icon"></td>
+                    <td class="direction">Veľké Dravce, Buzitka, Prša <img src="files/images/countries/sk/hm/12t.svg" class="road-tag"> ← | ↑ Fiľakovo, Šiatorská Bukovinka</td>
+                    <td>III/2669</td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>10,92</td>
+                    <td class="info">Začiatok obce: Fiľakovské Kováče časť Kurtáň</td>
+                    <td><img src="files/images/countries/sk/i/i-71.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>11,1 - <img src="files/images/countries/sk/u-k.svg" class="icon"></td>
+                    <td class="direction">← | ↑ Fiľakovo, Šiatorská Bukovinka</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>11,42</td>
+                    <td class="info"><img src="files/images/countries/sk/info/bus.svg" class="road-tag"> Fiľakovské Kováče, Kurtáň</td>
+                    <td><img src="files/images/countries/sk/info/priechod.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>11,74 - <img src="files/images/countries/sk/u-k.svg" class="icon"></td>
+                    <td class="direction">Fiľakovo, Šiatorská Bukovinka ↑ | →</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>11,78</td>
+                    <td class="info">Koniec obce: Fiľakovské Kováče časť Kurtáň</td>
+                    <td><img src="files/images/countries/sk/i/i-71.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>12,36</td>
+                    <td class="info"><img src="files/images/countries/sk/reg/nepredchadzat.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>12,61 - <img src="files/images/countries/sk/u-k.svg" class="icon"></td>
+                    <td class="direction">Fiľakovo, Šiatorská Bukovinka ↑ | →</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>13,18 - <img src="files/images/countries/sk/u-k.svg" class="icon"></td>
+                    <td class="direction">Jesenské, Fiľakovo ← | ↑ Šiatorská Bukovinka</td>
+                    <td><img onclick="red('II/II-571.html')" title="Cesta druhej triedy číslo 571" src="files/images/countries/sk/II/II-571.svg" class="road-tag red"></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>13,22</td>
+                    <td class="info"><img src="files/images/countries/sk/reg/nepredchadzat-k.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>13,94</td>
+                    <td class="info"><img src="files/images/countries/sk/rych/70.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>14,12 - <img src="files/images/countries/sk/u-k.svg" class="icon"></td>
+                    <td class="direction">Fiľakovo ← | ↑ Šiatorská Bukovinka | → Ratka <img src="files/images/countries/sk/reg/zakaz-tir.svg" class="road-tag"></td>
+                    <td>III/2673</td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>14,84 - <img src="files/images/countries/sk/u-k.svg" class="icon"></td>
+                    <td class="direction">← | ↑ Šiatorská Bukovinka</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>14,95 - <img src="files/images/countries/sk/u-k.svg" class="icon"></td>
+                    <td class="direction"><img src="files/images/countries/sk/reg/zakazvjazdu-smer.svg" class="road-tag"> ← | ↑ Šiatorská Bukovinka</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>15,22 - <img src="files/images/countries/sk/u-k.svg" class="icon"></td>
+                    <td class="direction">← | ↑ Šiatorská Bukovinka</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>15,58 - <img src="files/images/countries/sk/u-k.svg" class="icon"></td>
+                    <td class="direction">← | ↑ Šiatorská Bukovinka</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>15,59</td>
+                    <td class="info">Začiatok obce: Biskupice</td>
+                    <td><img src="files/images/countries/sk/i/i-71.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>15,71 - <img src="files/images/countries/sk/u-k.svg" class="icon"></td>
+                    <td class="direction">Šiatorská Bukovinka ↑ | →</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>15,96 - <img src="files/images/countries/sk/u-k.svg" class="icon"></td>
+                    <td class="direction">Jesenské, Fiľakovo ← | ↑ Šiatorská Bukovinka</td>
+                    <td>III/2674</td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>16,05</td>
+                    <td class="info"><img src="files/images/countries/sk/info/priechod.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>16,27 - <img src="files/images/countries/sk/u-k.svg" class="icon"></td>
+                    <td class="direction">← | ↑ Šiatorská Bukovinka | →</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>16,4</td>
+                    <td class="info"><img src="files/images/countries/sk/warn/dvoj_z-pravo.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>16,5</td>
+                    <td class="info"><img src="files/images/countries/sk/info/priechod.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>16,51 - <img src="files/images/countries/sk/u-k.svg" class="icon"></td>
+                    <td class="direction">Šiatorská Bukovinka ↑ | →</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>16,56 - <img src="files/images/countries/sk/u-k.svg" class="icon"></td>
+                    <td class="direction">Šiatorská Bukovinka ↑ | →</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>16,58</td>
+                    <td class="info"><img src="files/images/countries/sk/info/bus.svg" class="road-tag"> Biskupice, Námestie</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>16,62 - <img src="files/images/countries/sk/u-k.svg" class="icon"></td>
+                    <td class="direction">← | ↑ Šiatorská Bukovinka</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>16,83 - <img src="files/images/countries/sk/u-k.svg" class="icon"></td>
+                    <td class="direction">Šiatorská Bukovinka ↑ | →</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>16,84</td>
+                    <td class="info"><img src="files/images/countries/sk/info/priechod.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>16,89 - <img src="files/images/countries/sk/u-k.svg" class="icon"></td>
+                    <td class="direction">← | ↑ Šiatorská Bukovinka</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>17,03</td>
+                    <td class="info"><img src="files/images/countries/sk/info/priechod.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>17,28</td>
+                    <td class="info">Koniec obce: Biskupice</td>
+                    <td><img src="files/images/countries/sk/i/i-71.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>17,31</td>
+                    <td class="info"><img src="files/images/countries/sk/warn/dvoj_z-pravo.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>17,38</td>
+                    <td class="info"><img src="files/images/countries/sk/warn/zver-p.svg" class="road-tag"> 2 km ↓</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>17,62 - <img src="files/images/countries/sk/u-k.svg" class="icon"></td>
+                    <td class="direction">Belina ← | ↑ Šiatorská Bukovinka</td>
+                    <td>III/2675</td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>19,4</td>
+                    <td class="info">Začiatok obce: Radzovce</td>
+                    <td><img src="files/images/countries/sk/i/i-71.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>19,53 - <img src="files/images/countries/sk/u-k.svg" class="icon"></td>
+                    <td class="direction">Šiatorská Bukovinka ↑ | →</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>19,55 - <img src="files/images/countries/sk/u-k.svg" class="icon"></td>
+                    <td class="direction">← | ↑ Šiatorská Bukovinka</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>19,6</td>
+                    <td class="info"><img src="files/images/countries/sk/info/bus.svg" class="road-tag"> Radzovce, 1. zastávka</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>19,78</td>
+                    <td class="info"><img src="files/images/countries/sk/warn/deti.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>20,05 - <img src="files/images/countries/sk/u-k.svg" class="icon"></td>
+                    <td class="direction">← | ↑ Šiatorská Bukovinka</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>20,15</td>
+                    <td class="info"><img src="files/images/countries/sk/info/bus.svg" class="road-tag"> Radzovce, kultúrny dom</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>20,19 - <img src="files/images/countries/sk/u-k.svg" class="icon"></td>
+                    <td class="direction">Šiatorská Bukovinka ↑ | → Čakanovce</td>
+                    <td>III/2653</td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>20,28 - <img src="files/images/countries/sk/u-k.svg" class="icon"></td>
+                    <td class="direction">Šiatorská Bukovinka ↑ | →</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>20,4 - <img src="files/images/countries/sk/u-k.svg" class="icon"></td>
+                    <td class="direction">← | ↑ Šiatorská Bukovinka</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>20,48</td>
+                    <td class="info"><img src="files/images/countries/sk/warn/deti.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>20,52 - <img src="files/images/countries/sk/u-k.svg" class="icon"></td>
+                    <td class="direction">Šiatorská Bukovinka ↑ | →</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>21</td>
+                    <td class="info">Koniec obce: Radzovce</td>
+                    <td><img src="files/images/countries/sk/i/i-71.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>21,48 - <img src="files/images/countries/sk/u-k.svg" class="icon"></td>
+                    <td class="direction">Šiatorská Bukovinka ↑ | → Čakanovce</td>
+                    <td>III/2657</td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>21,95</td>
+                    <td class="info"><img src="files/images/countries/sk/rych/70.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>22,63</td>
+                    <td class="info">Začiatok obce: Šiatorská Bukovinka</td>
+                    <td><img src="files/images/countries/sk/i/i-71.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>22,67 - <img src="files/images/countries/sk/u-k.svg" class="icon"></td>
+                    <td class="direction">← | ↑ <img src="files/images/countries/sk/i/i-71.svg" class="road-tag"></td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>23 - <img src="files/images/countries/sk/u-k.svg" class="icon"></td>
+                    <td class="direction">← | ↑ <img src="files/images/countries/sk/i/i-71.svg" class="road-tag"></td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>23,04</td>
+                    <td class="info"><img src="files/images/countries/sk/info/bus.svg" class="road-tag"> Šiatorská Bukovinka, Zastávka</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>23,06</td>
+                    <td class="info"><img src="files/images/countries/sk/reg/nepredchadzat-tir.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>23,43 - <img src="files/images/countries/sk/u-k.svg" class="icon"></td>
+                    <td class="direction">← | ↑ <img src="files/images/countries/sk/i/i-71.svg" class="road-tag"></td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>23,51</td>
+                    <td class="info"><img src="files/images/countries/sk/info/bus.svg" class="road-tag"> Šiatorská Bukovinka, lom</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>23,59</td>
+                    <td class="info"><img src="files/images/countries/sk/rych/70.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>24,14</td>
+                    <td class="info"><img src="files/images/countries/sk/rych/70k.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>24,26 - <img src="files/images/countries/sk/u-k.svg" class="icon"></td>
+                    <td class="direction">← | ↑ <img src="files/images/countries/sk/i/i-71.svg" class="road-tag"></td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>24,33</td>
+                    <td class="info"><img src="files/images/countries/sk/info/bus.svg" class="road-tag"> Šiatorská Bukovinka, základná škola</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>25,17 - <img src="files/images/countries/sk/u-k.svg" class="icon"></td>
+                    <td class="direction">← | ↑ <img src="files/images/countries/sk/i/i-71.svg" class="road-tag"></td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>25,18</td>
+                    <td class="info"><img src="files/images/countries/sk/info/bus.svg" class="road-tag"> Šiatorská Bukovinka, rázcestie</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>25,25</td>
+                    <td class="info">Koniec obce: Šiatorská Bukovinka</td>
+                    <td><img src="files/images/countries/sk/i/i-71.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>25,25</td>
+                    <td class="info"><img src="files/images/countries/sk/rych/70.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>25,61</td>
+                    <td class="info"><img src="files/images/countries/sk/rych/70.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>26,25</td>
+                    <td class="info"><img src="files/images/countries/sk/rych/40.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">hranice</td>
+                    <td><img src="files/images/countries/sk/info/hranice-eu.svg" class="road-tag"></td>
+                    <td class="hranice">Štátna hranica SK <img src="files/images/flags/slovakia.svg" class="flag"> / H <img onclick="red('../hungary.html')" src="files/images/flags/hungary.svg" class="flag red"></td>
+                    <td><img src="files/images/countries/sk/I/I-71.svg" class="road-tag"> ↑ | ↓ <img onclick="red('../h/SH/21.html')" src="files/images/countries/h/SH/21.svg" class="road-tag red"></td>
+                    <td></td>
+                </tr>
+            </table>
+            <hr>
+            <h4 id="dir2">Smer Šiatorská Bukovinka → Lučenec</h4>
+            <table border="1" class="tabulka objekty">
+                <tr>
+                    <th class="typ">
+                        Typ objektu
+                    </th>
+                    <th id="cv">
+                        Číslo výjazdu
+                    </th>
+                    <th id="main">
+                        Smer/-y
+                    </th>
+                    <th id="prej">
+                        Prejazdy
+                    </th>
+                    <th>
+                        Poznámka
+                    </th>
+                </tr>
+                <!-- ↑ ↓ ← → ↗ ↘ ↔ ↕ ⇐ ⇒ ⇑ ⇓ ⤳ ⤴ ⤵ 
+                    ↗ - šípka doprava hore diagonálna
+                    ↖ - šípka doľava hore diagonálna
+                -->
+                <tr>
+                    <td class="typ">hranice</td>
+                    <td><img src="files/images/countries/sk/info/hranice-eu.svg" class="road-tag"></td>
+                    <td class="hranice">Štátna hranica H <img onclick="red('../hungary.html')" src="files/images/flags/hungary.svg" class="flag red"> / SK <img src="files/images/flags/slovakia.svg" class="flag"></td>
+                    <td><img onclick="red('../h/SH/21.html')" src="files/images/countries/h/SH/21.svg" class="road-tag red"> ↑ | ↓ <img src="files/images/countries/sk/I/I-71.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>26,16</td>
+                    <td class="info">→ Banskobystrický samosprávny kraj, → Okres Lučenec</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>26,13</td>
+                    <td class="info"><img src="files/images/countries/sk/rych/70.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>26,11</td>
+                    <td class="info"><img src="files/images/countries/sk/warn/dvoj_z-pravo.svg" class="road-tag"> 3 km ↓</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>25,57</td>
+                    <td class="info"><img src="files/images/countries/sk/rych/70.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>25,25</td>
+                    <td class="info">Začiatok obce: Šiatorská Buskovinka</td>
+                    <td><img src="files/images/countries/sk/i/i-71.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>25,22 - <img src="files/images/countries/sk/u-k.svg" class="icon"></td>
+                    <td class="direction">Cieľ ↑ | →</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>25,18</td>
+                    <td class="info"><img src="files/images/countries/sk/info/bus.svg" class="road-tag"> Šiatorská Bukovinka, rázcestie</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+  </body>
+  <hr>
+  <footer>
+    <span>Posledná aktualizácia: 20/ 8/ 2026 20:10:56</span>
+  </footer>
+</html>

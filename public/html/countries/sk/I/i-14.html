@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="sk">
+  <head>
+    <title>Slovensko • I/10</title>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../../styles/index.css">
+    <link rel="stylesheet" href="../../../styles/road.css">
+    <script src="../../../scripts/loadExit.js" defer></script>
+    <script src="../../../scripts/road.js" defer></script>
+  </head>
+  <body>
+  <div id="header">
+        <h2><img src="../../../files/images/countries/sk/I/I-14.svg" class="road-tag">Cesta prvej triedy 14, Slovensko  •  Banská Bystrica - Turčianske Teplice</h2>
+        <hr>
+    </div>
+    <div id="objekty-na-trase">
+        <h3>Objekty na trase:</h3>
+        <div id="objekty">
+            <h4>Objekty • Smer Banská Bystrica → Turčianske Teplice</h4>
+            <table border="1" class="tabulka objekty" id="#dir1">
+                <tr>
+                    <th class="typ">
+                        Typ objektu
+                    </th>
+                    <th id="cv">
+                        Číslo výjazdu
+                    </th>
+                    <th id="main">
+                        Smer/-y
+                    </th>
+                    <th id="prej">
+                        Prejazdy
+                    </th>
+                    <th>
+                        Poznámka
+                    </th>
+                </tr>
+                <!-- ↑ ↓ ← → ↗ ↘ ↔ ↕ ⇐ ⇒ ⇑ ⇓ ⤳ ⤴ ⤵ 
+                    ↗ - šípka doprava hore diagonálna
+                    ↖ - šípka doľava hore diagonálna
+                -->
+                <tr>
+                    <td class="typ">info</td>
+                    <td>0,08</td>
+                    <td class="info"><img src="../../../files/images/countries/sk/info/bus.svg" class="road-tag"> Banská Bystrica, Uľanka, Križovatka</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>0,12</td>
+                    <td class="info"><img src="../../../files/images/countries/sk/warn/dvoj_z-lavo.svg" class="road-tag">,<img src="../../../files/images/countries/sk/maxvyska-4,6.png" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>0,22</td>
+                    <td class="info"><img src="../../../files/images/countries/sk/warn/lad.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>1,36</td>
+                    <td class="info"><img src="../../../files/images/countries/sk/warn/dvoj_z-lavo.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>1,63</td>
+                    <td class="info">Začiatok obce: Harmanec</td>
+                    <td><img src="../../../files/images/countries/sk/i/i-14.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>1,87</td>
+                    <td class="info"><img src="../../../files/images/countries/sk/info/bus.svg" class="road-tag"> Harmanec, Papiereň</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>2,46</td>
+                    <td class="direction">Turčianske Teplice ↑ | →</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>2,57</td>
+                    <td class="info"><img src="../../../files/images/countries/sk/info/bus.svg" class="road-tag"> Harmanec, Ubytovňa</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>2,63</td>
+                    <td class="direction">← | ↑ Turčianske Teplice | →</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>3,09</td>
+                    <td class="info">Koniec obce: Harmanec</td>
+                    <td><img src="../../../files/images/countries/sk/i/i-14.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>3,15</td>
+                    <td class="info"><img src="../../../files/images/countries/sk/warn/lad.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>4,2</td>
+                    <td class="info"><img src="../../../files/images/countries/sk/warn/dvoj_z-pravo.svg" class="road-tag"> 2km ↓</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>4,26</td>
+                    <td class="info">Začiatok obce: Dolný Harmanec</td>
+                    <td><img src="../../../files/images/countries/sk/i/i-14.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>4,53</td>
+                    <td class="direction">← | ↑ Turčianske Teplice</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>5,23</td>
+                    <td class="direction">Turčianske Teplice ↑ | → Krížna</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>5,26</td>
+                    <td class="info">Koniec obce: Dolný Harmanec</td>
+                    <td><img src="../../../files/images/countries/sk/i/i-14.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>5,42</td>
+                    <td class="info"><img src="../../../files/images/countries/sk/warn/skaly.svg" class="road-tag"> 8km ↓</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>5,45</td>
+                    <td class="info"><img src="../../../files/images/countries/sk/warn/smyk.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>5,69</td>
+                    <td class="info"><img src="../../../files/images/countries/sk/warn/zver-p.png" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>6,47</td>
+                    <td class="info">Začiatok obce: Dolný Harmanec časť Horný Harmanec</td>
+                    <td><img src="../../../files/images/countries/sk/i/i-14.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>7,49</td>
+                    <td class="info">Koniec obce: Dolný Harmanec časť Horný Harmanec</td>
+                    <td><img src="../../../files/images/countries/sk/i/i-14.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>9,57</td>
+                    <td class="info">Odstavná plocha</td>
+                    <td><img src="../../../files/images/countries/sk/info/odstavna-plocha.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>9,85</td>
+                    <td class="info">Odstavná plocha</td>
+                    <td><img src="../../../files/images/countries/sk/info/odstavna-plocha.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>9,99</td>
+                    <td class="info"><img src="../../../files/images/countries/sk/warn/dvoj_z-lavo.svg" class="road-tag">,<img src="../../../files/images/countries/sk/warn/smyk.svg" class="road-tag"> 3km ↓</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>11,71</td>
+                    <td class="info">Odstavná plocha</td>
+                    <td><img src="../../../files/images/countries/sk/info/odstavna-plocha.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>12</td>
+                    <td class="info">Odstavná plocha</td>
+                    <td><img src="../../../files/images/countries/sk/info/odstavna-plocha.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>13,07</td>
+                    <td class="info"><img src="../../../files/images/countries/sk/warn/zakruta-l.png" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>13,19</td>
+                    <td class="info">Horský priechod Šturec</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>13,2</td>
+                    <td class="info">Odstavná plocha</td>
+                    <td><img src="../../../files/images/countries/sk/info/odstavna-plocha.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>13,25</td>
+                    <td class="info">Banskobystrický kraj → Žilinský kraj, Okres Banská Bystrica → Okres Turčianske Teplice</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>13,26</td>
+                    <td class="info"><img src="../../../files/images/countries/sk/warn/dvoj_z-lavo.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>13,28</td>
+                    <td class="info"><img src="../../../files/images/countries/sk/warn/smyk.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>14,08</td>
+                    <td class="info"><img src="../../../files/images/countries/sk/warn/skaly.svg" class="road-tag"> 5km ↓</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>14,53</td>
+                    <td class="info">Odstavná plocha</td>
+                    <td><img src="../../../files/images/countries/sk/info/odstavna-plocha.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>14,81</td>
+                    <td class="info">Odstavná plocha</td>
+                    <td><img src="../../../files/images/countries/sk/info/odstavna-plocha.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>15,53</td>
+                    <td class="info">Odstavná plocha</td>
+                    <td><img src="../../../files/images/countries/sk/info/odstavna-plocha.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>17,09</td>
+                    <td class="info"><img src="../../../files/images/countries/sk/warn/st/12.svg" class="road-tag">,<img src="../../../files/images/countries/sk/warn/smyk.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>17,69</td>
+                    <td class="info"><img src="../../../files/images/countries/sk/hm/21t.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>18</td>
+                    <td class="info"><img src="../../../files/images/countries/sk/maxvyska-4,6.png" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>18,18</td>
+                    <td class="direction">Čremošné - vlaková stanica ← | ↑ Turčianske Teplice</td>
+                    <td>III/2195</td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>18,98</td>
+                    <td class="info"><img src="../../../files/images/countries/sk/warn/zakruta-l.png" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>19,36</td>
+                    <td class="info"><img src="../../../files/images/countries/sk/warn/zakruta-l.png" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>19,78</td>
+                    <td class="direction">Turčianske Teplice ↑ | → Čremošné</td>
+                    <td>III/2174</td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>21,82</td>
+                    <td class="info"><img src="../../../files/images/countries/sk/warn/dvoj_z-lavo.svg" class="road-tag"> 3km ↓</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>24,75</td>
+                    <td class="direction">Žiar nad Hronom, Horná Štubňa <img onclick="red('i-65.html')" src="../../../files/images/countries/sk/i/i-65.svg" class="road-tag red"> ← | ↑ Dolná Štubňa III/2188 | → Žilina, Martin, Turčianske Teplice <img onclick="red('i-65.html')" src="../../../files/images/countries/sk/i/i-65.svg" class="road-tag red"></td>
+                    <td><img onclick="red('i-65.html')" src="../../../files/images/countries/sk/i/i-65.svg" class="road-tag red">, III/2188, <img src="../../../files/images/countries/sk/dajprednost.svg" class="road-tag"></td>
+                    <td>Križovanie je úrovňové. Koniec <img src="../../../files/images/countries/sk/i/i-14.svg" class="road-tag">.</td>
+                </tr>
+            </table>
+            <hr>
+            <h4>Objekty • Smer Turčianske Teplice → Banská Bystrica</h4>
+            <table border="1" class="tabulka objekty" id="#dir2">
+                <tr>
+                    <th class="typ">
+                        Typ objektu
+                    </th>
+                    <th id="cv">
+                        Číslo výjazdu
+                    </th>
+                    <th id="main">
+                        Smer/-y
+                    </th>
+                    <th id="prej">
+                        Prejazdy
+                    </th>
+                    <th>
+                        Poznámka
+                    </th>
+                </tr>
+                <!-- ↑ ↓ ← → ↗ ↘ ↔ ↕ ⇐ ⇒ ⇑ ⇓ ⤳ ⤴ ⤵ 
+                    ↗ - šípka doprava hore diagonálna
+                    ↖ - šípka doľava hore diagonálna
+                -->
+                <tr>
+                    <td class="typ">info</td>
+                    <td>24,06</td>
+                    <td class="info"><img src="../../../files/images/countries/sk/warn/dvoj_z-pravo.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>21,71</td>
+                    <td class="info"><img src="../../../files/images/countries/sk/warn/skaly.svg" class="road-tag"> 8km ↓</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>19,78</td>
+                    <td class="direction">Čremošné ← | ↑ Banská Bystrica</td>
+                    <td>III/2174</td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>19,69</td>
+                    <td class="info"><img src="../../../files/images/countries/sk/warn/zakruta-p.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>18,45</td>
+                    <td class="info"><img src="../../../files/images/countries/sk/warn/lad.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>18,18</td>
+                    <td class="direction">Banská Bystrica ↑ | → Čremošné - vlaková stanica</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>18,04</td>
+                    <td class="info"><img src="../../../files/images/countries/sk/maxvyska-4,6.png" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>17,71</td>
+                    <td class="info"><img src="../../../files/images/countries/sk/hm/21t.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>17,61</td>
+                    <td class="info"><img src="../../../files/images/countries/sk/warn/st/12.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>16,71</td>
+                    <td class="info"><img src="../../../files/images/countries/sk/warn/skaly.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>16,05</td>
+                    <td class="info">Odstavná plocha</td>
+                    <td><img src="../../../files/images/countries/sk/info/odstavna-plocha.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>13,58</td>
+                    <td class="info">Odstavná plocha</td>
+                    <td><img src="../../../files/images/countries/sk/info/odstavna-plocha.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>13,25</td>
+                    <td class="info">Žilinský kraj → Banskobystrický kraj, Okres Turčianske Teplice → Okres Banská Bystrica</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>13,2</td>
+                    <td class="info">Odstavná plocha</td>
+                    <td><img src="../../../files/images/countries/sk/info/odstavna-plocha.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>13,18</td>
+                    <td class="info"><img src="../../../files/images/countries/sk/warn/zakruta-p.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>13,16</td>
+                    <td class="info"><img src="../../../files/images/countries/sk/warn/smyk.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>13,11</td>
+                    <td class="info"><img src="../../../files/images/countries/sk/warn/zver-p.svg" class="road-tag">,<img src="../../../files/images/countries/sk/warn/skaly.svg" class="road-tag"> 8km ↓</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>12,89</td>
+                    <td class="info"><img src="../../../files/images/countries/sk/warn/smyk.svg" class="road-tag">,<img src="../../../files/images/countries/sk/warn/dvoj_z-lavo.svg" class="road-tag"> 3km ↓</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>11,43</td>
+                    <td class="info">Odstavná plocha</td>
+                    <td><img src="../../../files/images/countries/sk/info/odstavna-plocha.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>7,49</td>
+                    <td class="info">Začiatok obce: Dolný Harmanec časť Horný Harmanec</td>
+                    <td><img src="../../../files/images/countries/sk/i/i-14.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>7,11</td>
+                    <td class="info"><img src="../../../files/images/countries/sk/info/bus.svg" class="road-tag"> Dolný Harmanec, Horný Harmanec</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>6,74</td>
+                    <td class=""><img src="../../../files/images/countries/sk/warn/priechod.svg" class="road-tag"> 100 m </td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>6,64</td>
+                    <td class="info"><img src="../../../files/images/countries/sk/info/priechod.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>6,68</td>
+                    <td class="info"><img src="../../../files/images/countries/sk/info/bus.svg" class="road-tag"> Dolný Harmanec, Jaskyňa</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>6,47</td>
+                    <td class="info">Koniec obce: Dolný Harmanec časť Horný Harmanec</td>
+                    <td><img src="../../../files/images/countries/sk/i/i-14.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>5,26</td>
+                    <td class="info">Začiatok obce: Dolný Harmanec</td>
+                    <td><img src="../../../files/images/countries/sk/i/i-14.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>5,22</td>
+                    <td class="info"><img src="../../../files/images/countries/sk/info/bus.svg" class="road-tag"> Dolný Harmanec, Ihrisko</td>
+                    <td><img src="../../../files/images/countries/sk/info/priechod.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>5,23</td>
+                    <td class="direction">Krížna ← | ↑ Banská Bystrica</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>5,01</td>
+                    <td class="info"><img src="../../../files/images/countries/sk/info/priechod.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>4,82</td>
+                    <td class="info"><img src="../../../files/images/countries/sk/info/bus.svg" class="road-tag"> Dolný Harmanec, kostol</td>
+                    <td><img src="../../../files/images/countries/sk/info/priechod.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>4,53</td>
+                    <td class="direction">Banská Bystrica ↑ | →</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>4,46</td>
+                    <td class="info"><img src="../../../files/images/countries/sk/info/priechod.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>4,4</td>
+                    <td class="info"><img src="../../../files/images/countries/sk/info/bus.svg" class="road-tag"> Dolný Harmanec, Pamätník</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>4,26</td>
+                    <td class="info">Koniec obce: Dolný Harmanec</td>
+                    <td><img src="../../../files/images/countries/sk/i/i-14.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>3,09</td>
+                    <td class="info">Začiatok obce: Harmanec</td>
+                    <td><img src="../../../files/images/countries/sk/i/i-14.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>3,01</td>
+                    <td class="info"><img src="../../../files/images/countries/sk/info/bus.svg" class="road-tag"> Harmanec, Strelnica</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>2,62</td>
+                    <td class="direction">← | ↑ Banská Bystrica | →</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>2,61</td>
+                    <td class="info"><img src="../../../files/images/countries/sk/info/bus.svg" class="road-tag"> Harmanec, Ubytovňa</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>2,52</td>
+                    <td class="info"><img src="../../../files/images/countries/sk/info/priechod.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>2,46</td>
+                    <td class="direction">← | ↑ Banská Bystrica</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>2,23</td>
+                    <td class="info"><img src="../../../files/images/countries/sk/info/bus.svg" class="road-tag"> Harmanec, OcÚ</td>
+                    <td><img src="../../../files/images/countries/sk/info/priechod.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>1,88</td>
+                    <td class="info"><img src="../../../files/images/countries/sk/info/priechod.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>1,63</td>
+                    <td class="info">Koniec obce: Harmanec</td>
+                    <td><img src="../../../files/images/countries/sk/i/i-14.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>1,57</td>
+                    <td class="info"><img src="../../../files/images/countries/sk/warn/lad.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>0,23</td>
+                    <td class="info"><img src="../../../files/images/countries/sk/maxvyska-4,6.png" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>0,09</td>
+                    <td class="info"><img src="../../../files/images/countries/sk/info/bus.svg" class="road-tag"> Banská Bystrica, Uľanka, Križovatka</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>0</td>
+                    <td class="direction">Ružomberok, Donovaly <img onclick="red('i-59.html')" src="../../../files/images/countries/sk/i/i-59.svg" class="road-tag red">,<img onclick="red('../e/e77.html')" src="../../../files/images/countries/eu/sk/e77.svg" class="road-tag red"> ← | → Zvolen, Banská Bystrica, Banská Bystrica - centrum <img onclick="red('i-59.html')" src="../../../files/images/countries/sk/i/i-59.svg" class="road-tag red">,<img onclick="red('../e/e77.html')" src="../../../files/images/countries/eu/sk/e77.svg" class="road-tag red"></td>
+                    <td><img src="../../../files/images/countries/sk/i/i-59.svg" class="road-tag">,<img onclick="red('../e/e77.html')" src="../../../files/images/countries/eu/sk/e77.svg" class="road-tag red">, <img src="../../../files/images/countries/sk/dajprednost.svg" class="road-tag"></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+  </body>
+  <hr>
+  <footer>
+    <span>Posledná aktualizácia: 8/ 7/ 2026 17:46:56</span><br><span class="f-info">Označené ako hotové 8/ 7/ 2026 17:46:59.</span>
+  </footer>
+</html>

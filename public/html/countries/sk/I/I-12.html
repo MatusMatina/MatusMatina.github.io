@@ -1,0 +1,1441 @@
+<!DOCTYPE html>
+<html lang="sk">
+  <head>
+    <title>Slovensko • I/12</title>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../../styles/index.css">
+    <link rel="stylesheet" href="../../../styles/road.css">
+    <script src="../../../scripts/loadExit.js" defer></script>
+    <script src="../../../scripts/road.js" defer></script>
+  </head>
+  <body>
+  <div id="header">
+        <h2><img src="../../../files/images/countries/sk/i/i-12.svg" class="road-tag">Cesta prvej triedy 12, Slovensko  •  Svrčinovec - Skalité</h2>
+        <hr>
+    </div>
+    <div id="selection">
+        <span>Toto je beta verzia funkcie.</span>
+        <button onclick="history.back()">Späť</button>
+        <button onclick="direction('dir1')">Svrčinovec → Skalité</button>
+        <button onclick="direction('dir2')">Skalité → Svrčinovec</button>
+    </div>
+    <div id="objekty-na-trase">
+        <h3>Objekty na trase:</h3>
+        <div id="objekty">
+            <h2 id="dir1">Objekty • Smer Svrčinovec → Skalité</h2>
+            <table border="1" class="tabulka objekty">
+                <tr>
+                    <th class="typ">
+                        Typ objektu
+                    </th>
+                    <th id="cv">
+                        Číslo výjazdu
+                    </th>
+                    <th id="main">
+                        Smer/-y
+                    </th>
+                    <th id="prej">
+                        Prejazdy
+                    </th>
+                    <th>
+                        Poznámka
+                    </th>
+                </tr>
+                <!-- ↑ ↓ ← → ↗ ↘ ↔ ↕ ⇐ ⇒ ⇑ ⇓ ⤳ ⤴ ⤵ 
+                    ↗ - šípka doprava hore diagonálna
+                    ↖ - šípka doľava hore diagonálna
+                -->
+                <tr>
+                    <td class="typ">info</td>
+                    <td>0,04</td>
+                    <td class="info"><img src="../../../files/images/countries/sk/reg/zakaz-tir.svg" class="road-tag"> nad 7,5 ton pre TRANZIT</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>0,08</td>
+                    <td class="info"><img src="../../../files/images/countries/sk/info/priechod.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>0,41</td>
+                    <td class="direction">Skalité ↑ | →</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>0,56</td>
+                    <td class="direction">Skalité ↑ | →</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>0,61</td>
+                    <td class="direction">Skalité ↑ | →</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>0,65</td>
+                    <td class="info">Koniec obce: Skalité</td>
+                    <td><img src="../../../files/images/countries/sk/i/i-12.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>1,08</td>
+                    <td class="info"><img src="../../../files/images/countries/sk/rych/70.svg" class="road-tag">,<img src="../../../files/images/countries/sk/warn/dvoj_z-pravo.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>1,72</td>
+                    <td class="info">Začiatok obce: Čierne</td>
+                    <td><img src="../../../files/images/countries/sk/i/i-12.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>1,78</td>
+                    <td class="direction">← | ↑ Skalité</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>1,98</td>
+                    <td class="direction">← | ↑ Skalité</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>1,99</td>
+                    <td class="info"><img src="../../../files/images/countries/sk/info/priechod.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>2,02</td>
+                    <td class="direction">← | ↑ Skalité</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>2,17</td>
+                    <td class="direction">← | ↑ Skalité</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>2,32</td>
+                    <td class="direction">← | ↑ Skalité</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>2,61</td>
+                    <td class="info"><img src="../../../files/images/countries/sk/info/bus.svg" class="road-tag"> Čierne, Zdravotnícke stredisko</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>2,68</td>
+                    <td class="direction">← | ↑ Skalité</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>2,72</td>
+                    <td class="direction">III/2010 ← | ↑ Skalité <img src="../../../files/images/countries/sk/i/i-12.svg" class="road-tag"> | →</td>
+                    <td>III/2010</td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>2,73</td>
+                    <td class="info"><img src="../../../files/images/countries/sk/info/priechod.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>3,2</td>
+                    <td class="info"><img src="../../../files/images/countries/sk/info/bus.svg" class="road-tag"> Čierne, Ondráši</td>
+                    <td><img src="../../../files/images/countries/sk/info/priechod.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>3,21</td>
+                    <td class="direction">Skalité ↑ | → <img src="../../../files/images/countries/sk/info/smer-p.svg" class="road-tag"></td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>3,37</td>
+                    <td class="direction">Skalité ↑ | → <img src="../../../files/images/countries/sk/reg/zakazvjazdu-smer.svg" class="road-tag"></td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>3,46</td>
+                    <td class="info"><img src="../../../files/images/countries/sk/warn/zver-p.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>4,76</td>
+                    <td class="direction">Skalité ↑ | →</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>5,05</td>
+                    <td class="direction">← | ↑ Skalité</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>5,11</td>
+                    <td class="direction">← | ↑ Skalité <img src="../../../files/images/countries/sk/i/i-12.svg" class="road-tag"> | →</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>5,36</td>
+                    <td class="direction">← | ↑ Skalité</td>
+                    <td>III/2010</td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>5,37</td>
+                    <td class="direction">Skalité ↑ | →</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>5,45</td>
+                    <td class="info"><img src="../../../files/images/countries/sk/info/bus.svg" class="road-tag"> Čierne, Jednota</td>
+                    <td><img src="../../../files/images/countries/sk/info/priechod.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>5,46</td>
+                    <td class="direction">Skalité ↑ | →</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>5,55</td>
+                    <td class="direction">Skalité ↑ | →</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>5,7 </td>
+                    <td class="direction">Skalité ↑ | →</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>5,86</td>
+                    <td class="direction">Skalité ↑ | →</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>6,06</td>
+                    <td class="direction">← | ↑ Skalité <img src="../../../files/images/countries/sk/i/i-12.svg" class="road-tag"> | →</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>6,11</td>
+                    <td class="direction">Skalité ↑ | →</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>6,21</td>
+                    <td class="direction">Skalité ↑ | →</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>6,21</td>
+                    <td class="info"><img src="../../../files/images/countries/sk/warn/zakruta-p.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>6,31</td>
+                    <td class="direction">← | ↑ Skalité <img src="../../../files/images/countries/sk/i/i-12.svg" class="road-tag"> | →</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>6,38</td>
+                    <td class="direction">← | ↑ Skalité <img src="../../../files/images/countries/sk/i/i-12.svg" class="road-tag"> | →</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>6,48</td>
+                    <td class="info">Koniec obce: Čierne</td>
+                    <td><img src="../../../files/images/countries/sk/i/i-12.svg" class="road-tag">,<img src="../../../files/images/countries/sk/rych/70.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>7,39</td>
+                    <td class="info">Začiatok obce: Skalité</td>
+                    <td><img src="../../../files/images/countries/sk/i/i-12.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>7,45</td>
+                    <td class="info"><img src="../../../files/images/countries/sk/info/priechod.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>7,57</td>
+                    <td class="direction"><img src="../../../files/images/countries/sk/warn/priecestie.svg" class="road-tag"> ← | ↑ Skalité <img src="../../../files/images/countries/sk/i/i-12.svg" class="road-tag"> | →</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>7,64</td>
+                    <td class="info"><img src="../../../files/images/countries/sk/info/bus.svg" class="road-tag"> Skalité, Šimurda</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>7,82</td>
+                    <td class="direction">Skalité ↑ | →</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>8,34</td>
+                    <td class="direction">Skalité ↑ | →</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>8,36</td>
+                    <td class="direction"><img src="../../../files/images/countries/sk/warn/priecestie.svg" class="road-tag"> ← | ↑ Skalité</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>8,52</td>
+                    <td class="direction"><img src="../../../files/images/countries/sk/reg/zakazvjazdu-smer.svg" class="road-tag"> ← | ↑ Skalité</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>8,57</td>
+                    <td class="direction">Skalité ↑ | →</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>8,87</td>
+                    <td class="direction">Skalité ↑ | →</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>9,12</td>
+                    <td class="info"><img src="../../../files/images/countries/sk/info/bus.svg" class="road-tag"> Skalité, Železničná stanica</td>
+                    <td><img src="../../../files/images/countries/sk/info/priechod.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>9,13</td>
+                    <td class="direction">Železničná stanica ← | ↑ Skalité</td>
+                    <td>III/2011</td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>9,25</td>
+                    <td class="direction">← | ↑ Skalité</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>9,42</td>
+                    <td class="info"><img src="../../../files/images/countries/sk/warn/zakruta-p.svg" class="road-tag">,<img src="../../../files/images/countries/sk/warn/deti.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>9,48</td>
+                    <td class="direction">← | ↑ Skalité <img src="../../../files/images/countries/sk/i/i-12.svg" class="road-tag"> | →</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>9,48</td>
+                    <td class="info">Zóna <img src="../../../files/images/countries/sk/rych/40.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>9,61</td>
+                    <td class="info"><img src="../../../files/images/countries/sk/info/priechod.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>9,63</td>
+                    <td class="direction">← | ↑ Skalité</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>9,69</td>
+                    <td class="direction">Skalité ↑ | →</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>9,78</td>
+                    <td class="info"><img src="../../../files/images/countries/sk/info/priechod.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>9,82</td>
+                    <td class="info">Zóna <img src="../../../files/images/countries/sk/rych/40k.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>9,85</td>
+                    <td class="direction">Skalité ↑ | →</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>10,02</td>
+                    <td class="direction">← | ↑ Skalité</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>10,13</td>
+                    <td class="direction">Skalité ↑ | →</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>10,22</td>
+                    <td class="direction">Skalité ↑ | →</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>10,6</td>
+                    <td class="direction">Skalité ↑ | →</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>10,68</td>
+                    <td class="direction">Skalité ↑ | →</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>10,77</td>
+                    <td class="info"><img src="../../../files/images/countries/sk/info/priechod.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>11</td>
+                    <td class="direction"><img src="../../../files/images/countries/sk/warn/priecestie.svg" class="road-tag"> ← | ↑ Skalité</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>11,23</td>
+                    <td class="direction">Skalité ↑ | →</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>11,5</td>
+                    <td class="direction">Skalité ↑ | →</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>11,7</td>
+                    <td class="direction">← | ↑ Skalité</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>11,97</td>
+                    <td class="direction">← | ↑ Skalité <img src="../../../files/images/countries/sk/i/i-12.svg" class="road-tag"> | →</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>11,99</td>
+                    <td class="direction">← | ↑ Skalité</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>12,55</td>
+                    <td class="direction">← | ↑ Skalité <img src="../../../files/images/countries/sk/i/i-12.svg" class="road-tag"> | →</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>12,56</td>
+                    <td class="info"><img src="../../../files/images/countries/sk/info/priechod.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>12,64</td>
+                    <td class="direction">← | ↑ Skalité</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>12,72</td>
+                    <td class="info"><img src="../../../files/images/countries/sk/hm/11t.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>12,74</td>
+                    <td class="direction">Skalité ↑ | →</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>12,76</td>
+                    <td class="direction">← | ↑ Skalité</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>13,04</td>
+                    <td class="direction">Skalité ↑ | →</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>13,11</td>
+                    <td class="info"><img src="../../../files/images/countries/sk/warn/deti.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>13,19</td>
+                    <td class="info"><img src="../../../files/images/countries/sk/info/priechod.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>13,31</td>
+                    <td class="direction">Skalité ↑ | →</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>13,35</td>
+                    <td class="direction">← | ↑ Skalité</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>13,52</td>
+                    <td class="direction">← | ↑ Skalité</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>13,68</td>
+                    <td class="direction">Skalité ↑ | →</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>13,74</td>
+                    <td class="direction">← | ↑ Skalité</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>14,08</td>
+                    <td class="direction">Skalité ↑ | →</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>14,18</td>
+                    <td class="info"><img src="../../../files/images/countries/sk/info/priechod.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>14,19</td>
+                    <td class="direction">← | ↑ Skalité <img src="../../../files/images/countries/sk/i/i-12.svg" class="road-tag"> | →</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>14,22</td>
+                    <td class="info"><img src="../../../files/images/countries/sk/hm/7,5t.svg" class="road-tag">,<img src="../../../files/images/countries/sk/info/prednost-proti.svg" class="road-tag">,<img src="../../../files/images/countries/sk/warn/semafor.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>14,43</td>
+                    <td class="direction"><img src="../../../files/images/countries/sk/reg/zakazvjazdu-smer.svg" class="road-tag"> ← | ↑ Skalité</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>14,5</td>
+                    <td class="info">Koniec obce: Skalité</td>
+                    <td><img src="../../../files/images/countries/sk/i/i-12.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>14,73</td>
+                    <td class="info"><img src="../../../files/images/countries/sk/rych/60.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>14,79</td>
+                    <td class="info"><img src="../../../files/images/countries/sk/rych/40.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>0</td>
+                    <td class="info"><img src="../../../files/images/countries/sk/reg/nepredchadzat.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>15</td>
+                    <td class="direction">Skalité ↑ | → <img src="../../../files/images/countries/sk/reg/zakazvjazdu-smer.svg" class="road-tag"></td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>15,03</td>
+                    <td class="info"><img src="../../../files/images/countries/sk/warn/dvoj_z-pravo.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>15,15</td>
+                    <td class="info"><img src="../../../files/images/countries/sk/reg/nepredchadzat-k.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>15,2</td>
+                    <td class="info"><img src="../../../files/images/countries/sk/pruhy-clenenie/2.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">hranice</td>
+                    <td>Štátne hranice</td>
+                    <td class="hranice">Štátna hranica <img src="../../../files/images/flags/slovakia.webp" class="flag"> Slovensko (SK)/<img src="../../../files/images/flags/poland.webp" class="flag"> Poľsko (PL)</td>
+                    <td><img src="../../../files/images/countries/sk/i/i-12.svg" class="road-tag"> ↑ / ↓ </td>
+                    <td></td>
+                </tr>
+            </table>
+            <hr>
+            <h2 id="dir2">Objetky • Smer Skalité → Svrčinovec</h2>
+            <table border="1" class="tabulka objekty">
+                <tr>
+                    <th class="typ">
+                        Typ objektu
+                    </th>
+                    <th id="cv">
+                        Číslo výjazdu
+                    </th>
+                    <th id="main">
+                        Smer/-y
+                    </th>
+                    <th id="prej">
+                        Prejazdy
+                    </th>
+                    <th>
+                        Poznámka
+                    </th>
+                </tr>
+                <!-- ↑ ↓ ← → ↗ ↘ ↔ ↕ ⇐ ⇒ ⇑ ⇓ ⤳ ⤴ ⤵ 
+                    ↗ - šípka doprava hore diagonálna
+                    ↖ - šípka doľava hore diagonálna
+                -->
+                <tr>
+                    <td class="typ">hranice</td>
+                    <td>Štátne hranice</td>
+                    <td class="hranice">Štátna hranica <img src="../../../files/images/flags/poland.webp" class="flag"> Poľsko (PL)/<img src="../../../files/images/flags/slovakia.webp" class="flag"> Slovensko (SK)</td>
+                    <td>↑ / ↓ <img src="../../../files/images/countries/sk/i/i-12.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>15,15</td>
+                    <td class="info"><img src="../../../files/images/countries/sk/reg/nepredchadzat.svg" class="road-tag">,<img src="../../../files/images/countries/sk/rych/50.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>15</td>
+                    <td class="direction"><img src="../../../files/images/countries/sk/reg/zakazvjazdu-smer.svg" class="road-tag"> ← | ↑ Svrčinovec</td>
+                    <td><img src="../../../files/images/countries/sk/prednost/stop.svg" class="road-tag"></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>14,99</td>
+                    <td class="info"><img src="../../../files/images/countries/sk/hm/7,5t.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>14,97</td>
+                    <td class="info"><img src="../../../files/images/countries/sk/rych/60.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>14,5</td>
+                    <td class="info">Začiatok obce: Svrčinovec</td>
+                    <td><img src="../../../files/images/countries/sk/i/i-12.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>14,43</td>
+                    <td class="direction">Svrčinovec ↑ | → <img src="../../../files/images/countries/sk/reg/zakazvjazdu-smer.svg" class="road-tag"></td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>14,31</td>
+                    <td class="info"><img src="../../../files/images/countries/sk/rych/30.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>14,25</td>
+                    <td class="info"><img src="../../../files/images/countries/sk/reg/prednost-proti.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>14,19</td>
+                    <td class="direction">← | ↑ Svrčinovec <img src="../../../files/images/countries/sk/i/i-12.svg" class="road-tag"> | →</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>14,18</td>
+                    <td class="info"><img src="../../../files/images/countries/sk/info/priechod.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>14,08</td>
+                    <td class="direction">← | ↑ Svrčinovec</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>13,74</td>
+                    <td class="direction">Svrčinovec ↑ | →</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>13,68</td>
+                    <td class="direction">← | ↑ Svrčinovec</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>13,52</td>
+                    <td class="direction">Svrčinovec ↑ | →</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>13,35</td>
+                    <td class="direction">Svrčinovec ↑ | →</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>13,34</td>
+                    <td class="info"><img src="../../../files/images/countries/sk/warn/deti.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>13,31</td>
+                    <td class="direction">← | ↑ Svrčinovec</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>13,19</td>
+                    <td class="info"><img src="../../../files/images/countries/sk/info/priechod.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>13,04</td>
+                    <td class="direction">← | ↑ Svrčinovec</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>13,76</td>
+                    <td class="direction">Svrčinovec ↑ | →</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>13,74</td>
+                    <td class="direction">← | ↑ Svrčinovec</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>12,73</td>
+                    <td class="info"><img src="../../../files/images/countries/sk/hm/11t.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>12,56</td>
+                    <td class="info"><img src="../../../files/images/countries/sk/info/priechod.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>12,55</td>
+                    <td class="direction">← | ↑ Svrčinovec <img src="../../../files/images/countries/sk/i/i-12.svg" class="road-tag"> | →</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>11,99</td>
+                    <td class="direction">Svrčinovec ↑ | →</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>11,97</td>
+                    <td class="direction">← | ↑ Svrčinovec <img src="../../../files/images/countries/sk/i/i-12.svg" class="road-tag"> | →</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>11,7</td>
+                    <td class="direction">Svrčinovec ↑ | →</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>11,5</td>
+                    <td class="direction">← | ↑ Svrčinovec</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>11,23</td>
+                    <td class="direction">← | ↑ Svrčinovec</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>11</td>
+                    <td class="direction">Svrčinovec ↑ | →</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>10,77</td>
+                    <td class="info"><img src="../../../files/images/countries/sk/info/priechod.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>10,68</td>
+                    <td class="direction">← | ↑ Svrčinovec</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>10,6</td>
+                    <td class="direction">← | ↑ Svrčinovec</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>10,22</td>
+                    <td class="direction">← | ↑ Svrčinovec</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>10,13</td>
+                    <td class="direction">← | ↑ Svrčinovec</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>10,02</td>
+                    <td class="direction">Svrčinovec ↑ | →</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>9,85</td>
+                    <td class="direction">← | ↑ Svrčinovec</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>9,82</td>
+                    <td class="info">Zóna <img src="../../../files/images/countries/sk/rych/40.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>9,78</td>
+                    <td class="info"><img src="../../../files/images/countries/sk/info/priechod.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>9,69</td>
+                    <td class="direction">← | ↑ Svrčinovec</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>9,63</td>
+                    <td class="direction">Svrčinovec ↑ | →</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>9,61</td>
+                    <td class="info"><img src="../../../files/images/countries/sk/info/priechod.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>9,48</td>
+                    <td class="info">Zóna <img src="../../../files/images/countries/sk/rych/40k.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>9,48</td>
+                    <td class="direction">← | ↑ Svrčinovec <img src="../../../files/images/countries/sk/i/i-12.svg" class="road-tag"> | →</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>9,25</td>
+                    <td class="direction">Svrčinovec ↑ | →</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>9,13</td>
+                    <td class="direction">Svrčinovec ↑ | → Železničná stanica</td>
+                    <td>III/2011</td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>9,12</td>
+                    <td class="info"><img src="../../../files/images/countries/sk/info/bus.svg" class="road-tag"> Skalité, Železničná stanica</td>
+                    <td><img src="../../../files/images/countries/sk/info/priechod.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>8,87</td>
+                    <td class="direction">← | ↑ Svrčinovec</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>8,57</td>
+                    <td class="direction">← | ↑ Svrčinovec</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>8,52</td>
+                    <td class="direction">Svrčinovec ↑ | →</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>8,36</td>
+                    <td class="direction">Svrčinovec ↑ | →</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>8,34</td>
+                    <td class="direction">← | ↑ Svrčinovec</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>7,82</td>
+                    <td class="direction">← | ↑ Svrčinovec</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>7,57</td>
+                    <td class="direction">← | ↑ Svrčinovec <img src="../../../files/images/countries/sk/i/i-12.svg" class="road-tag"> | → <img src="../../../files/images/countries/sk/warn/priecestie.svg" class="road-tag"></td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>7,45</td>
+                    <td class="info"><img src="../../../files/images/countries/sk/info/priechod.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>7,39</td>
+                    <td class="info">Koniec obce: Skalité</td>
+                    <td><img src="../../../files/images/countries/sk/i/i-12.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>6,43</td>
+                    <td class="info">Začiatok obce: Čierne</td>
+                    <td><img src="../../../files/images/countries/sk/i/i-12.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>6,38</td>
+                    <td class="direction">← | ↑ Svrčinovec <img src="../../../files/images/countries/sk/i/i-12.svg" class="road-tag"> | →</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>6,31</td>
+                    <td class="direction">← | ↑ Svrčinovec <img src="../../../files/images/countries/sk/i/i-12.svg" class="road-tag"> | →</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>6,21</td>
+                    <td class="direction">← | ↑ Svrčinovec</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>6,11</td>
+                    <td class="direction">← | ↑ Svrčinovec</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>6,06</td>
+                    <td class="direction">← | ↑ Svrčinovec <img src="../../../files/images/countries/sk/i/i-12.svg" class="road-tag"> | →</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>5,86</td>
+                    <td class="direction">← | ↑ Svrčinovec</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>5,7</td>
+                    <td class="direction">← | ↑ Svrčinovec</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>5,55</td>
+                    <td class="info"><img src="../../../files/images/countries/sk/warn/deti.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>5,55</td>
+                    <td class="direction">← | ↑ Svrčinovec</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>5,46</td>
+                    <td class="direction">← | ↑ Svrčinovec</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>5,46</td>
+                    <td class="info"><img src="../../../files/images/countries/sk/info/bus.svg" class="road-tag"> Čierne, Jednota</td>
+                    <td><img src="../../../files/images/countries/sk/info/priechod.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>5,37</td>
+                    <td class="direction">← | ↑ Svrčinovec</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>5,36</td>
+                    <td class="direction">Svrčinovec ↑ | →</td>
+                    <td>III/2010</td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>5,11</td>
+                    <td class="direction">← | ↑ Svrčinovec <img src="../../../files/images/countries/sk/i/i-12.svg" class="road-tag"> | →</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>5,05</td>
+                    <td class="direction">Svrčinovec ↑ | →</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>4,76</td>
+                    <td class="direction">← | ↑ Svrčinovec</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>3,37</td>
+                    <td class="direction">← | ↑ Svrčinovec</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>3,21</td>
+                    <td class="direction"><img src="../../../files/images/countries/sk/reg/zakazvjazdu-smer.svg" class="road-tag"> ← | ↑ Svrčinovec</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>3,19</td>
+                    <td class="info"><img src="../../../files/images/countries/sk/info/bus.svg" class="road-tag"> Čierne, Ondráši</td>
+                    <td><img src="../../../files/images/countries/sk/info/priechod.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>2,73</td>
+                    <td class="info"><img src="../../../files/images/countries/sk/info/priechod.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>2,72</td>
+                    <td class="direction">← | ↑ Svrčinovec <img src="../../../files/images/countries/sk/i/i-12.svg" class="road-tag"> | → III/2010</td>
+                    <td>III/2010</td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>2,68</td>
+                    <td class="direction">Cieľ ↑ | →</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>2,32</td>
+                    <td class="direction">Cieľ ↑ | →</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>2,17</td>
+                    <td class="direction">Cieľ ↑ | →</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>2,02</td>
+                    <td class="direction">Cieľ ↑ | →</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>1,99</td>
+                    <td class="info"><img src="../../../files/images/countries/sk/info/priechod.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>1,98</td>
+                    <td class="direction">Cieľ ↑ | →</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>1,78</td>
+                    <td class="direction">Cieľ ↑ | →</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>1,72</td>
+                    <td class="info">Koniec obce: Čierne</td>
+                    <td><img src="../../../files/images/countries/sk/i/i-12.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>1,37</td>
+                    <td class="info"><img src="../../../files/images/countries/sk/warn/dvoj_z-pravo.svg" class="road-tag">,<img src="../../../files/images/countries/sk/rych/70.svg" class="road-tag"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">info</td>
+                    <td>0,65</td>
+                    <td class="info">Začiatok obce: Svrčinovec</td>
+                    <td><img src="../../../files/images/countries/sk/i/i-12.svg" class="road-tag"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>0,61</td>
+                    <td class="direction">← | ↑ Cieľ</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>0,56</td>
+                    <td class="direction">← | ↑ Cieľ</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>0,41</td>
+                    <td class="direction">← | ↑ Cieľ</td>
+                    <td></td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+                <tr>
+                    <td class="typ">vyjazd</td>
+                    <td>0</td>
+                    <td class="direction">Čadca <img onclick="red('i-11.html')" src="../../../files/images/countries/sk/i/i-11.svg" class="road-tag red"> ← | → Český Těšín (Smer <img onclick="red('../czhechrepublic.html')" src="../../../files/images/flags/czechrepublic.webp" class="road-tag red">) <img onclick="red('i-11.html')" src="../../../files/images/countries/sk/i/i-11.svg" class="road-tag red"></td>
+                    <td><img src="../../../files/images/countries/sk/prednost/stop.svg" class="road-tag">   Koniec <img src="../../../files/images/countries/sk/i/i-12.svg" class="road-tag">.</td>
+                    <td>Križovanie je úrovňové.</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+  </body>
+  <hr>
+  <footer>
+    <span>Posledná aktualizácia: 25/ 7/ 2026 18:44:07</span><br><span class="f-info">Označené ako hotové 25/ 7/ 2026 18:22:29.</span><br>
+    <span class="direction">V prípade akýchkoľvek otázok alebo nájdenia problému na stránkach, neváhajte ma kontaktovať na emailovú adresu <a href="mailto:matinam744@gmail.com">matinam744@gmail.com</a></span>
+  </footer>
+</html>
