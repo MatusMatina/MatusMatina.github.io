@@ -1,2 +1,2 @@
 # cesty
-→ [public/index.html]
+→ [Otvor](public/index.html)
